@@ -1,0 +1,46 @@
+---
+title: "Contas a Receber"
+module: "financeiro"
+route: "/financial/receivables"
+pdfRef: "8.2"
+videoUrl: "/videos/financeiro-contas-a-receber-v2.mp4"
+updatedAt: "2026-02-27"
+tags: ["receber", "financeiro", "titulos"]
+permissionHints: ["financial_movement.list"]
+order: 39
+version: "v2"
+description: "Controle recebimentos, vencimentos e conciliações de receita."
+menuGroup: "financeiro"
+menuGroupLabel: "Financeiro"
+related: ["financeiro/faturamento"]
+---
+
+## Quando usar
+Controle recebimentos, vencimentos e conciliações de receita.
+
+## Pré-requisitos
+- Perfil com permissões indicadas em `Permissões necessárias`.
+- Dados mínimos já cadastrados para o fluxo.
+- Acesso ao módulo em `/financial/receivables`.
+
+## Passo a passo
+1. Acesse o menu correspondente ao módulo `Financeiro`.
+2. Abra a funcionalidade `Contas a Receber`.
+3. Execute o fluxo principal seguindo a sequência operacional da tela.
+4. Revise os dados antes de confirmar a operação.
+
+## Campos críticos
+- Campos obrigatórios exibidos com validação de preenchimento.
+- Identificadores de cliente/equipamento/produto conforme contexto.
+- Datas, status e responsáveis quando aplicável.
+
+## Erros comuns
+- Permissão insuficiente para a ação solicitada.
+- Dados obrigatórios ausentes ou em formato inválido.
+- Inconsistência de vínculo entre registros relacionados.
+
+## Permissões necessárias
+- financial_movement.list
+
+## Relacionados
+- [financeiro/faturamento](/docs/financeiro/faturamento)

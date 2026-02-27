@@ -1,0 +1,34 @@
+{
+  "name": "integra-docs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run generate:index && next build",
+    "start": "next start",
+    "lint": "eslint",
+    "scaffold:docs": "node scripts/scaffold-docs.mjs",
+    "generate:index": "node scripts/generate-docs-index.mjs",
+    "validate:content": "node scripts/validate-content.mjs",
+    "verify:menu": "node scripts/verify-menu-alignment.mjs",
+    "videos:manifest": "node scripts/generate-videos-manifest.mjs",
+    "videos:capture": "node playwright/capture-doc-videos.mjs"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "16.1.6",
+    "next-mdx-remote": "^5.0.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^20.19.9",
+    "@types/react": "^19.2.1",
+    "@types/react-dom": "^19.2.2",
+    "eslint": "^9.35.0",
+    "eslint-config-next": "16.1.6",
+    "typescript": "^5.9.2"
+  }
+}

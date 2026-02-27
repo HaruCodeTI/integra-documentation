@@ -1,0 +1,47 @@
+---
+title: "Fornecedores"
+module: "cadastros"
+route: "/supplier"
+pdfRef: "2.8"
+videoUrl: "/videos/cadastros-fornecedores-v2.mp4"
+updatedAt: "2026-02-27"
+tags: ["fornecedores", "compras", "qualidade"]
+permissionHints: ["supplier.list"]
+order: 16
+version: "v2"
+description: "Cadastre fornecedores e mantenha dados para compras e qualidade."
+menuGroup: "cadastros"
+menuGroupLabel: "Cadastros"
+related: ["compras/pedidos-de-compra", "qualidade/qualificacao-de-fornecedores"]
+---
+
+## Quando usar
+Cadastre fornecedores e mantenha dados para compras e qualidade.
+
+## Pré-requisitos
+- Perfil com permissões indicadas em `Permissões necessárias`.
+- Dados mínimos já cadastrados para o fluxo.
+- Acesso ao módulo em `/supplier`.
+
+## Passo a passo
+1. Acesse o menu correspondente ao módulo `Cadastros`.
+2. Abra a funcionalidade `Fornecedores`.
+3. Execute o fluxo principal seguindo a sequência operacional da tela.
+4. Revise os dados antes de confirmar a operação.
+
+## Campos críticos
+- Campos obrigatórios exibidos com validação de preenchimento.
+- Identificadores de cliente/equipamento/produto conforme contexto.
+- Datas, status e responsáveis quando aplicável.
+
+## Erros comuns
+- Permissão insuficiente para a ação solicitada.
+- Dados obrigatórios ausentes ou em formato inválido.
+- Inconsistência de vínculo entre registros relacionados.
+
+## Permissões necessárias
+- supplier.list
+
+## Relacionados
+- [compras/pedidos-de-compra](/docs/compras/pedidos-de-compra)
+- [qualidade/qualificacao-de-fornecedores](/docs/qualidade/qualificacao-de-fornecedores)

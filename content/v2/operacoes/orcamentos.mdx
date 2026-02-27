@@ -1,0 +1,47 @@
+---
+title: "Orçamentos"
+module: "operacoes"
+route: "/budget"
+pdfRef: "3.2"
+videoUrl: "/videos/operacoes-orcamentos-v2.mp4"
+updatedAt: "2026-02-27"
+tags: ["orcamento", "aprovacao", "os"]
+permissionHints: ["budget.list"]
+order: 22
+version: "v2"
+description: "Monte orçamentos, aprove e acompanhe pendências do cliente."
+menuGroup: "operacoes"
+menuGroupLabel: "Operações"
+related: ["operacoes/ordem-de-servico", "financeiro/faturamento"]
+---
+
+## Quando usar
+Monte orçamentos, aprove e acompanhe pendências do cliente.
+
+## Pré-requisitos
+- Perfil com permissões indicadas em `Permissões necessárias`.
+- Dados mínimos já cadastrados para o fluxo.
+- Acesso ao módulo em `/budget`.
+
+## Passo a passo
+1. Acesse o menu correspondente ao módulo `Operações`.
+2. Abra a funcionalidade `Orçamentos`.
+3. Execute o fluxo principal seguindo a sequência operacional da tela.
+4. Revise os dados antes de confirmar a operação.
+
+## Campos críticos
+- Campos obrigatórios exibidos com validação de preenchimento.
+- Identificadores de cliente/equipamento/produto conforme contexto.
+- Datas, status e responsáveis quando aplicável.
+
+## Erros comuns
+- Permissão insuficiente para a ação solicitada.
+- Dados obrigatórios ausentes ou em formato inválido.
+- Inconsistência de vínculo entre registros relacionados.
+
+## Permissões necessárias
+- budget.list
+
+## Relacionados
+- [operacoes/ordem-de-servico](/docs/operacoes/ordem-de-servico)
+- [financeiro/faturamento](/docs/financeiro/faturamento)

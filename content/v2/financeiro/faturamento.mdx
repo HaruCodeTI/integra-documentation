@@ -1,0 +1,47 @@
+---
+title: "Faturamento"
+module: "financeiro"
+route: "/financial/billing"
+pdfRef: "8.4"
+videoUrl: "/videos/financeiro-faturamento-v2.mp4"
+updatedAt: "2026-02-27"
+tags: ["faturamento", "financeiro", "documentos"]
+permissionHints: ["financial.billing_list"]
+order: 41
+version: "v2"
+description: "Execute faturamento e acompanhe evolução de documentos emitidos."
+menuGroup: "financeiro"
+menuGroupLabel: "Financeiro"
+related: ["comercial/pedidos-de-venda", "financeiro/central-dfe-documentos-fiscais"]
+---
+
+## Quando usar
+Execute faturamento e acompanhe evolução de documentos emitidos.
+
+## Pré-requisitos
+- Perfil com permissões indicadas em `Permissões necessárias`.
+- Dados mínimos já cadastrados para o fluxo.
+- Acesso ao módulo em `/financial/billing`.
+
+## Passo a passo
+1. Acesse o menu correspondente ao módulo `Financeiro`.
+2. Abra a funcionalidade `Faturamento`.
+3. Execute o fluxo principal seguindo a sequência operacional da tela.
+4. Revise os dados antes de confirmar a operação.
+
+## Campos críticos
+- Campos obrigatórios exibidos com validação de preenchimento.
+- Identificadores de cliente/equipamento/produto conforme contexto.
+- Datas, status e responsáveis quando aplicável.
+
+## Erros comuns
+- Permissão insuficiente para a ação solicitada.
+- Dados obrigatórios ausentes ou em formato inválido.
+- Inconsistência de vínculo entre registros relacionados.
+
+## Permissões necessárias
+- financial.billing_list
+
+## Relacionados
+- [comercial/pedidos-de-venda](/docs/comercial/pedidos-de-venda)
+- [financeiro/central-dfe-documentos-fiscais](/docs/financeiro/central-dfe-documentos-fiscais)

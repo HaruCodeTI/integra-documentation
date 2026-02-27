@@ -1,0 +1,46 @@
+---
+title: "Despesas"
+module: "financeiro"
+route: "/financial/expenses"
+pdfRef: "8.8"
+videoUrl: "/videos/financeiro-despesas-v2.mp4"
+updatedAt: "2026-02-27"
+tags: ["despesas", "financeiro", "classificacao"]
+permissionHints: ["financial.expenses_list"]
+order: 45
+version: "v2"
+description: "Detalhe despesas do financeiro com classificação e vencimento."
+menuGroup: "financeiro"
+menuGroupLabel: "Financeiro"
+related: ["financeiro/contas-a-pagar"]
+---
+
+## Quando usar
+Detalhe despesas do financeiro com classificação e vencimento.
+
+## Pré-requisitos
+- Perfil com permissões indicadas em `Permissões necessárias`.
+- Dados mínimos já cadastrados para o fluxo.
+- Acesso ao módulo em `/financial/expenses`.
+
+## Passo a passo
+1. Acesse o menu correspondente ao módulo `Financeiro`.
+2. Abra a funcionalidade `Despesas`.
+3. Execute o fluxo principal seguindo a sequência operacional da tela.
+4. Revise os dados antes de confirmar a operação.
+
+## Campos críticos
+- Campos obrigatórios exibidos com validação de preenchimento.
+- Identificadores de cliente/equipamento/produto conforme contexto.
+- Datas, status e responsáveis quando aplicável.
+
+## Erros comuns
+- Permissão insuficiente para a ação solicitada.
+- Dados obrigatórios ausentes ou em formato inválido.
+- Inconsistência de vínculo entre registros relacionados.
+
+## Permissões necessárias
+- financial.expenses_list
+
+## Relacionados
+- [financeiro/contas-a-pagar](/docs/financeiro/contas-a-pagar)

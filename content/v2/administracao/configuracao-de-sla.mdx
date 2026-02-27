@@ -1,0 +1,47 @@
+---
+title: "Configuração de SLA"
+module: "administracao"
+route: "/sla-configuration"
+pdfRef: "12.6"
+videoUrl: "/videos/administracao-configuracao-de-sla-v2.mp4"
+updatedAt: "2026-02-27"
+tags: ["sla", "tempo", "configuracao"]
+permissionHints: ["sla_configuration.list"]
+order: 60
+version: "v2"
+description: "Defina tempos alvo por etapa operacional para controle de OS."
+menuGroup: "administracao"
+menuGroupLabel: "Administração"
+related: ["operacoes/ordem-de-servico", "administracao/controle-de-produtividade"]
+---
+
+## Quando usar
+Defina tempos alvo por etapa operacional para controle de OS.
+
+## Pré-requisitos
+- Perfil com permissões indicadas em `Permissões necessárias`.
+- Dados mínimos já cadastrados para o fluxo.
+- Acesso ao módulo em `/sla-configuration`.
+
+## Passo a passo
+1. Acesse o menu correspondente ao módulo `Administração`.
+2. Abra a funcionalidade `Configuração de SLA`.
+3. Execute o fluxo principal seguindo a sequência operacional da tela.
+4. Revise os dados antes de confirmar a operação.
+
+## Campos críticos
+- Campos obrigatórios exibidos com validação de preenchimento.
+- Identificadores de cliente/equipamento/produto conforme contexto.
+- Datas, status e responsáveis quando aplicável.
+
+## Erros comuns
+- Permissão insuficiente para a ação solicitada.
+- Dados obrigatórios ausentes ou em formato inválido.
+- Inconsistência de vínculo entre registros relacionados.
+
+## Permissões necessárias
+- sla_configuration.list
+
+## Relacionados
+- [operacoes/ordem-de-servico](/docs/operacoes/ordem-de-servico)
+- [administracao/controle-de-produtividade](/docs/administracao/controle-de-produtividade)

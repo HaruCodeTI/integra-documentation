@@ -1,0 +1,47 @@
+---
+title: "Pedidos de Compra"
+module: "compras"
+route: "/purchase"
+pdfRef: "6.2"
+videoUrl: "/videos/compras-pedidos-de-compra-v2.mp4"
+updatedAt: "2026-02-27"
+tags: ["compras", "pedidos", "fornecedores"]
+permissionHints: ["purchase.list"]
+order: 36
+version: "v2"
+description: "Converta solicitações em pedidos e acompanhe status de aquisição."
+menuGroup: "compras"
+menuGroupLabel: "Compras"
+related: ["compras/solicitacoes-de-compra", "cadastros/fornecedores"]
+---
+
+## Quando usar
+Converta solicitações em pedidos e acompanhe status de aquisição.
+
+## Pré-requisitos
+- Perfil com permissões indicadas em `Permissões necessárias`.
+- Dados mínimos já cadastrados para o fluxo.
+- Acesso ao módulo em `/purchase`.
+
+## Passo a passo
+1. Acesse o menu correspondente ao módulo `Compras`.
+2. Abra a funcionalidade `Pedidos de Compra`.
+3. Execute o fluxo principal seguindo a sequência operacional da tela.
+4. Revise os dados antes de confirmar a operação.
+
+## Campos críticos
+- Campos obrigatórios exibidos com validação de preenchimento.
+- Identificadores de cliente/equipamento/produto conforme contexto.
+- Datas, status e responsáveis quando aplicável.
+
+## Erros comuns
+- Permissão insuficiente para a ação solicitada.
+- Dados obrigatórios ausentes ou em formato inválido.
+- Inconsistência de vínculo entre registros relacionados.
+
+## Permissões necessárias
+- purchase.list
+
+## Relacionados
+- [compras/solicitacoes-de-compra](/docs/compras/solicitacoes-de-compra)
+- [cadastros/fornecedores](/docs/cadastros/fornecedores)

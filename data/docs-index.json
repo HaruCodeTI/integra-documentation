@@ -1,0 +1,1534 @@
+[
+  {
+    "title": "Acessando o Sistema",
+    "module": "acesso-e-navegacao",
+    "route": "/auth/sign-in",
+    "pdfRef": "1.1",
+    "videoUrl": "/videos/acesso-e-navegacao-acessando-o-sistema-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "login",
+      "acesso",
+      "autenticacao"
+    ],
+    "permissionHints": [
+      "Usuário ativo"
+    ],
+    "order": 1,
+    "version": "v2",
+    "description": "Realize login com credenciais válidas e acesse o painel inicial com segurança.",
+    "menuGroup": "acesso-e-navegacao",
+    "menuGroupLabel": "Acesso e Navegação",
+    "related": [
+      "acesso-e-navegacao/recuperacao-de-senha",
+      "acesso-e-navegacao/dashboard-visao-geral"
+    ],
+    "slug": "acesso-e-navegacao/acessando-o-sistema"
+  },
+  {
+    "title": "Recuperação de Senha",
+    "module": "acesso-e-navegacao",
+    "route": "/auth/forgot-password",
+    "pdfRef": "1.2",
+    "videoUrl": "/videos/acesso-e-navegacao-recuperacao-de-senha-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "senha",
+      "acesso",
+      "seguranca"
+    ],
+    "permissionHints": [
+      "Usuário cadastrado"
+    ],
+    "order": 2,
+    "version": "v2",
+    "description": "Recupere o acesso por e-mail e redefina a senha com fluxo seguro.",
+    "menuGroup": "acesso-e-navegacao",
+    "menuGroupLabel": "Acesso e Navegação",
+    "related": [
+      "acesso-e-navegacao/acessando-o-sistema"
+    ],
+    "slug": "acesso-e-navegacao/recuperacao-de-senha"
+  },
+  {
+    "title": "Dashboard - Visão Geral",
+    "module": "acesso-e-navegacao",
+    "route": "/",
+    "pdfRef": "1.3",
+    "videoUrl": "/videos/acesso-e-navegacao-dashboard-visao-geral-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "dashboard",
+      "indicadores",
+      "atalhos"
+    ],
+    "permissionHints": [
+      "Acesso ao dashboard"
+    ],
+    "order": 3,
+    "version": "v2",
+    "description": "Entenda indicadores, atalhos e blocos principais do painel inicial.",
+    "menuGroup": "acesso-e-navegacao",
+    "menuGroupLabel": "Acesso e Navegação",
+    "related": [
+      "acesso-e-navegacao/menu-lateral",
+      "acesso-e-navegacao/busca-rapida-de-modulos"
+    ],
+    "slug": "acesso-e-navegacao/dashboard-visao-geral"
+  },
+  {
+    "title": "Menu Lateral",
+    "module": "acesso-e-navegacao",
+    "route": "/",
+    "pdfRef": "1.4",
+    "videoUrl": "/videos/acesso-e-navegacao-menu-lateral-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "menu",
+      "navegacao",
+      "modulos"
+    ],
+    "permissionHints": [
+      "Permissões por módulo"
+    ],
+    "order": 4,
+    "version": "v2",
+    "description": "Navegue pelos módulos do Integra usando grupos e atalhos do menu.",
+    "menuGroup": "acesso-e-navegacao",
+    "menuGroupLabel": "Acesso e Navegação",
+    "related": [
+      "acesso-e-navegacao/busca-rapida-de-modulos"
+    ],
+    "slug": "acesso-e-navegacao/menu-lateral"
+  },
+  {
+    "title": "Busca Rápida de Módulos",
+    "module": "acesso-e-navegacao",
+    "route": "/",
+    "pdfRef": "1.5",
+    "videoUrl": "/videos/acesso-e-navegacao-busca-rapida-de-modulos-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "busca",
+      "produtividade",
+      "atalhos"
+    ],
+    "permissionHints": [
+      "Permissões de leitura"
+    ],
+    "order": 5,
+    "version": "v2",
+    "description": "Localize páginas e módulos rapidamente pela busca global do sistema.",
+    "menuGroup": "acesso-e-navegacao",
+    "menuGroupLabel": "Acesso e Navegação",
+    "related": [
+      "acesso-e-navegacao/menu-lateral"
+    ],
+    "slug": "acesso-e-navegacao/busca-rapida-de-modulos"
+  },
+  {
+    "title": "Outros Elementos da Interface",
+    "module": "acesso-e-navegacao",
+    "route": "/",
+    "pdfRef": "1.6",
+    "videoUrl": "/videos/acesso-e-navegacao-outros-elementos-da-interface-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "breadcrumb",
+      "notificacoes",
+      "perfil"
+    ],
+    "permissionHints": [
+      "Acesso ao sistema"
+    ],
+    "order": 6,
+    "version": "v2",
+    "description": "Use breadcrumb, notificações e perfil para navegação contextual.",
+    "menuGroup": "acesso-e-navegacao",
+    "menuGroupLabel": "Acesso e Navegação",
+    "related": [
+      "acesso-e-navegacao/dashboard-visao-geral"
+    ],
+    "slug": "acesso-e-navegacao/outros-elementos-da-interface"
+  },
+  {
+    "title": "Sistema de Permissões",
+    "module": "acesso-e-navegacao",
+    "route": "/config/permissions",
+    "pdfRef": "1.7",
+    "videoUrl": "/videos/acesso-e-navegacao-sistema-de-permissoes-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "permissoes",
+      "seguranca",
+      "perfil"
+    ],
+    "permissionHints": [
+      "Permissão config_permissions"
+    ],
+    "order": 7,
+    "version": "v2",
+    "description": "Compreenda níveis de acesso e impacto das permissões na interface.",
+    "menuGroup": "acesso-e-navegacao",
+    "menuGroupLabel": "Acesso e Navegação",
+    "related": [
+      "administracao/permissoes",
+      "acesso-e-navegacao/menu-lateral"
+    ],
+    "slug": "acesso-e-navegacao/sistema-de-permissoes"
+  },
+  {
+    "title": "Resolução de Problemas Comuns",
+    "module": "acesso-e-navegacao",
+    "route": "/",
+    "pdfRef": "1.8",
+    "videoUrl": "/videos/acesso-e-navegacao-resolucao-de-problemas-comuns-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "suporte",
+      "problemas",
+      "troubleshooting"
+    ],
+    "permissionHints": [
+      "Acesso ao sistema"
+    ],
+    "order": 8,
+    "version": "v2",
+    "description": "Resolva incidentes frequentes de login, lentidão e módulos indisponíveis.",
+    "menuGroup": "acesso-e-navegacao",
+    "menuGroupLabel": "Acesso e Navegação",
+    "related": [
+      "operacoes/solicitacoes-de-suporte"
+    ],
+    "slug": "acesso-e-navegacao/resolucao-de-problemas-comuns"
+  },
+  {
+    "title": "Clientes",
+    "module": "cadastros",
+    "route": "/customer",
+    "pdfRef": "2.1",
+    "videoUrl": "/videos/cadastros-clientes-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "clientes",
+      "cadastro",
+      "crm"
+    ],
+    "permissionHints": [
+      "customer.list"
+    ],
+    "order": 9,
+    "version": "v2",
+    "description": "Cadastre e mantenha dados de clientes para operações e CRM.",
+    "menuGroup": "cadastros",
+    "menuGroupLabel": "Cadastros",
+    "related": [
+      "crm/clientes",
+      "crm/parque-instalado"
+    ],
+    "slug": "cadastros/clientes"
+  },
+  {
+    "title": "Catálogo de Equipamentos e Categorias",
+    "module": "cadastros",
+    "route": "/equipments",
+    "pdfRef": "2.2",
+    "videoUrl": "/videos/cadastros-catalogo-de-equipamentos-e-categorias-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "equipamentos",
+      "categorias",
+      "cadastro"
+    ],
+    "permissionHints": [
+      "equipment.list",
+      "equipment.list_category"
+    ],
+    "order": 10,
+    "version": "v2",
+    "description": "Gerencie catálogo técnico e categorias usadas em estoque e OS.",
+    "menuGroup": "cadastros",
+    "menuGroupLabel": "Cadastros",
+    "related": [
+      "gestao/hub-de-estoque",
+      "gestao/historico-de-equipamentos"
+    ],
+    "slug": "cadastros/catalogo-de-equipamentos-e-categorias"
+  },
+  {
+    "title": "Catálogo de Peças",
+    "module": "cadastros",
+    "route": "/parts",
+    "pdfRef": "2.3",
+    "videoUrl": "/videos/cadastros-catalogo-de-pecas-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "pecas",
+      "estoque",
+      "cadastro"
+    ],
+    "permissionHints": [
+      "part.list"
+    ],
+    "order": 11,
+    "version": "v2",
+    "description": "Mantenha peças com identificação, status e dados de controle.",
+    "menuGroup": "cadastros",
+    "menuGroupLabel": "Cadastros",
+    "related": [
+      "gestao/hub-de-estoque",
+      "compras/solicitacoes-de-compra"
+    ],
+    "slug": "cadastros/catalogo-de-pecas"
+  },
+  {
+    "title": "Catálogo de Produtos",
+    "module": "cadastros",
+    "route": "/product",
+    "pdfRef": "2.4",
+    "videoUrl": "/videos/cadastros-catalogo-de-produtos-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "produtos",
+      "comercial",
+      "estoque"
+    ],
+    "permissionHints": [
+      "product.list"
+    ],
+    "order": 12,
+    "version": "v2",
+    "description": "Registre produtos para venda, estoque e faturamento.",
+    "menuGroup": "cadastros",
+    "menuGroupLabel": "Cadastros",
+    "related": [
+      "comercial/pedidos-de-venda",
+      "gestao/hub-de-estoque"
+    ],
+    "slug": "cadastros/catalogo-de-produtos"
+  },
+  {
+    "title": "Acessórios",
+    "module": "cadastros",
+    "route": "/accessory",
+    "pdfRef": "2.5",
+    "videoUrl": "/videos/cadastros-acessorios-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "acessorios",
+      "equipamentos",
+      "cadastro"
+    ],
+    "permissionHints": [
+      "accessory.list"
+    ],
+    "order": 13,
+    "version": "v2",
+    "description": "Cadastre acessórios vinculáveis a equipamentos e contratos.",
+    "menuGroup": "cadastros",
+    "menuGroupLabel": "Cadastros",
+    "related": [
+      "gestao/controle-patrimonial"
+    ],
+    "slug": "cadastros/acessorios"
+  },
+  {
+    "title": "Marcas",
+    "module": "cadastros",
+    "route": "/brand",
+    "pdfRef": "2.6",
+    "videoUrl": "/videos/cadastros-marcas-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "marcas",
+      "padronizacao",
+      "cadastro"
+    ],
+    "permissionHints": [
+      "brand.list"
+    ],
+    "order": 14,
+    "version": "v2",
+    "description": "Padronize marcas para catálogo de peças, produtos e equipamentos.",
+    "menuGroup": "cadastros",
+    "menuGroupLabel": "Cadastros",
+    "related": [
+      "cadastros/catalogo-de-produtos"
+    ],
+    "slug": "cadastros/marcas"
+  },
+  {
+    "title": "Famílias de Peças",
+    "module": "cadastros",
+    "route": "/part-family",
+    "pdfRef": "2.7",
+    "videoUrl": "/videos/cadastros-familias-de-pecas-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "pecas",
+      "familias",
+      "classificacao"
+    ],
+    "permissionHints": [
+      "part_family.list"
+    ],
+    "order": 15,
+    "version": "v2",
+    "description": "Organize peças por famílias para busca, filtros e relatórios.",
+    "menuGroup": "cadastros",
+    "menuGroupLabel": "Cadastros",
+    "related": [
+      "cadastros/catalogo-de-pecas",
+      "relatorios/relatorio-de-estoque"
+    ],
+    "slug": "cadastros/familias-de-pecas"
+  },
+  {
+    "title": "Fornecedores",
+    "module": "cadastros",
+    "route": "/supplier",
+    "pdfRef": "2.8",
+    "videoUrl": "/videos/cadastros-fornecedores-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "fornecedores",
+      "compras",
+      "qualidade"
+    ],
+    "permissionHints": [
+      "supplier.list"
+    ],
+    "order": 16,
+    "version": "v2",
+    "description": "Cadastre fornecedores e mantenha dados para compras e qualidade.",
+    "menuGroup": "cadastros",
+    "menuGroupLabel": "Cadastros",
+    "related": [
+      "compras/pedidos-de-compra",
+      "qualidade/qualificacao-de-fornecedores"
+    ],
+    "slug": "cadastros/fornecedores"
+  },
+  {
+    "title": "Mão de Obra",
+    "module": "cadastros",
+    "route": "/labor",
+    "pdfRef": "2.9",
+    "videoUrl": "/videos/cadastros-mao-de-obra-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "mao-de-obra",
+      "os",
+      "orcamento"
+    ],
+    "permissionHints": [
+      "labor.list"
+    ],
+    "order": 17,
+    "version": "v2",
+    "description": "Mantenha tipos de mão de obra usados em OS e orçamento.",
+    "menuGroup": "cadastros",
+    "menuGroupLabel": "Cadastros",
+    "related": [
+      "operacoes/ordem-de-servico",
+      "operacoes/orcamentos"
+    ],
+    "slug": "cadastros/mao-de-obra"
+  },
+  {
+    "title": "Instrumentos",
+    "module": "cadastros",
+    "route": "/instruments",
+    "pdfRef": "2.10",
+    "videoUrl": "/videos/cadastros-instrumentos-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "instrumentos",
+      "qualidade",
+      "calibracao"
+    ],
+    "permissionHints": [
+      "quality.instruments_list"
+    ],
+    "order": 18,
+    "version": "v2",
+    "description": "Gerencie instrumentos usados em qualidade e calibração.",
+    "menuGroup": "cadastros",
+    "menuGroupLabel": "Cadastros",
+    "related": [
+      "qualidade/calibracoes"
+    ],
+    "slug": "cadastros/instrumentos"
+  },
+  {
+    "title": "Checklist",
+    "module": "cadastros",
+    "route": "/checklist",
+    "pdfRef": "2.11",
+    "videoUrl": "/videos/cadastros-checklist-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "checklist",
+      "operacoes",
+      "qualidade"
+    ],
+    "permissionHints": [
+      "checklist.list"
+    ],
+    "order": 19,
+    "version": "v2",
+    "description": "Crie checklists operacionais para execução técnica padronizada.",
+    "menuGroup": "cadastros",
+    "menuGroupLabel": "Cadastros",
+    "related": [
+      "operacoes/ordem-de-servico"
+    ],
+    "slug": "cadastros/checklist"
+  },
+  {
+    "title": "Status ANVISA",
+    "module": "cadastros",
+    "route": "/anvisa-registration-status",
+    "pdfRef": "2.12",
+    "videoUrl": "/videos/cadastros-status-anvisa-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "anvisa",
+      "regulatorio",
+      "cadastro"
+    ],
+    "permissionHints": [
+      "anvisa_registration_status.list"
+    ],
+    "order": 20,
+    "version": "v2",
+    "description": "Configure status regulatórios para produtos e equipamentos.",
+    "menuGroup": "cadastros",
+    "menuGroupLabel": "Cadastros",
+    "related": [
+      "cadastros/catalogo-de-produtos"
+    ],
+    "slug": "cadastros/status-anvisa"
+  },
+  {
+    "title": "Ordem de Serviço",
+    "module": "operacoes",
+    "route": "/service-order",
+    "pdfRef": "3.1",
+    "videoUrl": "/videos/operacoes-ordem-de-servico-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "os",
+      "operacoes",
+      "assistencia"
+    ],
+    "permissionHints": [
+      "service_order.list"
+    ],
+    "order": 21,
+    "version": "v2",
+    "description": "Abra, acompanhe e finalize OS conforme o fluxo operacional.",
+    "menuGroup": "operacoes",
+    "menuGroupLabel": "Operações",
+    "related": [
+      "operacoes/orcamentos",
+      "operacoes/agenda-de-manutencao"
+    ],
+    "slug": "operacoes/ordem-de-servico"
+  },
+  {
+    "title": "Orçamentos",
+    "module": "operacoes",
+    "route": "/budget",
+    "pdfRef": "3.2",
+    "videoUrl": "/videos/operacoes-orcamentos-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "orcamento",
+      "aprovacao",
+      "os"
+    ],
+    "permissionHints": [
+      "budget.list"
+    ],
+    "order": 22,
+    "version": "v2",
+    "description": "Monte orçamentos, aprove e acompanhe pendências do cliente.",
+    "menuGroup": "operacoes",
+    "menuGroupLabel": "Operações",
+    "related": [
+      "operacoes/ordem-de-servico",
+      "financeiro/faturamento"
+    ],
+    "slug": "operacoes/orcamentos"
+  },
+  {
+    "title": "Agenda de Manutenção",
+    "module": "operacoes",
+    "route": "/schedule",
+    "pdfRef": "3.3",
+    "videoUrl": "/videos/operacoes-agenda-de-manutencao-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "agenda",
+      "manutencao",
+      "planejamento"
+    ],
+    "permissionHints": [
+      "maintenance_schedule.list"
+    ],
+    "order": 23,
+    "version": "v2",
+    "description": "Programe serviços e janelas de manutenção com controle de agenda.",
+    "menuGroup": "operacoes",
+    "menuGroupLabel": "Operações",
+    "related": [
+      "gestao/agendamentos-de-manutencao"
+    ],
+    "slug": "operacoes/agenda-de-manutencao"
+  },
+  {
+    "title": "Visitas Técnicas",
+    "module": "operacoes",
+    "route": "/technical-visit",
+    "pdfRef": "3.4",
+    "videoUrl": "/videos/operacoes-visitas-tecnicas-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "visitas",
+      "campo",
+      "atendimento"
+    ],
+    "permissionHints": [
+      "technical_visit.list"
+    ],
+    "order": 24,
+    "version": "v2",
+    "description": "Registre visitas, etapas de atendimento e histórico técnico.",
+    "menuGroup": "operacoes",
+    "menuGroupLabel": "Operações",
+    "related": [
+      "operacoes/ordem-de-servico"
+    ],
+    "slug": "operacoes/visitas-tecnicas"
+  },
+  {
+    "title": "Solicitações de Suporte",
+    "module": "operacoes",
+    "route": "/support",
+    "pdfRef": "3.5",
+    "videoUrl": "/videos/operacoes-solicitacoes-de-suporte-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "suporte",
+      "tickets",
+      "atendimento"
+    ],
+    "permissionHints": [
+      "support.list"
+    ],
+    "order": 25,
+    "version": "v2",
+    "description": "Abra e acompanhe solicitações de suporte técnico e operacional.",
+    "menuGroup": "operacoes",
+    "menuGroupLabel": "Operações",
+    "related": [
+      "acesso-e-navegacao/resolucao-de-problemas-comuns"
+    ],
+    "slug": "operacoes/solicitacoes-de-suporte"
+  },
+  {
+    "title": "Clientes no CRM",
+    "module": "crm",
+    "route": "/customer",
+    "pdfRef": "4.1",
+    "videoUrl": "/videos/crm-clientes-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "crm",
+      "clientes",
+      "relacionamento"
+    ],
+    "permissionHints": [
+      "customer.list"
+    ],
+    "order": 26,
+    "version": "v2",
+    "description": "Gerencie clientes no contexto comercial e relacionamento contínuo.",
+    "menuGroup": "crm",
+    "menuGroupLabel": "CRM",
+    "related": [
+      "cadastros/clientes",
+      "crm/solicitacoes-crm"
+    ],
+    "slug": "crm/clientes"
+  },
+  {
+    "title": "Solicitações CRM",
+    "module": "crm",
+    "route": "/crm",
+    "pdfRef": "4.2",
+    "videoUrl": "/videos/crm-solicitacoes-crm-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "crm",
+      "solicitacoes",
+      "pipeline"
+    ],
+    "permissionHints": [
+      "crm.list_report"
+    ],
+    "order": 27,
+    "version": "v2",
+    "description": "Registre oportunidades, demandas e evolução de solicitações comerciais.",
+    "menuGroup": "crm",
+    "menuGroupLabel": "CRM",
+    "related": [
+      "crm/clientes",
+      "crm/parque-instalado"
+    ],
+    "slug": "crm/solicitacoes-crm"
+  },
+  {
+    "title": "Parque Instalado",
+    "module": "crm",
+    "route": "/crm/customer-equipment",
+    "pdfRef": "4.3",
+    "videoUrl": "/videos/crm-parque-instalado-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "parque-instalado",
+      "equipamentos",
+      "crm"
+    ],
+    "permissionHints": [
+      "crm.customer_equipment_list_customers"
+    ],
+    "order": 28,
+    "version": "v2",
+    "description": "Associe equipamentos a clientes e mantenha rastreabilidade instalada.",
+    "menuGroup": "crm",
+    "menuGroupLabel": "CRM",
+    "related": [
+      "gestao/controle-patrimonial",
+      "gestao/historico-de-equipamentos"
+    ],
+    "slug": "crm/parque-instalado"
+  },
+  {
+    "title": "Hub de Estoque",
+    "module": "gestao",
+    "route": "/stock",
+    "pdfRef": "5.1",
+    "videoUrl": "/videos/gestao-hub-de-estoque-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "estoque",
+      "hub",
+      "lotes"
+    ],
+    "permissionHints": [
+      "stock.list_part",
+      "stock.list_product",
+      "stock.list_equipment"
+    ],
+    "order": 29,
+    "version": "v2",
+    "description": "Gerencie estoques de equipamentos, peças e produtos no mesmo hub.",
+    "menuGroup": "gestao",
+    "menuGroupLabel": "Gestão",
+    "related": [
+      "relatorios/relatorio-de-estoque"
+    ],
+    "slug": "gestao/hub-de-estoque"
+  },
+  {
+    "title": "Histórico de Equipamentos",
+    "module": "gestao",
+    "route": "/history",
+    "pdfRef": "5.2",
+    "videoUrl": "/videos/gestao-historico-de-equipamentos-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "historico",
+      "equipamentos",
+      "rastreabilidade"
+    ],
+    "permissionHints": [
+      "equipment.history_list"
+    ],
+    "order": 30,
+    "version": "v2",
+    "description": "Consulte alterações e rastreabilidade histórica dos equipamentos.",
+    "menuGroup": "gestao",
+    "menuGroupLabel": "Gestão",
+    "related": [
+      "gestao/controle-patrimonial",
+      "crm/parque-instalado"
+    ],
+    "slug": "gestao/historico-de-equipamentos"
+  },
+  {
+    "title": "Controle Patrimonial",
+    "module": "gestao",
+    "route": "/asset-equipment",
+    "pdfRef": "5.3",
+    "videoUrl": "/videos/gestao-controle-patrimonial-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "patrimonio",
+      "ativos",
+      "movimentacao"
+    ],
+    "permissionHints": [
+      "equipment.show_asset_equipment"
+    ],
+    "order": 31,
+    "version": "v2",
+    "description": "Controle movimentações e ciclo de vida de ativos patrimoniais.",
+    "menuGroup": "gestao",
+    "menuGroupLabel": "Gestão",
+    "related": [
+      "gestao/historico-de-equipamentos"
+    ],
+    "slug": "gestao/controle-patrimonial"
+  },
+  {
+    "title": "Contratos de Manutenção",
+    "module": "gestao",
+    "route": "/contract/maintenance",
+    "pdfRef": "5.4",
+    "videoUrl": "/videos/gestao-contratos-de-manutencao-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "contratos",
+      "manutencao",
+      "gestao"
+    ],
+    "permissionHints": [
+      "maintenance_contract.list"
+    ],
+    "order": 32,
+    "version": "v2",
+    "description": "Cadastre contratos recorrentes e regras de manutenção associadas.",
+    "menuGroup": "gestao",
+    "menuGroupLabel": "Gestão",
+    "related": [
+      "gestao/agendamentos-de-manutencao"
+    ],
+    "slug": "gestao/contratos-de-manutencao"
+  },
+  {
+    "title": "Contratos de Locação",
+    "module": "gestao",
+    "route": "/contract/rental",
+    "pdfRef": "5.5",
+    "videoUrl": "/videos/gestao-contratos-de-locacao-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "locacao",
+      "contratos",
+      "gestao"
+    ],
+    "permissionHints": [
+      "rental_contract.list"
+    ],
+    "order": 33,
+    "version": "v2",
+    "description": "Gerencie contratos de locação com itens, prazos e status.",
+    "menuGroup": "gestao",
+    "menuGroupLabel": "Gestão",
+    "related": [
+      "gestao/controle-patrimonial"
+    ],
+    "slug": "gestao/contratos-de-locacao"
+  },
+  {
+    "title": "Agendamentos de Manutenção",
+    "module": "gestao",
+    "route": "/maintenance-schedule",
+    "pdfRef": "5.6",
+    "videoUrl": "/videos/gestao-agendamentos-de-manutencao-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "agendamento",
+      "manutencao",
+      "contratos"
+    ],
+    "permissionHints": [
+      "maintenance_schedule.list"
+    ],
+    "order": 34,
+    "version": "v2",
+    "description": "Automatize e acompanhe agendamentos vinculados a contratos e ativos.",
+    "menuGroup": "gestao",
+    "menuGroupLabel": "Gestão",
+    "related": [
+      "operacoes/agenda-de-manutencao",
+      "gestao/contratos-de-manutencao"
+    ],
+    "slug": "gestao/agendamentos-de-manutencao"
+  },
+  {
+    "title": "Solicitações de Compra",
+    "module": "compras",
+    "route": "/purchase/request",
+    "pdfRef": "6.1",
+    "videoUrl": "/videos/compras-solicitacoes-de-compra-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "compras",
+      "solicitacoes",
+      "suprimentos"
+    ],
+    "permissionHints": [
+      "purchase.list_request"
+    ],
+    "order": 35,
+    "version": "v2",
+    "description": "Solicite itens para reposição e aquisição conforme necessidade operacional.",
+    "menuGroup": "compras",
+    "menuGroupLabel": "Compras",
+    "related": [
+      "compras/pedidos-de-compra"
+    ],
+    "slug": "compras/solicitacoes-de-compra"
+  },
+  {
+    "title": "Pedidos de Compra",
+    "module": "compras",
+    "route": "/purchase",
+    "pdfRef": "6.2",
+    "videoUrl": "/videos/compras-pedidos-de-compra-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "compras",
+      "pedidos",
+      "fornecedores"
+    ],
+    "permissionHints": [
+      "purchase.list"
+    ],
+    "order": 36,
+    "version": "v2",
+    "description": "Converta solicitações em pedidos e acompanhe status de aquisição.",
+    "menuGroup": "compras",
+    "menuGroupLabel": "Compras",
+    "related": [
+      "compras/solicitacoes-de-compra",
+      "cadastros/fornecedores"
+    ],
+    "slug": "compras/pedidos-de-compra"
+  },
+  {
+    "title": "Pedidos de Venda",
+    "module": "comercial",
+    "route": "/sales-order",
+    "pdfRef": "7.1",
+    "videoUrl": "/videos/comercial-pedidos-de-venda-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "vendas",
+      "pedidos",
+      "comercial"
+    ],
+    "permissionHints": [
+      "commercial.sales_order_list"
+    ],
+    "order": 37,
+    "version": "v2",
+    "description": "Registre pedidos de venda com itens, impostos e condições comerciais.",
+    "menuGroup": "comercial",
+    "menuGroupLabel": "Comercial",
+    "related": [
+      "financeiro/faturamento",
+      "cadastros/catalogo-de-produtos"
+    ],
+    "slug": "comercial/pedidos-de-venda"
+  },
+  {
+    "title": "Visão Geral do Módulo Financeiro",
+    "module": "financeiro",
+    "route": "/financial",
+    "pdfRef": "8.1",
+    "videoUrl": "/videos/financeiro-visao-geral-do-modulo-financeiro-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "financeiro",
+      "visao-geral",
+      "modulo"
+    ],
+    "permissionHints": [
+      "Acesso ao módulo financeiro"
+    ],
+    "order": 38,
+    "version": "v2",
+    "description": "Conheça os submódulos financeiros e principais fluxos de trabalho.",
+    "menuGroup": "financeiro",
+    "menuGroupLabel": "Financeiro",
+    "related": [
+      "financeiro/contas-a-receber",
+      "financeiro/contas-a-pagar"
+    ],
+    "slug": "financeiro/visao-geral-do-modulo-financeiro"
+  },
+  {
+    "title": "Contas a Receber",
+    "module": "financeiro",
+    "route": "/financial/receivables",
+    "pdfRef": "8.2",
+    "videoUrl": "/videos/financeiro-contas-a-receber-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "receber",
+      "financeiro",
+      "titulos"
+    ],
+    "permissionHints": [
+      "financial_movement.list"
+    ],
+    "order": 39,
+    "version": "v2",
+    "description": "Controle recebimentos, vencimentos e conciliações de receita.",
+    "menuGroup": "financeiro",
+    "menuGroupLabel": "Financeiro",
+    "related": [
+      "financeiro/faturamento"
+    ],
+    "slug": "financeiro/contas-a-receber"
+  },
+  {
+    "title": "Contas a Pagar",
+    "module": "financeiro",
+    "route": "/financial/expenses",
+    "pdfRef": "8.3",
+    "videoUrl": "/videos/financeiro-contas-a-pagar-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "pagar",
+      "despesas",
+      "financeiro"
+    ],
+    "permissionHints": [
+      "financial.expenses_list"
+    ],
+    "order": 40,
+    "version": "v2",
+    "description": "Gerencie despesas, aprovações e pagamentos com rastreabilidade.",
+    "menuGroup": "financeiro",
+    "menuGroupLabel": "Financeiro",
+    "related": [
+      "financeiro/despesas"
+    ],
+    "slug": "financeiro/contas-a-pagar"
+  },
+  {
+    "title": "Faturamento",
+    "module": "financeiro",
+    "route": "/financial/billing",
+    "pdfRef": "8.4",
+    "videoUrl": "/videos/financeiro-faturamento-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "faturamento",
+      "financeiro",
+      "documentos"
+    ],
+    "permissionHints": [
+      "financial.billing_list"
+    ],
+    "order": 41,
+    "version": "v2",
+    "description": "Execute faturamento e acompanhe evolução de documentos emitidos.",
+    "menuGroup": "financeiro",
+    "menuGroupLabel": "Financeiro",
+    "related": [
+      "comercial/pedidos-de-venda",
+      "financeiro/central-dfe-documentos-fiscais"
+    ],
+    "slug": "financeiro/faturamento"
+  },
+  {
+    "title": "Central DFe / Documentos Fiscais",
+    "module": "financeiro",
+    "route": "/financial/fiscal-documents",
+    "pdfRef": "8.5",
+    "videoUrl": "/videos/financeiro-central-dfe-documentos-fiscais-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "dfe",
+      "fiscal",
+      "documentos"
+    ],
+    "permissionHints": [
+      "fiscal_config.list_documents"
+    ],
+    "order": 42,
+    "version": "v2",
+    "description": "Consulte e gerencie documentos fiscais eletrônicos centralizados.",
+    "menuGroup": "financeiro",
+    "menuGroupLabel": "Financeiro",
+    "related": [
+      "financeiro/configuracoes-fiscais"
+    ],
+    "slug": "financeiro/central-dfe-documentos-fiscais"
+  },
+  {
+    "title": "Configurações Fiscais",
+    "module": "financeiro",
+    "route": "/financial/fiscal-config",
+    "pdfRef": "8.6",
+    "videoUrl": "/videos/financeiro-configuracoes-fiscais-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "fiscal",
+      "configuracao",
+      "tributacao"
+    ],
+    "permissionHints": [
+      "fiscal_config.list"
+    ],
+    "order": 43,
+    "version": "v2",
+    "description": "Configure parâmetros fiscais usados em emissão e integração.",
+    "menuGroup": "financeiro",
+    "menuGroupLabel": "Financeiro",
+    "related": [
+      "financeiro/central-dfe-documentos-fiscais",
+      "financeiro/naturezas-de-operacao-tipos-de-operacao"
+    ],
+    "slug": "financeiro/configuracoes-fiscais"
+  },
+  {
+    "title": "Naturezas de Operação / Tipos de Operação",
+    "module": "financeiro",
+    "route": "/financial/operation-types",
+    "pdfRef": "8.7",
+    "videoUrl": "/videos/financeiro-naturezas-de-operacao-tipos-de-operacao-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "naturezas",
+      "operacao",
+      "fiscal"
+    ],
+    "permissionHints": [
+      "operation_type.list"
+    ],
+    "order": 44,
+    "version": "v2",
+    "description": "Defina naturezas de operação para controle tributário e fiscal.",
+    "menuGroup": "financeiro",
+    "menuGroupLabel": "Financeiro",
+    "related": [
+      "financeiro/configuracoes-fiscais"
+    ],
+    "slug": "financeiro/naturezas-de-operacao-tipos-de-operacao"
+  },
+  {
+    "title": "Despesas",
+    "module": "financeiro",
+    "route": "/financial/expenses",
+    "pdfRef": "8.8",
+    "videoUrl": "/videos/financeiro-despesas-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "despesas",
+      "financeiro",
+      "classificacao"
+    ],
+    "permissionHints": [
+      "financial.expenses_list"
+    ],
+    "order": 45,
+    "version": "v2",
+    "description": "Detalhe despesas do financeiro com classificação e vencimento.",
+    "menuGroup": "financeiro",
+    "menuGroupLabel": "Financeiro",
+    "related": [
+      "financeiro/contas-a-pagar"
+    ],
+    "slug": "financeiro/despesas"
+  },
+  {
+    "title": "Qualificação de Fornecedores",
+    "module": "qualidade",
+    "route": "/quality/supplier-qualifications",
+    "pdfRef": "9.1",
+    "videoUrl": "/videos/qualidade-qualificacao-de-fornecedores-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "qualidade",
+      "fornecedores",
+      "avaliacao"
+    ],
+    "permissionHints": [
+      "quality.suppliers_qualification_show"
+    ],
+    "order": 46,
+    "version": "v2",
+    "description": "Avalie fornecedores com critérios de conformidade e desempenho.",
+    "menuGroup": "qualidade",
+    "menuGroupLabel": "Qualidade",
+    "related": [
+      "cadastros/fornecedores"
+    ],
+    "slug": "qualidade/qualificacao-de-fornecedores"
+  },
+  {
+    "title": "Calibrações",
+    "module": "qualidade",
+    "route": "/quality/calibrations",
+    "pdfRef": "9.2",
+    "videoUrl": "/videos/qualidade-calibracoes-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "calibracao",
+      "instrumentos",
+      "qualidade"
+    ],
+    "permissionHints": [
+      "quality.calibrations_list"
+    ],
+    "order": 47,
+    "version": "v2",
+    "description": "Gerencie o ciclo de calibração de instrumentos e alertas de prazo.",
+    "menuGroup": "qualidade",
+    "menuGroupLabel": "Qualidade",
+    "related": [
+      "cadastros/instrumentos"
+    ],
+    "slug": "qualidade/calibracoes"
+  },
+  {
+    "title": "Não Conformidades",
+    "module": "qualidade",
+    "route": "/quality/non-conformities",
+    "pdfRef": "9.3",
+    "videoUrl": "/videos/qualidade-nao-conformidades-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "nao-conformidade",
+      "qualidade",
+      "acao-corretiva"
+    ],
+    "permissionHints": [
+      "quality.non_conformities_list"
+    ],
+    "order": 48,
+    "version": "v2",
+    "description": "Registre e trate não conformidades com plano de ação rastreável.",
+    "menuGroup": "qualidade",
+    "menuGroupLabel": "Qualidade",
+    "related": [
+      "qualidade/qualificacao-de-fornecedores"
+    ],
+    "slug": "qualidade/nao-conformidades"
+  },
+  {
+    "title": "Dashboard RH",
+    "module": "rh",
+    "route": "/rh",
+    "pdfRef": "10.1",
+    "videoUrl": "/videos/rh-dashboard-rh-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "rh",
+      "dashboard",
+      "indicadores"
+    ],
+    "permissionHints": [
+      "hr.view_module"
+    ],
+    "order": 49,
+    "version": "v2",
+    "description": "Acompanhe indicadores de pessoas, ciclos e pendências de RH.",
+    "menuGroup": "rh",
+    "menuGroupLabel": "Recursos Humanos",
+    "related": [
+      "rh/beneficios",
+      "rh/avaliacoes-de-desempenho"
+    ],
+    "slug": "rh/dashboard-rh"
+  },
+  {
+    "title": "Benefícios",
+    "module": "rh",
+    "route": "/rh/benefits",
+    "pdfRef": "10.2",
+    "videoUrl": "/videos/rh-beneficios-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "rh",
+      "beneficios",
+      "colaboradores"
+    ],
+    "permissionHints": [
+      "hr.manage_benefits"
+    ],
+    "order": 50,
+    "version": "v2",
+    "description": "Gerencie benefícios corporativos e vínculos por colaborador.",
+    "menuGroup": "rh",
+    "menuGroupLabel": "Recursos Humanos",
+    "related": [
+      "rh/dashboard-rh"
+    ],
+    "slug": "rh/beneficios"
+  },
+  {
+    "title": "Avaliações de Desempenho",
+    "module": "rh",
+    "route": "/rh/evaluations",
+    "pdfRef": "10.3",
+    "videoUrl": "/videos/rh-avaliacoes-de-desempenho-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "rh",
+      "avaliacoes",
+      "desempenho"
+    ],
+    "permissionHints": [
+      "hr.manage_evaluations"
+    ],
+    "order": 51,
+    "version": "v2",
+    "description": "Planeje ciclos, execute avaliações e acompanhe resultados.",
+    "menuGroup": "rh",
+    "menuGroupLabel": "Recursos Humanos",
+    "related": [
+      "rh/dashboard-rh"
+    ],
+    "slug": "rh/avaliacoes-de-desempenho"
+  },
+  {
+    "title": "Central de Relatórios",
+    "module": "relatorios",
+    "route": "/report",
+    "pdfRef": "11.1",
+    "videoUrl": "/videos/relatorios-central-de-relatorios-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "relatorios",
+      "exportacao",
+      "filtros"
+    ],
+    "permissionHints": [
+      "report.list"
+    ],
+    "order": 52,
+    "version": "v2",
+    "description": "Acesse relatórios operacionais, filtros e exportações em um único ponto.",
+    "menuGroup": "relatorios",
+    "menuGroupLabel": "Relatórios",
+    "related": [
+      "relatorios/desempenho-de-tecnicos",
+      "relatorios/relatorio-de-estoque"
+    ],
+    "slug": "relatorios/central-de-relatorios"
+  },
+  {
+    "title": "Desempenho de Técnicos",
+    "module": "relatorios",
+    "route": "/report/performance",
+    "pdfRef": "11.2",
+    "videoUrl": "/videos/relatorios-desempenho-de-tecnicos-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "relatorio",
+      "tecnicos",
+      "desempenho"
+    ],
+    "permissionHints": [
+      "report.performance"
+    ],
+    "order": 53,
+    "version": "v2",
+    "description": "Analise produtividade técnica e indicadores de execução em campo.",
+    "menuGroup": "relatorios",
+    "menuGroupLabel": "Relatórios",
+    "related": [
+      "administracao/controle-de-produtividade"
+    ],
+    "slug": "relatorios/desempenho-de-tecnicos"
+  },
+  {
+    "title": "Relatório de Estoque",
+    "module": "relatorios",
+    "route": "/report/stock",
+    "pdfRef": "11.3",
+    "videoUrl": "/videos/relatorios-relatorio-de-estoque-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "relatorio",
+      "estoque",
+      "movimentacao"
+    ],
+    "permissionHints": [
+      "stock.stock_export"
+    ],
+    "order": 54,
+    "version": "v2",
+    "description": "Monitore níveis de estoque, movimentação e cobertura de itens.",
+    "menuGroup": "relatorios",
+    "menuGroupLabel": "Relatórios",
+    "related": [
+      "gestao/hub-de-estoque"
+    ],
+    "slug": "relatorios/relatorio-de-estoque"
+  },
+  {
+    "title": "Usuários",
+    "module": "administracao",
+    "route": "/user",
+    "pdfRef": "12.1",
+    "videoUrl": "/videos/administracao-usuarios-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "usuarios",
+      "acesso",
+      "administracao"
+    ],
+    "permissionHints": [
+      "user.list"
+    ],
+    "order": 55,
+    "version": "v2",
+    "description": "Cadastre usuários e administre acessos por perfil.",
+    "menuGroup": "administracao",
+    "menuGroupLabel": "Administração",
+    "related": [
+      "administracao/cargos",
+      "administracao/permissoes"
+    ],
+    "slug": "administracao/usuarios"
+  },
+  {
+    "title": "Cargos",
+    "module": "administracao",
+    "route": "/user/roles",
+    "pdfRef": "12.2",
+    "videoUrl": "/videos/administracao-cargos-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "cargos",
+      "papeis",
+      "administracao"
+    ],
+    "permissionHints": [
+      "role.list"
+    ],
+    "order": 56,
+    "version": "v2",
+    "description": "Defina cargos e responsabilidades para controle de acesso.",
+    "menuGroup": "administracao",
+    "menuGroupLabel": "Administração",
+    "related": [
+      "administracao/permissoes",
+      "administracao/usuarios"
+    ],
+    "slug": "administracao/cargos"
+  },
+  {
+    "title": "Permissões",
+    "module": "administracao",
+    "route": "/config/permissions",
+    "pdfRef": "12.3",
+    "videoUrl": "/videos/administracao-permissoes-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "permissoes",
+      "seguranca",
+      "admin"
+    ],
+    "permissionHints": [
+      "config.config_permissions"
+    ],
+    "order": 57,
+    "version": "v2",
+    "description": "Configure permissões finas por módulo, função e operação.",
+    "menuGroup": "administracao",
+    "menuGroupLabel": "Administração",
+    "related": [
+      "administracao/cargos",
+      "acesso-e-navegacao/sistema-de-permissoes"
+    ],
+    "slug": "administracao/permissoes"
+  },
+  {
+    "title": "Controle de Produtividade",
+    "module": "administracao",
+    "route": "/productivity-dashboard",
+    "pdfRef": "12.4",
+    "videoUrl": "/videos/administracao-controle-de-produtividade-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "produtividade",
+      "tempo",
+      "indicadores"
+    ],
+    "permissionHints": [
+      "productivity.reports"
+    ],
+    "order": 58,
+    "version": "v2",
+    "description": "Acompanhe tempo operacional e indicadores de produtividade.",
+    "menuGroup": "administracao",
+    "menuGroupLabel": "Administração",
+    "related": [
+      "relatorios/desempenho-de-tecnicos"
+    ],
+    "slug": "administracao/controle-de-produtividade"
+  },
+  {
+    "title": "Importação",
+    "module": "administracao",
+    "route": "/import",
+    "pdfRef": "12.5",
+    "videoUrl": "/videos/administracao-importacao-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "importacao",
+      "lote",
+      "dados"
+    ],
+    "permissionHints": [
+      "import-menu.list"
+    ],
+    "order": 59,
+    "version": "v2",
+    "description": "Importe dados em lote seguindo layout e validações do sistema.",
+    "menuGroup": "administracao",
+    "menuGroupLabel": "Administração",
+    "related": [
+      "cadastros/clientes",
+      "cadastros/catalogo-de-produtos"
+    ],
+    "slug": "administracao/importacao"
+  },
+  {
+    "title": "Configuração de SLA",
+    "module": "administracao",
+    "route": "/sla-configuration",
+    "pdfRef": "12.6",
+    "videoUrl": "/videos/administracao-configuracao-de-sla-v2.mp4",
+    "updatedAt": "2026-02-27",
+    "tags": [
+      "sla",
+      "tempo",
+      "configuracao"
+    ],
+    "permissionHints": [
+      "sla_configuration.list"
+    ],
+    "order": 60,
+    "version": "v2",
+    "description": "Defina tempos alvo por etapa operacional para controle de OS.",
+    "menuGroup": "administracao",
+    "menuGroupLabel": "Administração",
+    "related": [
+      "operacoes/ordem-de-servico",
+      "administracao/controle-de-produtividade"
+    ],
+    "slug": "administracao/configuracao-de-sla"
+  }
+]

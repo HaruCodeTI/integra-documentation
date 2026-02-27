@@ -1,0 +1,422 @@
+[
+  {
+    "docSlug": "acesso-e-navegacao/acessando-o-sistema",
+    "route": "/auth/sign-in",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "acesso-e-navegacao/recuperacao-de-senha",
+    "route": "/auth/forgot-password",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "acesso-e-navegacao/dashboard-visao-geral",
+    "route": "/",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "acesso-e-navegacao/menu-lateral",
+    "route": "/",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "acesso-e-navegacao/busca-rapida-de-modulos",
+    "route": "/",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "acesso-e-navegacao/outros-elementos-da-interface",
+    "route": "/",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "acesso-e-navegacao/sistema-de-permissoes",
+    "route": "/config/permissions",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "acesso-e-navegacao/resolucao-de-problemas-comuns",
+    "route": "/",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "cadastros/clientes",
+    "route": "/customer",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "cadastros/catalogo-de-equipamentos-e-categorias",
+    "route": "/equipments",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "cadastros/catalogo-de-pecas",
+    "route": "/parts",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "cadastros/catalogo-de-produtos",
+    "route": "/product",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "cadastros/acessorios",
+    "route": "/accessory",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "cadastros/marcas",
+    "route": "/brand",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "cadastros/familias-de-pecas",
+    "route": "/part-family",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "cadastros/fornecedores",
+    "route": "/supplier",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "cadastros/mao-de-obra",
+    "route": "/labor",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "cadastros/instrumentos",
+    "route": "/instruments",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "cadastros/checklist",
+    "route": "/checklist",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "cadastros/status-anvisa",
+    "route": "/anvisa-registration-status",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "operacoes/ordem-de-servico",
+    "route": "/service-order",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "operacoes/orcamentos",
+    "route": "/budget",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "operacoes/agenda-de-manutencao",
+    "route": "/schedule",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "operacoes/visitas-tecnicas",
+    "route": "/technical-visit",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "operacoes/solicitacoes-de-suporte",
+    "route": "/support",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "crm/clientes",
+    "route": "/customer",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "crm/solicitacoes-crm",
+    "route": "/crm",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "crm/parque-instalado",
+    "route": "/crm/customer-equipment",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "gestao/hub-de-estoque",
+    "route": "/stock",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "gestao/historico-de-equipamentos",
+    "route": "/history",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "gestao/controle-patrimonial",
+    "route": "/asset-equipment",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "gestao/contratos-de-manutencao",
+    "route": "/contract/maintenance",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "gestao/contratos-de-locacao",
+    "route": "/contract/rental",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "gestao/agendamentos-de-manutencao",
+    "route": "/maintenance-schedule",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "compras/solicitacoes-de-compra",
+    "route": "/purchase/request",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "compras/pedidos-de-compra",
+    "route": "/purchase",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "comercial/pedidos-de-venda",
+    "route": "/sales-order",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "financeiro/visao-geral-do-modulo-financeiro",
+    "route": "/financial",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "financeiro/contas-a-receber",
+    "route": "/financial/receivables",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "financeiro/contas-a-pagar",
+    "route": "/financial/expenses",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "financeiro/faturamento",
+    "route": "/financial/billing",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "financeiro/central-dfe-documentos-fiscais",
+    "route": "/financial/fiscal-documents",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "financeiro/configuracoes-fiscais",
+    "route": "/financial/fiscal-config",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "financeiro/naturezas-de-operacao-tipos-de-operacao",
+    "route": "/financial/operation-types",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "financeiro/despesas",
+    "route": "/financial/expenses",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "qualidade/qualificacao-de-fornecedores",
+    "route": "/quality/supplier-qualifications",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "qualidade/calibracoes",
+    "route": "/quality/calibrations",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "qualidade/nao-conformidades",
+    "route": "/quality/non-conformities",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "rh/dashboard-rh",
+    "route": "/rh",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "rh/beneficios",
+    "route": "/rh/benefits",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "rh/avaliacoes-de-desempenho",
+    "route": "/rh/evaluations",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "relatorios/central-de-relatorios",
+    "route": "/report",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "relatorios/desempenho-de-tecnicos",
+    "route": "/report/performance",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "relatorios/relatorio-de-estoque",
+    "route": "/report/stock",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "administracao/usuarios",
+    "route": "/user",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "administracao/cargos",
+    "route": "/user/roles",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "administracao/permissoes",
+    "route": "/config/permissions",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "administracao/controle-de-produtividade",
+    "route": "/productivity-dashboard",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "administracao/importacao",
+    "route": "/import",
+    "requiredSelectors": [
+      "body"
+    ]
+  },
+  {
+    "docSlug": "administracao/configuracao-de-sla",
+    "route": "/sla-configuration",
+    "requiredSelectors": [
+      "body"
+    ]
+  }
+]

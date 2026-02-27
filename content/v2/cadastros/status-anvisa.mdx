@@ -1,0 +1,46 @@
+---
+title: "Status ANVISA"
+module: "cadastros"
+route: "/anvisa-registration-status"
+pdfRef: "2.12"
+videoUrl: "/videos/cadastros-status-anvisa-v2.mp4"
+updatedAt: "2026-02-27"
+tags: ["anvisa", "regulatorio", "cadastro"]
+permissionHints: ["anvisa_registration_status.list"]
+order: 20
+version: "v2"
+description: "Configure status regulatórios para produtos e equipamentos."
+menuGroup: "cadastros"
+menuGroupLabel: "Cadastros"
+related: ["cadastros/catalogo-de-produtos"]
+---
+
+## Quando usar
+Configure status regulatórios para produtos e equipamentos.
+
+## Pré-requisitos
+- Perfil com permissões indicadas em `Permissões necessárias`.
+- Dados mínimos já cadastrados para o fluxo.
+- Acesso ao módulo em `/anvisa-registration-status`.
+
+## Passo a passo
+1. Acesse o menu correspondente ao módulo `Cadastros`.
+2. Abra a funcionalidade `Status ANVISA`.
+3. Execute o fluxo principal seguindo a sequência operacional da tela.
+4. Revise os dados antes de confirmar a operação.
+
+## Campos críticos
+- Campos obrigatórios exibidos com validação de preenchimento.
+- Identificadores de cliente/equipamento/produto conforme contexto.
+- Datas, status e responsáveis quando aplicável.
+
+## Erros comuns
+- Permissão insuficiente para a ação solicitada.
+- Dados obrigatórios ausentes ou em formato inválido.
+- Inconsistência de vínculo entre registros relacionados.
+
+## Permissões necessárias
+- anvisa_registration_status.list
+
+## Relacionados
+- [cadastros/catalogo-de-produtos](/docs/cadastros/catalogo-de-produtos)

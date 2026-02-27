@@ -1,0 +1,46 @@
+---
+title: "Contas a Pagar"
+module: "financeiro"
+route: "/financial/expenses"
+pdfRef: "8.3"
+videoUrl: "/videos/financeiro-contas-a-pagar-v2.mp4"
+updatedAt: "2026-02-27"
+tags: ["pagar", "despesas", "financeiro"]
+permissionHints: ["financial.expenses_list"]
+order: 40
+version: "v2"
+description: "Gerencie despesas, aprovações e pagamentos com rastreabilidade."
+menuGroup: "financeiro"
+menuGroupLabel: "Financeiro"
+related: ["financeiro/despesas"]
+---
+
+## Quando usar
+Gerencie despesas, aprovações e pagamentos com rastreabilidade.
+
+## Pré-requisitos
+- Perfil com permissões indicadas em `Permissões necessárias`.
+- Dados mínimos já cadastrados para o fluxo.
+- Acesso ao módulo em `/financial/expenses`.
+
+## Passo a passo
+1. Acesse o menu correspondente ao módulo `Financeiro`.
+2. Abra a funcionalidade `Contas a Pagar`.
+3. Execute o fluxo principal seguindo a sequência operacional da tela.
+4. Revise os dados antes de confirmar a operação.
+
+## Campos críticos
+- Campos obrigatórios exibidos com validação de preenchimento.
+- Identificadores de cliente/equipamento/produto conforme contexto.
+- Datas, status e responsáveis quando aplicável.
+
+## Erros comuns
+- Permissão insuficiente para a ação solicitada.
+- Dados obrigatórios ausentes ou em formato inválido.
+- Inconsistência de vínculo entre registros relacionados.
+
+## Permissões necessárias
+- financial.expenses_list
+
+## Relacionados
+- [financeiro/despesas](/docs/financeiro/despesas)
