@@ -1,0 +1,14 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "https://staging.integra-erp.app.br",
+      "localStorage": [
+        {
+          "name": "persist:stopwatch",
+          "value": "{\"activeTaskId\":\"null\",\"timeAccumulated\":\"0\",\"isRunning\":\"false\",\"_persist\":\"{\\\"version\\\":-1,\\\"rehydrated\\\":true}\"}"
+        }
+      ]
+    }
+  ]
+}
