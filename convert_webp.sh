@@ -7,6 +7,24 @@ if [ ! -f "$WEBP_FILE" ]; then
     exit 1
 fi
 
+echo "Waiting for $WEBP_FILE to stabilize..."
+PRV_SIZE=0
+STABLE_COUNT=0
+for i in {1..60}; do
+    CUR_SIZE=$(stat -f%z "$WEBP_FILE")
+    if [ "$CUR_SIZE" -gt 100000 ] && [ "$CUR_SIZE" -eq "$PRV_SIZE" ]; then
+        STABLE_COUNT=$((STABLE_COUNT+1))
+        if [ "$STABLE_COUNT" -ge 2 ]; then
+            echo "File stabilized at $CUR_SIZE bytes."
+            break
+        fi
+    else
+        STABLE_COUNT=0
+    fi
+    PRV_SIZE=$CUR_SIZE
+    sleep 10
+done
+
 TMP_DIR=$(mktemp -d)
 echo "Extracting frames to $TMP_DIR..."
 

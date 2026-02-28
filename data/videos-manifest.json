@@ -3,232 +3,232 @@
     "docSlug": "acesso-e-navegacao/acessando-o-sistema",
     "videoPath": "/videos/acesso-e-navegacao-acessando-o-sistema-v2.mp4",
     "thumbnailPath": "/thumbnails/acesso-e-navegacao-acessando-o-sistema.jpg",
-    "durationSec": 63,
-    "capturedAt": "2026-02-27T17:29:42.551Z",
+    "durationSec": 38,
+    "capturedAt": "2026-02-27T19:06:28.450Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "acesso-e-navegacao/recuperacao-de-senha",
     "videoPath": "/videos/acesso-e-navegacao-recuperacao-de-senha-v2.mp4",
     "thumbnailPath": "/thumbnails/acesso-e-navegacao-recuperacao-de-senha.jpg",
-    "durationSec": 60,
-    "capturedAt": "2026-02-27T17:30:42.636Z",
+    "durationSec": 27,
+    "capturedAt": "2026-02-27T20:18:06.921Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "acesso-e-navegacao/dashboard-visao-geral",
     "videoPath": "/videos/acesso-e-navegacao-dashboard-visao-geral-v2.mp4",
     "thumbnailPath": "/thumbnails/acesso-e-navegacao-dashboard-visao-geral.jpg",
-    "durationSec": 63,
-    "capturedAt": "2026-02-27T17:31:45.430Z",
+    "durationSec": 57,
+    "capturedAt": "2026-02-27T19:06:50.484Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "acesso-e-navegacao/menu-lateral",
     "videoPath": "/videos/acesso-e-navegacao-menu-lateral-v2.mp4",
     "thumbnailPath": "/thumbnails/acesso-e-navegacao-menu-lateral.jpg",
-    "durationSec": 63,
-    "capturedAt": "2026-02-27T17:32:48.527Z",
+    "durationSec": 46,
+    "capturedAt": "2026-02-27T20:14:05.768Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "acesso-e-navegacao/busca-rapida-de-modulos",
     "videoPath": "/videos/acesso-e-navegacao-busca-rapida-de-modulos-v2.mp4",
     "thumbnailPath": "/thumbnails/acesso-e-navegacao-busca-rapida-de-modulos.jpg",
-    "durationSec": 63,
-    "capturedAt": "2026-02-27T17:33:51.351Z",
+    "durationSec": 49,
+    "capturedAt": "2026-02-27T20:15:29.019Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "acesso-e-navegacao/outros-elementos-da-interface",
     "videoPath": "/videos/acesso-e-navegacao-outros-elementos-da-interface-v2.mp4",
     "thumbnailPath": "/thumbnails/acesso-e-navegacao-outros-elementos-da-interface.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 34,
+    "capturedAt": "2026-02-27T20:29:28.134Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "acesso-e-navegacao/sistema-de-permissoes",
     "videoPath": "/videos/acesso-e-navegacao-sistema-de-permissoes-v2.mp4",
     "thumbnailPath": "/thumbnails/acesso-e-navegacao-sistema-de-permissoes.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 45,
+    "capturedAt": "2026-02-27T20:29:58.889Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "acesso-e-navegacao/resolucao-de-problemas-comuns",
     "videoPath": "/videos/acesso-e-navegacao-resolucao-de-problemas-comuns-v2.mp4",
     "thumbnailPath": "/thumbnails/acesso-e-navegacao-resolucao-de-problemas-comuns.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 63,
+    "capturedAt": "2026-02-27T20:30:26.785Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "cadastros/clientes",
     "videoPath": "/videos/cadastros-clientes-v2.mp4",
     "thumbnailPath": "/thumbnails/cadastros-clientes.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 48,
+    "capturedAt": "2026-02-27T21:59:45.647Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "cadastros/catalogo-de-equipamentos-e-categorias",
     "videoPath": "/videos/cadastros-catalogo-de-equipamentos-e-categorias-v2.mp4",
     "thumbnailPath": "/thumbnails/cadastros-catalogo-de-equipamentos-e-categorias.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 63,
+    "capturedAt": "2026-02-27T21:44:57.359Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "cadastros/catalogo-de-pecas",
     "videoPath": "/videos/cadastros-catalogo-de-pecas-v2.mp4",
     "thumbnailPath": "/thumbnails/cadastros-catalogo-de-pecas.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 71,
+    "capturedAt": "2026-02-27T21:32:26.145Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "cadastros/catalogo-de-produtos",
     "videoPath": "/videos/cadastros-catalogo-de-produtos-v2.mp4",
     "thumbnailPath": "/thumbnails/cadastros-catalogo-de-produtos.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 44,
+    "capturedAt": "2026-02-27T21:45:24.022Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "cadastros/acessorios",
     "videoPath": "/videos/cadastros-acessorios-v2.mp4",
     "thumbnailPath": "/thumbnails/cadastros-acessorios.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 55,
+    "capturedAt": "2026-02-27T21:51:06.498Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "cadastros/marcas",
     "videoPath": "/videos/cadastros-marcas-v2.mp4",
     "thumbnailPath": "/thumbnails/cadastros-marcas.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 16,
+    "capturedAt": "2026-02-27T21:58:18.486Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "cadastros/familias-de-pecas",
     "videoPath": "/videos/cadastros-familias-de-pecas-v2.mp4",
     "thumbnailPath": "/thumbnails/cadastros-familias-de-pecas.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 38,
+    "capturedAt": "2026-02-27T21:58:47.163Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "cadastros/fornecedores",
     "videoPath": "/videos/cadastros-fornecedores-v2.mp4",
     "thumbnailPath": "/thumbnails/cadastros-fornecedores.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 59,
+    "capturedAt": "2026-02-28T00:18:14.113Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "cadastros/mao-de-obra",
     "videoPath": "/videos/cadastros-mao-de-obra-v2.mp4",
     "thumbnailPath": "/thumbnails/cadastros-mao-de-obra.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 17,
+    "capturedAt": "2026-02-28T00:27:05.827Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "cadastros/instrumentos",
     "videoPath": "/videos/cadastros-instrumentos-v2.mp4",
     "thumbnailPath": "/thumbnails/cadastros-instrumentos.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 26,
+    "capturedAt": "2026-02-28T00:27:17.544Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "cadastros/checklist",
     "videoPath": "/videos/cadastros-checklist-v2.mp4",
     "thumbnailPath": "/thumbnails/cadastros-checklist.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 25,
+    "capturedAt": "2026-02-28T00:31:57.281Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "cadastros/status-anvisa",
     "videoPath": "/videos/cadastros-status-anvisa-v2.mp4",
     "thumbnailPath": "/thumbnails/cadastros-status-anvisa.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 0,
+    "capturedAt": "2026-02-28T00:41:41.389Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "operacoes/ordem-de-servico",
     "videoPath": "/videos/operacoes-ordem-de-servico-v2.mp4",
     "thumbnailPath": "/thumbnails/operacoes-ordem-de-servico.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 36,
+    "capturedAt": "2026-02-28T00:39:15.674Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "operacoes/orcamentos",
     "videoPath": "/videos/operacoes-orcamentos-v2.mp4",
     "thumbnailPath": "/thumbnails/operacoes-orcamentos.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 34,
+    "capturedAt": "2026-02-28T00:42:50.101Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "operacoes/agenda-de-manutencao",
     "videoPath": "/videos/operacoes-agenda-de-manutencao-v2.mp4",
     "thumbnailPath": "/thumbnails/operacoes-agenda-de-manutencao.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 22,
+    "capturedAt": "2026-02-28T00:45:48.785Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "operacoes/visitas-tecnicas",
     "videoPath": "/videos/operacoes-visitas-tecnicas-v2.mp4",
     "thumbnailPath": "/thumbnails/operacoes-visitas-tecnicas.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 40,
+    "capturedAt": "2026-02-28T00:51:46.216Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "operacoes/solicitacoes-de-suporte",
     "videoPath": "/videos/operacoes-solicitacoes-de-suporte-v2.mp4",
     "thumbnailPath": "/thumbnails/operacoes-solicitacoes-de-suporte.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 35,
+    "capturedAt": "2026-02-28T00:53:25.979Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "crm/clientes",
     "videoPath": "/videos/crm-clientes-v2.mp4",
     "thumbnailPath": "/thumbnails/crm-clientes.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 99,
+    "capturedAt": "2026-02-27T20:14:46.278Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "crm/solicitacoes-crm",
     "videoPath": "/videos/crm-solicitacoes-crm-v2.mp4",
     "thumbnailPath": "/thumbnails/crm-solicitacoes-crm.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 17,
+    "capturedAt": "2026-02-28T00:53:42.325Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "crm/parque-instalado",
     "videoPath": "/videos/crm-parque-instalado-v2.mp4",
     "thumbnailPath": "/thumbnails/crm-parque-instalado.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 40,
+    "capturedAt": "2026-02-28T01:04:20.072Z",
     "sourceEnv": "staging"
   },
   {
     "docSlug": "gestao/hub-de-estoque",
     "videoPath": "/videos/gestao-hub-de-estoque-v2.mp4",
     "thumbnailPath": "/thumbnails/gestao-hub-de-estoque.jpg",
-    "durationSec": 90,
-    "capturedAt": "2026-02-27T16:46:44.899Z",
+    "durationSec": 19,
+    "capturedAt": "2026-02-28T01:30:53.439Z",
     "sourceEnv": "staging"
   },
   {
