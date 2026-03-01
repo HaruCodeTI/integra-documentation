@@ -9,7 +9,7 @@ export default async function VersionPage() {
     <>
       <AppHeader />
       <main className="version-page">
-        <h1>Documentação v2</h1>
+        <h1>Índice da Documentação</h1>
         <p>Índice completo da documentação orientada por módulo.</p>
         <ul>
           {docs.map((doc) => (

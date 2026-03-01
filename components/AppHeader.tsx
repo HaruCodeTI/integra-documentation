@@ -11,7 +11,7 @@ export function AppHeader() {
 
         <nav className="top-nav" aria-label="Navegação principal">
           <Link href="/">Início</Link>
-          <Link href="/v2">Documentação v2</Link>
+          <Link href="/indice">Índice Geral</Link>
           <a href="mailto:contato@harucode.com.br">Contato</a>
         </nav>
 

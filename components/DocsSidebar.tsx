@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useMemo, useState } from 'react'
 import type { DocsIndexItem, GroupedNav } from '@/lib/types'
 import { groupNavigation } from '@/lib/navigation'
@@ -44,7 +45,8 @@ function IconMenu() {
   )
 }
 
-export function DocsSidebar({ docsIndex, currentSlug }: { docsIndex: DocsIndexItem[]; currentSlug: string }) {
+export function DocsSidebar({ docsIndex }: { docsIndex: DocsIndexItem[] }) {
+  const pathname = usePathname()
   const [query, setQuery] = useState('')
   const [collapsed, setCollapsed] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -111,17 +113,21 @@ export function DocsSidebar({ docsIndex, currentSlug }: { docsIndex: DocsIndexIt
                     <span>{group.label}</span>
                   </h3>
                   <ul>
-                    {group.items.map((item) => (
-                      <li key={item.slug}>
-                        <Link
-                          href={`/docs/${item.slug}`}
-                          className={item.slug === currentSlug ? 'active' : ''}
-                          onClick={() => setMobileOpen(false)}
-                        >
-                          {item.title}
-                        </Link>
-                      </li>
-                    ))}
+                    {group.items.map((item) => {
+                      const href = `/docs/${item.slug}`
+                      const isActive = pathname === href
+                      return (
+                        <li key={item.slug}>
+                          <Link
+                            href={href}
+                            className={isActive ? 'active' : ''}
+                            onClick={() => setMobileOpen(false)}
+                          >
+                            {item.title}
+                          </Link>
+                        </li>
+                      )
+                    })}
                   </ul>
                 </section>
               ))}
