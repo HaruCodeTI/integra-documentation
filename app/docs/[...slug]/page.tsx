@@ -24,7 +24,6 @@ export default async function DocPage({ params }: { params: Promise<{ slug: stri
       </nav>
       <header className="doc-header animate-fade-up">
         <div>
-          <p className="doc-version">Versão {doc.version.toUpperCase()}</p>
           <h1>{doc.title}</h1>
           <p>{doc.description}</p>
         </div>

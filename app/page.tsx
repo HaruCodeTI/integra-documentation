@@ -18,14 +18,14 @@ export default async function HomePage() {
           </p>
           <div className="hero-actions">
             <Link href="/docs/acesso-e-navegacao/acessando-o-sistema">Começar agora</Link>
-            <Link href="/v2">Explorar índice v2</Link>
+            <Link href="/indice">Explorar índice</Link>
           </div>
         </section>
 
         <section className="versions animate-fade-up-delay">
           {summary.map((item) => (
             <article key={item.version} className="version-card">
-              <h2>{item.version.toUpperCase()}</h2>
+              <h2>Módulos Publicados</h2>
               <p>{item.totalDocs} páginas publicadas</p>
               <p>{item.totalGroups} grupos funcionais</p>
             </article>
