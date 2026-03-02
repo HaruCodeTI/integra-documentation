@@ -1,47 +1,89 @@
 ---
-title: "Cargos"
-module: "administracao"
-route: "/user/roles"
-pdfRef: "12.2"
-videoUrl: "/videos/administracao-cargos-v2.mp4"
-updatedAt: "2026-02-27"
-tags: ["cargos", "papeis", "administracao"]
-permissionHints: ["role.list"]
+title: Cargos
+module: administracao
+route: /user/roles
+pdfRef: '12.2'
+videoUrl: /videos/administracao-cargos-v2.mp4
+updatedAt: '2026-02-27'
+tags:
+  - cargos
+  - papeis
+  - administracao
+permissionHints:
+  - role.list
+permissionDescriptions:
+  - Listar cargo
+  - Visualizar cargo
+  - Criar cargo
+  - Atualizar cargo
+  - Deletar cargo
 order: 56
-version: "v2"
-description: "Defina cargos e responsabilidades para controle de acesso."
-menuGroup: "administracao"
-menuGroupLabel: "Administração"
-related: ["administracao/permissoes", "administracao/usuarios"]
+version: v2
+description: Defina cargos e responsabilidades para controle de acesso.
+menuGroup: administracao
+menuGroupLabel: Administração
+related:
+  - administracao/permissoes
+  - administracao/usuarios
 ---
-
 ## Quando usar
-Defina cargos e responsabilidades para controle de acesso.
+Criar e gerenciar cargos (perfis) que agrupam permissões e definem nível hierárquico de acesso.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/user/roles`.
+## Acesso
+Menu lateral → Administração → Cargos
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Administração`.
-2. Abra a funcionalidade `Cargos`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Visão geral da listagem
+- Colunas: **Descrição** (nome do cargo), **Hierarquia** (nível numérico).
+- Filtros: Descrição, Hierarquia.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Níveis de acesso (hierarquia)
+- **1 – Administrador**: acesso total (configurações, usuários, cargos, permissões).
+- **2 – Gestor**: acesso gerencial (relatórios, aprovações, visão de equipe).
+- **7 – Técnico**: acesso operacional (OS, checklists, execução).
+> O nível é indicativo; as permissões efetivas são definidas na seleção de permissões.
+
+## Operações disponíveis
+- Listar e filtrar cargos.
+- Criar cargo.
+- Editar cargo.
+- Excluir cargo (bloqueado se houver usuários vinculados).
+
+## Passo a passo — Cadastrar novo cargo
+1) Clique em **Cadastrar novo cargo**.  
+2) Preencha:
+   - **Nome do cargo*** (texto, mín. 1 caractere)  
+   - **Hierarquia*** (número inteiro, mínimo 0)  
+   - **Permissões** (checkbox agrupado por módulo; selecione as ações permitidas)  
+3) Clique em **Cadastrar**.
+
+## Passo a passo — Editar cargo
+1) Na listagem, clique no ícone de edição.  
+2) Ajuste nome, nível e permissões.  
+3) Clique em **Atualizar**.  
+> Alterar permissões afeta todos os usuários vinculados ao cargo.
+
+## Passo a passo — Excluir cargo
+1) Na listagem, clique no ícone de exclusão.  
+2) Confirme.  
+> Não é possível excluir cargo com usuários vinculados; reatribuía antes.
+
+## Campos e validações
+- **Nome do cargo***: texto; mínimo 1 caractere.
+- **Hierarquia***: número inteiro ≥ 0.
+- **Permissões**: múltipla seleção por módulo; opcional.
+
+## Permissões necessárias (nomes no sistema)
+- Listar cargo
+- Visualizar cargo
+- Criar cargo
+- Atualizar cargo
+- Deletar cargo
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
-
-## Permissões necessárias
-- role.list
+- Cargo com usuários vinculados não pode ser excluído.
+- Não selecionar permissões suficientes para o nível esperado do cargo.
 
 ## Relacionados
 - [administracao/permissoes](/docs/administracao/permissoes)
 - [administracao/usuarios](/docs/administracao/usuarios)
+

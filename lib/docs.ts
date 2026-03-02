@@ -6,6 +6,14 @@ import type { DocPage, DocsIndexItem } from '@/lib/types'
 
 const docsRoot = path.join(process.cwd(), 'content', 'v2')
 const docsIndexFile = path.join(process.cwd(), 'data', 'docs-index.json')
+const permissionsFile = path.join(process.cwd(), 'data', 'permissions.json')
+
+let permissionsMap: Record<string, string> = {}
+try {
+  permissionsMap = JSON.parse(await fs.readFile(permissionsFile, 'utf-8'))
+} catch {
+  permissionsMap = {}
+}
 
 const frontmatterSchema = z.object({
   title: z.string(),
@@ -16,6 +24,7 @@ const frontmatterSchema = z.object({
   updatedAt: z.string(),
   tags: z.array(z.string()),
   permissionHints: z.array(z.string()),
+  permissionDescriptions: z.array(z.string()).optional(),
   order: z.number(),
   version: z.string(),
   description: z.string(),
@@ -59,12 +68,19 @@ export async function getDocBySlug(slugParts: string[]): Promise<DocPage | null>
 
   try {
     const raw = await fs.readFile(filePath, 'utf-8')
-    const parsed = matter(raw)
-    const frontmatter = frontmatterSchema.parse(parsed.data)
-    const index = await getDocsIndex()
-    const relatedDocs = index.filter((doc) => frontmatter.related.includes(doc.slug))
+  const parsed = matter(raw)
+  const fm = frontmatterSchema.parse(parsed.data)
+  const permissionDescriptions =
+    fm.permissionDescriptions && fm.permissionDescriptions.length > 0
+      ? fm.permissionDescriptions
+      : fm.permissionHints
+          .map((hint) => permissionsMap[hint])
+          .filter((v): v is string => Boolean(v))
+  const frontmatter = { ...fm, permissionDescriptions }
+  const index = await getDocsIndex()
+  const relatedDocs = index.filter((doc) => frontmatter.related.includes(doc.slug))
 
-    return {
+  return {
       ...frontmatter,
       slug: fullSlug,
       content: parsed.content,

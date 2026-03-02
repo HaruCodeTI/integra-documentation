@@ -1,47 +1,65 @@
 ---
-title: "Permissões"
-module: "administracao"
-route: "/config/permissions"
-pdfRef: "12.3"
-videoUrl: "/videos/administracao-permissoes-v2.mp4"
-updatedAt: "2026-02-27"
-tags: ["permissoes", "seguranca", "admin"]
-permissionHints: ["config.config_permissions"]
+title: Permissões
+module: administracao
+route: /config/permissions
+pdfRef: '12.3'
+videoUrl: /videos/administracao-permissoes-v2.mp4
+updatedAt: '2026-02-27'
+tags:
+  - permissoes
+  - seguranca
+  - admin
+permissionHints:
+  - config.config_permissions
+permissionDescriptions:
+  - Configurar permissões
 order: 57
-version: "v2"
-description: "Configure permissões finas por módulo, função e operação."
-menuGroup: "administracao"
-menuGroupLabel: "Administração"
-related: ["administracao/cargos", "acesso-e-navegacao/sistema-de-permissoes"]
+version: v2
+description: 'Configure permissões finas por módulo, função e operação.'
+menuGroup: administracao
+menuGroupLabel: Administração
+related:
+  - administracao/cargos
+  - acesso-e-navegacao/sistema-de-permissoes
 ---
-
 ## Quando usar
-Configure permissões finas por módulo, função e operação.
+Para consultar e configurar o catálogo de permissões do Integra ERP (módulo + ação) usado em Cargos e Usuários.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/config/permissions`.
+## Acesso
+Menu lateral → Administração → Permissões
+
+## Como funciona (níveis)
+1) **Permissões do cargo**: definidas em Cargos; todos os usuários do cargo herdam.  
+2) **Permissões individuais**: ao editar Usuário, é possível ajustar permissão a permissão após escolher um cargo.
+> Quando um cargo é selecionado no formulário de usuário, as permissões do cargo são carregadas e podem ser personalizadas.
+
+## Estrutura das permissões
+- Cada permissão = **Módulo** (ex.: Usuários, Cargos, OS, Orçamentos) + **Ação** (listar, visualizar, criar, editar, excluir, exportar, etc.).
+- Na tela, são exibidas como checkboxes agrupados por módulo para seleção em lote.
 
 ## Passo a passo
-1. Acesse o menu correspondente ao módulo `Administração`.
-2. Abra a funcionalidade `Permissões`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+1) Abra Administração → Permissões.  
+2) Localize o módulo desejado na lista.  
+3) Revise as ações disponíveis (listar, visualizar, criar, editar, excluir, exportar, ações específicas de cada módulo).  
+4) Use estas referências ao configurar Cargos ou ao ajustar permissões individuais em Usuários.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Principais módulos e ações (exemplos)
+- **Usuários**: Listar, Visualizar, Criar, Editar, Excluir.
+- **Cargos**: Listar, Visualizar, Criar, Editar, Excluir.
+- **Ordens de Serviço**: Listar, Visualizar, Criar, Editar, Atualizar status de tarefa, Ver avaliação, Ver valores, Atribuir/Iniciar/Confirmar atribuição, etc.
+- **Orçamentos**: Listar, Visualizar, Criar, Editar, Excluir, Enviar, Atualizar status.
+- **Clientes / Peças / Produtos / Equipamentos / Marcas / Famílias de Peças**: Listar, Visualizar, Criar, Editar, Excluir.
+- **Contratos de Manutenção/Locação, Parque Instalado, Estoque, Financeiro, Qualidade, RH, Relatórios**: ações conforme módulo (ver tabela completa no próprio formulário).
+
+## Permissões necessárias (nomes no sistema)
+- Configurar permissões
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
-
-## Permissões necessárias
-- config.config_permissions
+- Achar que nível hierárquico do cargo concede permissão automática (não concede; é apenas indicador).
+- Não carregar permissões ao selecionar cargo no usuário (necessário selecionar cargo ou marcar manualmente).
+- Marcar permissões conflitantes com políticas internas.
 
 ## Relacionados
 - [administracao/cargos](/docs/administracao/cargos)
 - [acesso-e-navegacao/sistema-de-permissoes](/docs/acesso-e-navegacao/sistema-de-permissoes)
+

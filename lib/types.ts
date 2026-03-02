@@ -7,6 +7,7 @@ export interface DocFrontmatter {
   updatedAt: string
   tags: string[]
   permissionHints: string[]
+  permissionDescriptions?: string[]
   order: number
   version: string
   description: string

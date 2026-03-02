@@ -1391,6 +1391,13 @@
     "permissionHints": [
       "user.list"
     ],
+    "permissionDescriptions": [
+      "Listar usuário",
+      "Visualizar usuário",
+      "Criar usuário",
+      "Atualizar usuário",
+      "Deletar usuário"
+    ],
     "order": 55,
     "version": "v2",
     "description": "Cadastre usuários e administre acessos por perfil.",
@@ -1416,6 +1423,13 @@
     ],
     "permissionHints": [
       "role.list"
+    ],
+    "permissionDescriptions": [
+      "Listar cargo",
+      "Visualizar cargo",
+      "Criar cargo",
+      "Atualizar cargo",
+      "Deletar cargo"
     ],
     "order": 56,
     "version": "v2",
@@ -1443,6 +1457,9 @@
     "permissionHints": [
       "config.config_permissions"
     ],
+    "permissionDescriptions": [
+      "Configurar permissões"
+    ],
     "order": 57,
     "version": "v2",
     "description": "Configure permissões finas por módulo, função e operação.",
@@ -1469,6 +1486,9 @@
     "permissionHints": [
       "productivity.reports"
     ],
+    "permissionDescriptions": [
+      "Visualizar relatórios de produtividade"
+    ],
     "order": 58,
     "version": "v2",
     "description": "Acompanhe tempo operacional e indicadores de produtividade.",
@@ -1493,6 +1513,9 @@
     ],
     "permissionHints": [
       "import-menu.list"
+    ],
+    "permissionDescriptions": [
+      "Acessar importação de dados"
     ],
     "order": 59,
     "version": "v2",
@@ -1519,6 +1542,9 @@
     ],
     "permissionHints": [
       "sla_configuration.list"
+    ],
+    "permissionDescriptions": [
+      "Listar configuração de SLA"
     ],
     "order": 60,
     "version": "v2",

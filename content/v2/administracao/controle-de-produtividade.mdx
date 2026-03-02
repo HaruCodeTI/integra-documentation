@@ -1,46 +1,71 @@
 ---
-title: "Controle de Produtividade"
-module: "administracao"
-route: "/productivity-dashboard"
-pdfRef: "12.4"
-videoUrl: "/videos/administracao-controle-de-produtividade-v2.mp4"
-updatedAt: "2026-02-27"
-tags: ["produtividade", "tempo", "indicadores"]
-permissionHints: ["productivity.reports"]
+title: Controle de Produtividade
+module: administracao
+route: /productivity-dashboard
+pdfRef: '12.4'
+videoUrl: /videos/administracao-controle-de-produtividade-v2.mp4
+updatedAt: '2026-02-27'
+tags:
+  - produtividade
+  - tempo
+  - indicadores
+permissionHints:
+  - productivity.reports
+permissionDescriptions:
+  - Visualizar relatórios de produtividade
 order: 58
-version: "v2"
-description: "Acompanhe tempo operacional e indicadores de produtividade."
-menuGroup: "administracao"
-menuGroupLabel: "Administração"
-related: ["relatorios/desempenho-de-tecnicos"]
+version: v2
+description: Acompanhe tempo operacional e indicadores de produtividade.
+menuGroup: administracao
+menuGroupLabel: Administração
+related:
+  - relatorios/desempenho-de-tecnicos
 ---
-
 ## Quando usar
-Acompanhe tempo operacional e indicadores de produtividade.
+Para acompanhar a produtividade e o cumprimento de SLA no dashboard de Controle de Tempo de OS (SLA).
+
+## Acesso
+Menu lateral → Administração → Controle de Tempo de OS → Dashboard
 
 ## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/productivity-dashboard`.
+- Permissão: Visualizar relatórios de produtividade.
+- Configuração de SLA ativa (veja página `Configuração de SLA`). Sem SLA ativo, o dashboard exibe mensagem orientativa.
+
+## Indicadores (cards superiores)
+- **Total de OS**: quantidade total de ordens de serviço.
+- **Total de Violações**: número de violações de tempo detectadas.
+- **Taxa de Compliance**: % de OS dentro do limite configurado.
+- **Violações Recentes**: quantidade das últimas 5 violações.
+
+## Abas
+### Visão Geral
+1. **Performance por Status**  
+   - Status, tempo limite configurado, taxa de compliance, quantidade de violações.  
+   - Indicador visual: verde (≥95%), amarelo (≥80%), vermelho (&lt;80%).
+2. **Violações Recentes**  
+   - Código da OS, tempo de atraso, badge com status violado.
+
+### Relatório de Violações
+- Listagem completa das violações de SLA com filtros e opção de exportação.
 
 ## Passo a passo
-1. Acesse o menu correspondente ao módulo `Administração`.
-2. Abra a funcionalidade `Controle de Produtividade`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+1) Abra o dashboard em Administração → Controle de Tempo de OS → Dashboard.  
+2) Revise os KPIs no topo.  
+3) Use a aba **Visão Geral** para enxergar status com maior violação e taxa de compliance.  
+4) Use a aba **Relatório de Violações** para investigar casos e exportar.  
+5) Clique em **Atualizar** para recarregar dados em tempo real.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Dicas e alertas
+- Monitore a **Taxa de Compliance**: abaixo de 80% indica gargalos; ajuste tempos ou processos.  
+- Se indicadores vazios: verifique se a configuração de SLA está ativa e se há dados de OS.
+
+## Permissões necessárias (nomes no sistema)
+- Visualizar relatórios de produtividade
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
-
-## Permissões necessárias
-- productivity.reports
+- Dashboard vazio por ausência de configuração de SLA ativa.
+- Interpretação incorreta da taxa por status (cores indicam faixas de compliance).
 
 ## Relacionados
+- [administracao/configuracao-de-sla](/docs/administracao/configuracao-de-sla)
 - [relatorios/desempenho-de-tecnicos](/docs/relatorios/desempenho-de-tecnicos)

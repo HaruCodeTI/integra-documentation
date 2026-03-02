@@ -338,6 +338,39 @@ a {
   font-weight: 600;
 }
 
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.ai-assist {
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--border-radius-base);
+  padding: 14px;
+  background: var(--panel);
+  box-shadow: var(--shadow-sm);
+}
+
+.ai-assist h3 {
+  margin: 0 0 8px;
+}
+
+.ai-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ai-links a {
+  color: var(--brand-secondary);
+  font-weight: 600;
+  border: 1px solid color-mix(in srgb, var(--brand-secondary) 30%, var(--line));
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
 /* ------------------------
    B. LAYOUT PRINCIPAL E SIDEBAR
    ------------------------ */
@@ -762,6 +795,43 @@ a {
 .playbook-body blockquote p {
   color: var(--text);
   margin: 0;
+}
+
+.permissions-callout {
+  border: 1px solid var(--line);
+  border-radius: var(--border-radius-base);
+  padding: 14px;
+  background: color-mix(in srgb, var(--brand-secondary) 8%, var(--panel));
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.permissions-callout ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+
+.permissions-callout li {
+  line-height: 1.6;
+}
+
+.perm-codes {
+  font-size: 12px;
+  color: var(--text-soft);
+  margin-top: 4px;
+}
+
+.pdf-reference {
+  margin-top: 18px;
+  border: 1px dashed var(--line);
+  border-radius: var(--border-radius-base);
+  padding: 14px;
+  background: var(--panel-soft);
+}
+
+.pdf-reference a {
+  color: var(--brand-secondary);
+  font-weight: 600;
 }
 
 .next-steps h2 {

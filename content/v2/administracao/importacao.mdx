@@ -1,46 +1,72 @@
 ---
-title: "Importação"
-module: "administracao"
-route: "/import"
-pdfRef: "12.5"
-videoUrl: "/videos/administracao-importacao-v2.mp4"
-updatedAt: "2026-02-27"
-tags: ["importacao", "lote", "dados"]
-permissionHints: ["import-menu.list"]
+title: Importação
+module: administracao
+route: /import
+pdfRef: '12.5'
+videoUrl: /videos/administracao-importacao-v2.mp4
+updatedAt: '2026-02-27'
+tags:
+  - importacao
+  - lote
+  - dados
+permissionHints:
+  - import-menu.list
+permissionDescriptions:
+  - Acessar importação de dados
 order: 59
-version: "v2"
-description: "Importe dados em lote seguindo layout e validações do sistema."
-menuGroup: "administracao"
-menuGroupLabel: "Administração"
-related: ["cadastros/clientes", "cadastros/catalogo-de-produtos"]
+version: v2
+description: Importe dados em lote seguindo layout e validações do sistema.
+menuGroup: administracao
+menuGroupLabel: Administração
+related:
+  - cadastros/clientes
+  - cadastros/catalogo-de-produtos
 ---
-
 ## Quando usar
-Importe dados em lote seguindo layout e validações do sistema.
+Para carregar grandes volumes de dados de forma rápida, usando arquivos PDF ou XML conforme o tipo escolhido (faturamento, notas fiscais, aparelhos, peças ou usuários).
 
 ## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/import`.
+- Permissão de acesso à tela de Importação.
+- Arquivos nos formatos suportados (PDF ou XML) seguindo o layout esperado para cada tipo.
+- Dados mestres já existentes quando houver relacionamentos (ex.: produtos, clientes, equipamentos).
+
+## Acesso
+Menu lateral → Administração → Importação
+
+## Tipos de importação disponíveis
+- **Faturamento**: dados de faturamento em lote.
+- **Nota Fiscal (NF-e)**: importação de documentos fiscais.
+- **Aparelhos**: cadastro de equipamentos/aparelhos.
+- **Peças**: cadastro de peças.
+- **Usuários**: criação ou atualização de usuários em massa.
 
 ## Passo a passo
-1. Acesse o menu correspondente ao módulo `Administração`.
-2. Abra a funcionalidade `Importação`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+1) Abra **Administração → Importação**.
+2) Em **Importar Dados**, escolha o tipo (Faturamento, Nota Fiscal, Aparelhos, Peças ou Usuários).
+3) Na área **Enviar Arquivos**, arraste ou selecione os arquivos. Formatos aceitos: **PDF** e **XML**; múltiplos arquivos são permitidos.
+4) Revise a lista de arquivos selecionados (nome e tamanho). Remova itens se necessário.
+5) Clique em **Importar Arquivos**. O botão só habilita quando há um tipo selecionado e pelo menos um arquivo carregado.
+6) Para recomeçar, clique em **Limpar** (remove tipo e arquivos selecionados).
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Campos e validações
+- **Importar Dados***: seletor obrigatório do tipo de carga.
+- **Enviar Arquivos***: dropzone obrigatória; aceita PDF e XML. Arquivos em formato diferente são rejeitados imediatamente.
+- **Lista de arquivos**: exibe cada item; permite remover antes do envio.
+- **Importar Arquivos**: habilita apenas com tipo + arquivo(s); dispara processamento em segundo plano.
+- **Limpar**: limpa seleção de tipo e arquivos.
+
+## Pós-processamento
+- O processamento ocorre em segundo plano; você é notificado ao final.
+- Arquivos inválidos retornam mensagem de erro individual; os válidos continuam sendo importados.
+- Logs de erro indicam arquivo e motivo (formato ou estrutura).
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Não selecionar o tipo antes de enviar arquivos (botão permanece desabilitado).
+- Arquivo fora dos formatos permitidos (PDF/XML).
+- Tentar importar sem arquivos ou com layout divergente do esperado para o tipo escolhido.
 
-## Permissões necessárias
-- import-menu.list
+## Permissões necessárias (nomes no sistema)
+- Acessar importação de dados
 
 ## Relacionados
 - [cadastros/clientes](/docs/cadastros/clientes)

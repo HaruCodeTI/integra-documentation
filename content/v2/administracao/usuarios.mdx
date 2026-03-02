@@ -1,47 +1,113 @@
 ---
-title: "Usuários"
-module: "administracao"
-route: "/user"
-pdfRef: "12.1"
-videoUrl: "/videos/administracao-usuarios-v2.mp4"
-updatedAt: "2026-02-27"
-tags: ["usuarios", "acesso", "administracao"]
-permissionHints: ["user.list"]
+title: Usuários
+module: administracao
+route: /user
+pdfRef: '12.1'
+videoUrl: /videos/administracao-usuarios-v2.mp4
+updatedAt: '2026-02-27'
+tags:
+  - usuarios
+  - acesso
+  - administracao
+permissionHints:
+  - user.list
+permissionDescriptions:
+  - Listar usuário
+  - Visualizar usuário
+  - Criar usuário
+  - Atualizar usuário
+  - Deletar usuário
 order: 55
-version: "v2"
-description: "Cadastre usuários e administre acessos por perfil."
-menuGroup: "administracao"
-menuGroupLabel: "Administração"
-related: ["administracao/cargos", "administracao/permissoes"]
+version: v2
+description: Cadastre usuários e administre acessos por perfil.
+menuGroup: administracao
+menuGroupLabel: Administração
+related:
+  - administracao/cargos
+  - administracao/permissoes
 ---
-
 ## Quando usar
-Cadastre usuários e administre acessos por perfil.
+Para cadastrar, editar, inativar ou excluir usuários internos, definir credenciais, cargos e permissões.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/user`.
+## Acesso
+Menu lateral → Administração → Usuários
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Administração`.
-2. Abra a funcionalidade `Usuários`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Visão geral da listagem
+- Colunas: **Nome**, **Usuário**, **E-mail**, **Status** (badge Ativo/ Inativo).
+- Filtros: Nome, E-mail, Status; paginação e ordenação por coluna.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Operações disponíveis
+- Listar e filtrar usuários.
+- Cadastrar novo usuário.
+- Editar usuário existente.
+- Excluir usuário (irreversível) ou inativar via status.
+- Atribuir cargo e/ou permissões individuais.
+
+## Passo a passo — Cadastrar novo usuário
+1) Clique em **Novo Usuário** na listagem.  
+2) Preencha as 3 seções do formulário (acordeões):
+
+**Seção 1 – Dados de Login**
+- Usuário* (texto, mín. 1 caractere)
+- E-mail* (e-mail válido)
+- Senha* (mín. 6 caracteres, só na criação)
+- Confirmar Senha* (igual à senha, só na criação)
+> Senha não é exibida na edição.
+
+**Seção 2 – Dados Pessoais**
+- Nome* (texto)
+- Celular* (telefone BR, formato `(99) 99999-9999`, mín. 10 dígitos)
+- Data de Nascimento* (data válida `yyyy-mm-dd`)
+- Documento* (CPF/CNPJ, mín. 11 dígitos)
+- Estado Civil (lista)
+- Gênero (lista)
+- Status* (Ativo ou Inativo; padrão Ativo)
+
+**Seção 3 – Cargo e Permissões**
+- Cargo (seleção com busca; carrega permissões do cargo)
+- Permissões (checkbox agrupado por módulo; pode ajustar manualmente após escolher o cargo)
+
+3) Clique em **Salvar**.
+
+## Passo a passo — Editar usuário
+1) Na listagem, clique no ícone de edição.  
+2) Ajuste dados, cargo/permissões ou status.  
+3) Clique em **Salvar**.
+
+## Passo a passo — Excluir usuário
+1) Na listagem, clique no ícone de exclusão.  
+2) Confirme na caixa de diálogo.  
+> Exclusão é irreversível; para apenas bloquear acesso, use Status = Inativo.
+
+## Campos e validações
+- **Usuário***: obrigatório, texto; mínimo 1 caractere.
+- **E-mail***: obrigatório; formato de e-mail válido.
+- **Senha/Confirmar Senha***: obrigatórios apenas na criação; senha mín. 6; confirmar igual.
+- **Nome***: obrigatório.
+- **Celular***: obrigatório; máscara `(99) 99999-9999`; mínimo 10 dígitos.
+- **Data de Nascimento***: obrigatório; data válida.
+- **Documento***: obrigatório; CPF ou CNPJ; mínimo 11 dígitos.
+- **Estado Civil**: opcional; seleção.
+- **Gênero**: opcional; seleção.
+- **Status***: obrigatório; Ativo/Inativo.
+- **Cargo**: opcional; ao escolher, permissões são carregadas automaticamente.
+- **Permissões**: opcional; múltipla seleção por módulo.
+
+## Permissões necessárias (nomes no sistema)
+- Listar usuário
+- Visualizar usuário
+- Criar usuário
+- Atualizar usuário
+- Deletar usuário
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
-
-## Permissões necessárias
-- user.list
+- Senhas não coincidem (criação).
+- E-mail inválido ou já utilizado.
+- Documento com menos de 11 dígitos.
+- Telefone fora do padrão.
+- Tentar excluir usuário com uso ativo; prefira inativar.
 
 ## Relacionados
 - [administracao/cargos](/docs/administracao/cargos)
 - [administracao/permissoes](/docs/administracao/permissoes)
+
