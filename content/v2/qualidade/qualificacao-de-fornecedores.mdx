@@ -11,6 +11,9 @@ tags:
   - avaliacao
 permissionHints:
   - quality.suppliers_qualification_show
+permissionDescriptions:
+  - Visualizar qualificação de fornecedor
+  - Atualizar qualificação de fornecedor
 order: 46
 version: v2
 description: Avalie fornecedores com critérios de conformidade e desempenho.
@@ -20,31 +23,28 @@ related:
   - cadastros/fornecedores
 ---
 ## Quando usar
-Avalie fornecedores com critérios de conformidade e desempenho.
+Para avaliar fornecedores quanto a conformidade e desempenho, mantendo histórico de avaliações.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/quality/supplier-qualifications`.
+## Acesso
+Menu lateral → Qualidade → Qualificação de Fornecedores
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Qualidade`.
-2. Abra a funcionalidade `Qualificação de Fornecedores`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Avaliar fornecedor
+1) Selecione o fornecedor na lista.  
+2) Abra a qualificação e preencha critérios avaliativos conforme formulário (conformidade, desempenho, observações).  
+3) Salve a avaliação.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Campos e validações
+- Fornecedor: selecionado na lista.  
+- Critérios de conformidade/desempenho: obrigatórios conforme formulário.  
+- Observações: texto opcional.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Avaliar sem preencher critérios obrigatórios.  
+- Não registrar observações quando há restrições relevantes.
 
-## Permissões necessárias
-- quality.suppliers_qualification_show
+## Permissões necessárias (nomes no sistema)
+- Visualizar qualificação de fornecedor
+- Atualizar qualificação de fornecedor
 
 ## Relacionados
 - [cadastros/fornecedores](/docs/cadastros/fornecedores)
@@ -66,5 +66,4 @@ Avalie fornecedores com critérios de conformidade e desempenho.
 - Visualizar qualificação de fornecedor
 
 ## Conteúdo detalhado (PDF 9.1 Qualificação de Fornecedores)
-
 

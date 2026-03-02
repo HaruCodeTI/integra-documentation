@@ -615,6 +615,26 @@
     "permissionHints": [
       "service_order.list"
     ],
+    "permissionDescriptions": [
+      "Listar ordens de serviço",
+      "Visualizar ordem de serviço",
+      "Criar ordem de serviço",
+      "Atualizar ordem de serviço",
+      "Iniciar ordem de serviço",
+      "Confirmar atribuição de ordem de serviço",
+      "Atribuir ordem de serviço",
+      "Listar tipos de ordem de serviço",
+      "Listar checklists de ordem de serviço",
+      "Atualizar tarefa de checklists de ordem de serviço",
+      "Visualizar avaliação",
+      "Gerenciar itens de exceção",
+      "Visualizar valor da ordem de serviço",
+      "Atribuir labor",
+      "Atualizar checklists do labor",
+      "Listar status técnicos",
+      "Listar status financeiros",
+      "Gerar relatório de ordens de serviço"
+    ],
     "order": 21,
     "version": "v2",
     "description": "Abra, acompanhe e finalize OS conforme o fluxo operacional.",
@@ -640,6 +660,15 @@
     ],
     "permissionHints": [
       "budget.list"
+    ],
+    "permissionDescriptions": [
+      "Listar orçamentos",
+      "Visualizar orçamento",
+      "Criar orçamento",
+      "Atualizar orçamento",
+      "Deletar orçamento",
+      "Atualizar status do orçamento",
+      "Enviar orçamento"
     ],
     "order": 22,
     "version": "v2",
@@ -667,6 +696,17 @@
     "permissionHints": [
       "maintenance_schedule.list"
     ],
+    "permissionDescriptions": [
+      "Listar agendamentos de manutenção",
+      "Visualizar agendamento de manutenção",
+      "Criar agendamento de manutenção",
+      "Atualizar agendamento de manutenção",
+      "Deletar agendamento de manutenção",
+      "Visualizar avaliação de agendamento",
+      "Avaliar agendamento de manutenção",
+      "Atualizar tarefa de avaliação",
+      "Gerar ordem de serviço"
+    ],
     "order": 23,
     "version": "v2",
     "description": "Programe serviços e janelas de manutenção com controle de agenda.",
@@ -692,6 +732,13 @@
     "permissionHints": [
       "technical_visit.list"
     ],
+    "permissionDescriptions": [
+      "Listar visitas técnicas",
+      "Visualizar visita técnica",
+      "Criar visita técnica",
+      "Atualizar visita técnica",
+      "Deletar visita técnica"
+    ],
     "order": 24,
     "version": "v2",
     "description": "Registre visitas, etapas de atendimento e histórico técnico.",
@@ -716,6 +763,12 @@
     ],
     "permissionHints": [
       "support.list"
+    ],
+    "permissionDescriptions": [
+      "Listar solicitações de suporte",
+      "Criar solicitação de suporte",
+      "Atualizar solicitação de suporte",
+      "Deletar solicitação de suporte"
     ],
     "order": 25,
     "version": "v2",
@@ -846,6 +899,22 @@
       "stock.list_product",
       "stock.list_equipment"
     ],
+    "permissionDescriptions": [
+      "Listar estoque de peça",
+      "Visualizar estoque de peça",
+      "Criar estoque de peça",
+      "Atualizar estoque de peça",
+      "Inativar lote de peça do estoque",
+      "Listar estoque de produto",
+      "Visualizar estoque de produto",
+      "Criar estoque de produto",
+      "Atualizar estoque de produto",
+      "Listar estoque de equipamento",
+      "Visualizar estoque de equipamento",
+      "Criar estoque de equipamento",
+      "Atualizar estoque de equipamento",
+      "Deletar estoque de equipamento"
+    ],
     "order": 29,
     "version": "v2",
     "description": "Gerencie estoques de equipamentos, peças e produtos no mesmo hub.",
@@ -870,6 +939,15 @@
     ],
     "permissionHints": [
       "equipment.history_list"
+    ],
+    "permissionDescriptions": [
+      "Listar histórico de equipamento",
+      "Visualizar histórico de equipamento",
+      "Criar histórico de equipamento",
+      "Atualizar histórico de equipamento",
+      "Listar eventos de histórico de equipamento",
+      "Criar evento de histórico de equipamento",
+      "Atualizar evento de histórico de equipamento"
     ],
     "order": 30,
     "version": "v2",
@@ -897,6 +975,17 @@
     "permissionHints": [
       "equipment.show_asset_equipment"
     ],
+    "permissionDescriptions": [
+      "Visualizar equipamento do controle de equipamentos",
+      "Listar equipamentos do controle de equipamentos",
+      "Criar equipamento do controle de equipamentos",
+      "Atualizar equipamento do controle de equipamentos",
+      "Mover equipamento do controle de equipamentos",
+      "Baixar equipamento do controle de equipamentos",
+      "Agendar manutenção de equipamento do controle de equipamentos",
+      "Atualizar valor do equipamento do controle de equipamentos",
+      "Gerar relatório de ativo fixo"
+    ],
     "order": 31,
     "version": "v2",
     "description": "Controle movimentações e ciclo de vida de ativos patrimoniais.",
@@ -921,6 +1010,14 @@
     ],
     "permissionHints": [
       "maintenance_contract.list"
+    ],
+    "permissionDescriptions": [
+      "Listar contratos de manutenção",
+      "Visualizar contrato de manutenção",
+      "Criar contrato de manutenção",
+      "Atualizar contrato de manutenção",
+      "Deletar contrato de manutenção",
+      "Gerar relatório de contratos"
     ],
     "order": 32,
     "version": "v2",
@@ -947,6 +1044,13 @@
     "permissionHints": [
       "rental_contract.list"
     ],
+    "permissionDescriptions": [
+      "Listar contratos de locação",
+      "Visualizar contrato de locação",
+      "Criar contrato de locação",
+      "Atualizar contrato de locação",
+      "Deletar contrato de locação"
+    ],
     "order": 33,
     "version": "v2",
     "description": "Gerencie contratos de locação com itens, prazos e status.",
@@ -971,6 +1075,17 @@
     ],
     "permissionHints": [
       "maintenance_schedule.list"
+    ],
+    "permissionDescriptions": [
+      "Listar agendamentos de manutenção",
+      "Visualizar agendamento de manutenção",
+      "Criar agendamento de manutenção",
+      "Atualizar agendamento de manutenção",
+      "Deletar agendamento de manutenção",
+      "Visualizar avaliação de agendamento",
+      "Avaliar agendamento de manutenção",
+      "Atualizar tarefa de avaliação",
+      "Gerar ordem de serviço"
     ],
     "order": 34,
     "version": "v2",
@@ -1111,6 +1226,9 @@
     "permissionHints": [
       "Acesso ao módulo financeiro"
     ],
+    "permissionDescriptions": [
+      "Acesso ao módulo financeiro"
+    ],
     "order": 38,
     "version": "v2",
     "description": "Conheça os submódulos financeiros e principais fluxos de trabalho.",
@@ -1137,6 +1255,11 @@
     "permissionHints": [
       "financial_movement.list"
     ],
+    "permissionDescriptions": [
+      "Listar contas a receber",
+      "Visualizar conta a receber",
+      "Liquidar conta a receber"
+    ],
     "order": 39,
     "version": "v2",
     "description": "Controle recebimentos, vencimentos e conciliações de receita.",
@@ -1162,6 +1285,11 @@
     "permissionHints": [
       "financial.expenses_list"
     ],
+    "permissionDescriptions": [
+      "Listar despesas",
+      "Visualizar despesa",
+      "Liquidar despesa"
+    ],
     "order": 40,
     "version": "v2",
     "description": "Gerencie despesas, aprovações e pagamentos com rastreabilidade.",
@@ -1186,6 +1314,11 @@
     ],
     "permissionHints": [
       "financial.billing_list"
+    ],
+    "permissionDescriptions": [
+      "Listar faturamento",
+      "Gerar NF de orçamento",
+      "Gerar NF de ordem de serviço"
     ],
     "order": 41,
     "version": "v2",
@@ -1213,6 +1346,10 @@
     "permissionHints": [
       "fiscal_config.list_documents"
     ],
+    "permissionDescriptions": [
+      "Listar documentos fiscais",
+      "Reenviar webhook de documento fiscal"
+    ],
     "order": 42,
     "version": "v2",
     "description": "Consulte e gerencie documentos fiscais eletrônicos centralizados.",
@@ -1237,6 +1374,9 @@
     ],
     "permissionHints": [
       "fiscal_config.list"
+    ],
+    "permissionDescriptions": [
+      "Acessar configuração fiscal"
     ],
     "order": 43,
     "version": "v2",
@@ -1264,6 +1404,12 @@
     "permissionHints": [
       "operation_type.list"
     ],
+    "permissionDescriptions": [
+      "Listar naturezas de operação",
+      "Criar natureza de operação",
+      "Atualizar natureza de operação",
+      "Deletar natureza de operação"
+    ],
     "order": 44,
     "version": "v2",
     "description": "Defina naturezas de operação para controle tributário e fiscal.",
@@ -1288,6 +1434,11 @@
     ],
     "permissionHints": [
       "financial.expenses_list"
+    ],
+    "permissionDescriptions": [
+      "Listar despesas",
+      "Visualizar despesa",
+      "Liquidar despesa"
     ],
     "order": 45,
     "version": "v2",
@@ -1314,6 +1465,10 @@
     "permissionHints": [
       "quality.suppliers_qualification_show"
     ],
+    "permissionDescriptions": [
+      "Visualizar qualificação de fornecedor",
+      "Atualizar qualificação de fornecedor"
+    ],
     "order": 46,
     "version": "v2",
     "description": "Avalie fornecedores com critérios de conformidade e desempenho.",
@@ -1339,6 +1494,13 @@
     "permissionHints": [
       "quality.calibrations_list"
     ],
+    "permissionDescriptions": [
+      "Listar calibrações",
+      "Visualizar calibrações",
+      "Criar calibrações",
+      "Atualizar calibrações",
+      "Deletar calibrações"
+    ],
     "order": 47,
     "version": "v2",
     "description": "Gerencie o ciclo de calibração de instrumentos e alertas de prazo.",
@@ -1363,6 +1525,14 @@
     ],
     "permissionHints": [
       "quality.non_conformities_list"
+    ],
+    "permissionDescriptions": [
+      "Listar não conformidades",
+      "Visualizar não conformidades",
+      "Criar não conformidades",
+      "Atualizar não conformidades",
+      "Deletar não conformidades",
+      "Visualizar relatório de não conformidades"
     ],
     "order": 48,
     "version": "v2",
@@ -1465,6 +1635,9 @@
     "permissionHints": [
       "report.list"
     ],
+    "permissionDescriptions": [
+      "Listar relatórios"
+    ],
     "order": 52,
     "version": "v2",
     "description": "Acesse relatórios operacionais, filtros e exportações em um único ponto.",
@@ -1491,6 +1664,9 @@
     "permissionHints": [
       "report.performance"
     ],
+    "permissionDescriptions": [
+      "Visualizar relatório de desempenho de técnicos"
+    ],
     "order": 53,
     "version": "v2",
     "description": "Analise produtividade técnica e indicadores de execução em campo.",
@@ -1515,6 +1691,9 @@
     ],
     "permissionHints": [
       "stock.stock_export"
+    ],
+    "permissionDescriptions": [
+      "Exportar relatório de estoque"
     ],
     "order": 54,
     "version": "v2",

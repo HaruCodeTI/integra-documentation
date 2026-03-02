@@ -11,6 +11,8 @@ tags:
   - filtros
 permissionHints:
   - report.list
+permissionDescriptions:
+  - Listar relatórios
 order: 52
 version: v2
 description: 'Acesse relatórios operacionais, filtros e exportações em um único ponto.'
@@ -21,31 +23,31 @@ related:
   - relatorios/relatorio-de-estoque
 ---
 ## Quando usar
-Acesse relatórios operacionais, filtros e exportações em um único ponto.
+Para acessar todos os relatórios disponíveis (estoque, desempenho, financeiros) a partir de um hub único.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/report`.
+## Acesso
+Menu lateral → Relatórios → Central de Relatórios
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Relatórios`.
-2. Abra a funcionalidade `Central de Relatórios`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Conteúdo da central
+- Listagem dos relatórios habilitados para o seu perfil.  
+- Ações rápidas: **Abrir** relatório, **Exportar** (quando aplicável).
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Filtros da central
+- Busca por nome do relatório.  
+- Categoria (Operações, Estoque, Financeiro, Qualidade, RH).  
+- Disponibilidade de exportação (sim/não).
+
+## Colunas da lista
+- Nome do relatório.  
+- Categoria.  
+- Ações (Abrir, Exportar se disponível).
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Não ver um relatório por falta de permissão.  
+- Tentar exportar relatório que não possui ação de exportação.
 
-## Permissões necessárias
-- report.list
+## Permissões necessárias (nomes no sistema)
+- Listar relatórios
 
 ## Relacionados
 - [relatorios/desempenho-de-tecnicos](/docs/relatorios/desempenho-de-tecnicos)
@@ -69,5 +71,4 @@ Acesse relatórios operacionais, filtros e exportações em um único ponto.
 - report.list
 
 ## Conteúdo detalhado (PDF 11.1 Central de Relatórios)
-
 

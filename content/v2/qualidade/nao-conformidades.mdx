@@ -11,6 +11,13 @@ tags:
   - acao-corretiva
 permissionHints:
   - quality.non_conformities_list
+permissionDescriptions:
+  - Listar não conformidades
+  - Visualizar não conformidades
+  - Criar não conformidades
+  - Atualizar não conformidades
+  - Deletar não conformidades
+  - Visualizar relatório de não conformidades
 order: 48
 version: v2
 description: Registre e trate não conformidades com plano de ação rastreável.
@@ -20,31 +27,33 @@ related:
   - qualidade/qualificacao-de-fornecedores
 ---
 ## Quando usar
-Registre e trate não conformidades com plano de ação rastreável.
+Para registrar e acompanhar não conformidades com plano de ação até a resolução.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/quality/non-conformities`.
+## Acesso
+Menu lateral → Qualidade → Não Conformidades
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Qualidade`.
-2. Abra a funcionalidade `Não Conformidades`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Registrar não conformidade
+1) Clique em **Nova Não Conformidade**.  
+2) Preencha descrição do desvio, área afetada e impacto.  
+3) Defina responsável e prazo para ação corretiva.  
+4) Registre plano de ação e acompanhe o status até o fechamento.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Campos e validações
+- Descrição do desvio*: texto obrigatório.  
+- Área afetada/Origem: texto/seleção.  
+- Responsável: obrigatório.  
+- Prazo: data em `yyyy-mm-dd`.  
+- Plano de ação: texto.  
+- Status: Pendente, Em andamento, Concluída (ou conforme sistema).
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Não definir responsável ou prazo, dificultando follow-up.  
+- Não atualizar status após implementar ação corretiva.  
+- Prazo em data inválida.
 
-## Permissões necessárias
-- quality.non_conformities_list
+## Permissões necessárias (nomes no sistema)
+- Listar/Visualizar/Criar/Atualizar/Deletar não conformidades
+- Visualizar relatório de não conformidades
 
 ## Relacionados
 - [qualidade/qualificacao-de-fornecedores](/docs/qualidade/qualificacao-de-fornecedores)
@@ -67,5 +76,4 @@ Registre e trate não conformidades com plano de ação rastreável.
 - Listar não conformidades
 
 ## Conteúdo detalhado (PDF 9.3 Não Conformidades)
-
 

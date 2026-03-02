@@ -11,6 +11,14 @@ tags:
   - rastreabilidade
 permissionHints:
   - equipment.history_list
+permissionDescriptions:
+  - Listar histórico de equipamento
+  - Visualizar histórico de equipamento
+  - Criar histórico de equipamento
+  - Atualizar histórico de equipamento
+  - Listar eventos de histórico de equipamento
+  - Criar evento de histórico de equipamento
+  - Atualizar evento de histórico de equipamento
 order: 30
 version: v2
 description: Consulte alterações e rastreabilidade histórica dos equipamentos.
@@ -21,31 +29,36 @@ related:
   - crm/parque-instalado
 ---
 ## Quando usar
-Consulte alterações e rastreabilidade histórica dos equipamentos.
+Para rastrear todas as alterações de equipamentos (movimentações, mudanças de cliente, status, eventos).
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/history`.
+## Acesso
+Menu lateral → Gestão → Histórico de Equipamentos
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Gestão`.
-2. Abra a funcionalidade `Histórico de Equipamentos`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Consultar
+1) Filtre por equipamento, cliente ou período.  
+2) Abra o registro para ver eventos associados (criação, movimentação, atualizações).
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Passo a passo — Registrar evento
+1) Abra o equipamento no histórico.  
+2) Adicione evento com descrição, data e tipo de mudança (quando permitido pelo perfil).  
+3) Salve.
+
+## Campos e validações
+- Equipamento (obrigatório na consulta).  
+- Eventos: data (`yyyy-mm-dd`), descrição, tipo de evento.  
+- Mudanças de cliente ou status registram automaticamente no histórico.
+
+## Mensagens frequentes
+- “Equipamento obrigatório” ao tentar registrar evento sem selecionar.  
+- “Data inválida” fora do formato.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Não registrar mudança de cliente/posse após movimentar equipamento.  
+- Filtrar período errado e achar que não há histórico.
 
-## Permissões necessárias
-- equipment.history_list
+## Permissões necessárias (nomes no sistema)
+- Listar/Visualizar/Criar/Atualizar histórico de equipamento
+- Listar/Criar/Atualizar eventos de histórico de equipamento
 
 ## Relacionados
 - [gestao/controle-patrimonial](/docs/gestao/controle-patrimonial)
@@ -69,5 +82,4 @@ Consulte alterações e rastreabilidade histórica dos equipamentos.
 - Listar histórico de equipamento
 
 ## Conteúdo detalhado (PDF 5.2 Histórico de Equipamentos)
-
 

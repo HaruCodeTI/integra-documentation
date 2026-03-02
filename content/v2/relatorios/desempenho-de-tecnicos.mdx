@@ -11,6 +11,8 @@ tags:
   - desempenho
 permissionHints:
   - report.performance
+permissionDescriptions:
+  - Visualizar relatório de desempenho de técnicos
 order: 53
 version: v2
 description: Analise produtividade técnica e indicadores de execução em campo.
@@ -20,31 +22,38 @@ related:
   - administracao/controle-de-produtividade
 ---
 ## Quando usar
-Analise produtividade técnica e indicadores de execução em campo.
+Para medir produtividade e compliance de SLA por técnico, status e período.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/report/performance`.
+## Acesso
+Menu lateral → Relatórios → Desempenho de Técnicos
+
+## Filtros do painel
+- Período (De/Até).  
+- Técnico (multi-seleção).  
+- Status técnico.  
+- Status financeiro.  
+- Cliente/OS (opcional).
+
+## Colunas / cards exibidos
+- Técnico.  
+- Quantidade de OS.  
+- Tempo médio por status.  
+- Taxa de compliance (% dentro do SLA).  
+- Violações por status.  
+- KPI agregados (Total OS, Total Violações, Taxa de Compliance).
 
 ## Passo a passo
-1. Acesse o menu correspondente ao módulo `Relatórios`.
-2. Abra a funcionalidade `Desempenho de Técnicos`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
-
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+1) Escolha o período e técnicos.  
+2) Aplique filtros de status conforme análise desejada.  
+3) Revise cards de KPI e a tabela por técnico/status.  
+4) Exporte se disponível (csv/xlsx).
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Período sem dados retornando tabela vazia.  
+- Comparar técnicos sem aplicar o mesmo conjunto de status.
 
-## Permissões necessárias
-- report.performance
+## Permissões necessárias (nomes no sistema)
+- Visualizar relatório de desempenho de técnicos
 
 ## Relacionados
 - [administracao/controle-de-produtividade](/docs/administracao/controle-de-produtividade)
@@ -66,5 +75,4 @@ Analise produtividade técnica e indicadores de execução em campo.
 - report.performance
 
 ## Conteúdo detalhado (PDF 11.2 Desempenho de Técnicos)
-
 

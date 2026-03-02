@@ -11,6 +11,13 @@ tags:
   - gestao
 permissionHints:
   - maintenance_contract.list
+permissionDescriptions:
+  - Listar contratos de manutenção
+  - Visualizar contrato de manutenção
+  - Criar contrato de manutenção
+  - Atualizar contrato de manutenção
+  - Deletar contrato de manutenção
+  - Gerar relatório de contratos
 order: 32
 version: v2
 description: Cadastre contratos recorrentes e regras de manutenção associadas.
@@ -20,31 +27,43 @@ related:
   - gestao/agendamentos-de-manutencao
 ---
 ## Quando usar
-Cadastre contratos recorrentes e regras de manutenção associadas.
+Para registrar contratos de manutenção recorrente com SLA, equipamentos cobertos, serviços e condições financeiras.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/contract/maintenance`.
+## Acesso
+Menu lateral → Gestão → Contratos de Manutenção
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Gestão`.
-2. Abra a funcionalidade `Contratos de Manutenção`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Novo contrato
+1) Clique em **Novo Contrato** (aba Manutenção).  
+2) **Cabeçalho**: Cliente*, Data de Início*, Data de Término*, Valor Mensal* (mín. R$0,01), Renovável (toggle), Índice de Reajuste (opcional IGPM/IPCA), Tipo de Cobertura*, Peças Incluídas (sim/não), Periodicidade de Preventiva (opcional).  
+3) **SLA**: Canal de SLA (e-mail/whatsapp/telefone/portal/outro), Tempo de Resposta SLA (horas).  
+4) **Responsabilidades**: Frete (Cliente/Empresa), Seguro (Cliente/Empresa).  
+5) **Equipamentos***: mínimo 1; selecione Equipamento, Número de Série*, marque Backup se aplicável, adicione Acessórios e quantidades.  
+6) **Serviços***: mínimo 1; selecione mão de obra coberta.  
+7) Condições adicionais (texto).  
+8) Salve.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Campos e validações
+- Datas em `yyyy-mm-dd`; Data de Início/Término obrigatórias.  
+- Valor Mensal*: ≥0,01.  
+- Equipamentos*: mínimo 1; série obrigatória.  
+- Serviços*: mínimo 1.  
+- Campos de cobertura/SLA/índices opcionais mas recomendados para clareza contratual.
+
+## Mensagens frequentes
+- “Cliente é obrigatório”  
+- “Data de início é obrigatória”  
+- “Valor deve ser no mínimo R$ 0,01”  
+- “Selecione pelo menos um equipamento”  
+- “Pelo menos um serviço é obrigatório”
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Não marcar Peças Incluídas corretamente, causando cobrança errada.  
+- Omitir Periodicidade de Preventiva e perder agendamento automático.  
+- Não preencher série dos equipamentos, prejudicando rastreabilidade.
 
-## Permissões necessárias
-- maintenance_contract.list
+## Permissões necessárias (nomes no sistema)
+- Listar/Visualizar/Criar/Atualizar/Deletar contrato de manutenção
+- Gerar relatório de contratos
 
 ## Relacionados
 - [gestao/agendamentos-de-manutencao](/docs/gestao/agendamentos-de-manutencao)
@@ -67,5 +86,4 @@ Cadastre contratos recorrentes e regras de manutenção associadas.
 - Listar contratos de manutenção
 
 ## Conteúdo detalhado (PDF 5.4 Contratos de Manutenção)
-
 

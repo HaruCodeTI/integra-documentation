@@ -11,6 +11,10 @@ tags:
   - documentos
 permissionHints:
   - financial.billing_list
+permissionDescriptions:
+  - Listar faturamento
+  - Gerar NF de orçamento
+  - Gerar NF de ordem de serviço
 order: 41
 version: v2
 description: Execute faturamento e acompanhe evolução de documentos emitidos.
@@ -21,31 +25,48 @@ related:
   - financeiro/central-dfe-documentos-fiscais
 ---
 ## Quando usar
-Execute faturamento e acompanhe evolução de documentos emitidos.
+Para gerar NF-e ou NFS-e a partir de orçamentos aprovados ou OS finalizadas, conferindo cenário fiscal e itens antes da emissão.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/financial/billing`.
+## Acesso
+Menu lateral → Financeiro → Faturamento
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Financeiro`.
-2. Abra a funcionalidade `Faturamento`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Gerar documento fiscal
+1) Filtre itens faturáveis por **Período**, **Origem** (Orçamento ou OS) e **Cliente**.  
+2) Abra o item faturável.  
+3) Clique em **Gerar Documento Fiscal**.  
+4) Revise campos fiscais (Natureza de Operação, alíquotas, itens).  
+5) Confirme a emissão.  
+6) Acompanhe o status em **Documentos Fiscais**.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Campos (NF-e)
+- Natureza da Operação*: texto até 60.  
+- Itens*: mínimo 1; CFOP (4 dígitos), NCM (8 dígitos), Quantidade >0, Valor Unitário ≥0, Desconto ≥0.  
+- Origem ICMS, CST/CSOSN ICMS, alíquotas ICMS/PIS/COFINS/IPI 0–100.  
+- Descontos afetam a base de cálculo; IPI somado ao total final.
+
+## Campos (NFS-e)
+- CNAE* (7 dígitos cadastrado em Configuração Fiscal).  
+- Código de Serviço LC 116* (formato 00.00).  
+- ISS Retido (sim/não) e **Valor ISS Retido** obrigatório se marcado.  
+- Alíquota ISS (0–100) conforme regime.  
+- Discriminação (até 2000 caracteres).  
+- Tributos opcionais: INSS, IR, PIS, COFINS, CSLL (≥0).
+
+## Mensagens frequentes
+- “CFOP deve ter 4 dígitos” / “NCM deve ter 8 dígitos”.  
+- “Valor de ISS retido é obrigatório quando ISS está marcado como retido”.  
+- “CNAE não cadastrado” ao tentar emitir NFS-e sem configuração fiscal.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Emitir sem cenário fiscal correto (CFOP/aliquotas).  
+- Selecionar origem errada (Orçamento vs OS).  
+- Deixar alíquotas fora de 0–100.  
+- Tentar NFS-e sem CNAE configurado.
 
-## Permissões necessárias
-- financial.billing_list
+## Permissões necessárias (nomes no sistema)
+- Listar faturamento
+- Gerar NF de orçamento
+- Gerar NF de ordem de serviço
 
 ## Relacionados
 - [comercial/pedidos-de-venda](/docs/comercial/pedidos-de-venda)
@@ -69,5 +90,4 @@ Execute faturamento e acompanhe evolução de documentos emitidos.
 - Listar itens para faturamento
 
 ## Conteúdo detalhado (PDF 8.4 Faturamento)
-
 

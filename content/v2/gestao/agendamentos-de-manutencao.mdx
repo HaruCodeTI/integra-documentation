@@ -11,6 +11,16 @@ tags:
   - contratos
 permissionHints:
   - maintenance_schedule.list
+permissionDescriptions:
+  - Listar agendamentos de manutenção
+  - Visualizar agendamento de manutenção
+  - Criar agendamento de manutenção
+  - Atualizar agendamento de manutenção
+  - Deletar agendamento de manutenção
+  - Visualizar avaliação de agendamento
+  - Avaliar agendamento de manutenção
+  - Atualizar tarefa de avaliação
+  - Gerar ordem de serviço
 order: 34
 version: v2
 description: Automatize e acompanhe agendamentos vinculados a contratos e ativos.
@@ -21,31 +31,44 @@ related:
   - gestao/contratos-de-manutencao
 ---
 ## Quando usar
-Automatize e acompanhe agendamentos vinculados a contratos e ativos.
+Para programar manutenções preventivas ou corretivas ligadas a contratos, locações ou ativos patrimoniais.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/maintenance-schedule`.
+## Acesso
+Menu lateral → Gestão → Agendamentos de Manutenção
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Gestão`.
-2. Abra a funcionalidade `Agendamentos de Manutenção`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Criar agendamento
+1) Clique em **Novo Agendamento**.  
+2) Informe **Título*** (até 255), **Descrição** opcional.  
+3) Data* (`yyyy-mm-dd`) e Horário* (`HH:MM`).  
+4) Duração* em minutos (15–480).  
+5) **Responsável*** (usuário).  
+6) Vínculos opcionais: Contrato de Manutenção, Contrato de Locação, Equipamento Patrimonial, Avaliação.  
+7) Salve.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Campos e validações
+- Título*: 1–255.  
+- Data*: não pode ser passada; formato `yyyy-mm-dd`.  
+- Horário*: `HH:MM`; não pode ser passado quando combinado com data.  
+- Duração*: 15–480 min.  
+- Responsável*: obrigatório.  
+- Vínculos: opcionais.
+
+## Mensagens frequentes
+- “Título é obrigatório / deve ter no máximo 255 caracteres”.  
+- “Data deve estar no formato YYYY-MM-DD”.  
+- “Duração mínima de 15 minutos / máxima de 8 horas”.  
+- “Responsável é obrigatório”.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Agendar no passado (data/horário inválidos).  
+- Duração fora do intervalo.  
+- Não vincular contrato quando o atendimento está coberto (perde rastreabilidade).  
+- Conflito de agenda do responsável (alerta).
 
-## Permissões necessárias
-- maintenance_schedule.list
+## Permissões necessárias (nomes no sistema)
+- Listar/Visualizar/Criar/Atualizar/Deletar agendamento de manutenção
+- Visualizar/Avaliar/Atualizar avaliação de agendamento
+- Gerar ordem de serviço
 
 ## Relacionados
 - [operacoes/agenda-de-manutencao](/docs/operacoes/agenda-de-manutencao)
@@ -69,5 +92,4 @@ Automatize e acompanhe agendamentos vinculados a contratos e ativos.
 - Listar agendamentos de manutenção
 
 ## Conteúdo detalhado (PDF 5.6 Agendamentos de Manutenção)
-
 

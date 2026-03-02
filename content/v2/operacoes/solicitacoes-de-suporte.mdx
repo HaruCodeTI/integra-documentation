@@ -11,6 +11,11 @@ tags:
   - atendimento
 permissionHints:
   - support.list
+permissionDescriptions:
+  - Listar solicitações de suporte
+  - Criar solicitação de suporte
+  - Atualizar solicitação de suporte
+  - Deletar solicitação de suporte
 order: 25
 version: v2
 description: Abra e acompanhe solicitações de suporte técnico e operacional.
@@ -20,31 +25,46 @@ related:
   - acesso-e-navegacao/resolucao-de-problemas-comuns
 ---
 ## Quando usar
-Abra e acompanhe solicitações de suporte técnico e operacional.
+Para abrir chamados internos de suporte (bug, sugestão, solicitação de serviço) e acompanhar até a conclusão.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/support`.
+## Acesso
+Menu lateral → Operações → Suporte
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Operações`.
-2. Abra a funcionalidade `Solicitações de Suporte`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Tipos de solicitação
+- **Bug**, **Sugestão de Melhoria**, **Solicitação de Serviço**.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Passo a passo — Abrir solicitação
+1) Clique em **Nova Solicitação**.  
+2) Selecione **Tipo*** (bug/sugestão/serviço).  
+3) Informe **Título*** (1–255) e **Descrição*** (detalhada; para bug, inclua passos).  
+4) Se Tipo = Bug, informe **Data do Erro*** e **Comportamento Esperado** (opcional).  
+5) Anexe **Evidências** (opcional; formatos imagem/PDF/DOC/DOCX/XLS/XLSX/CSV/TXT/LOG; máx. 10 MB cada; apenas na criação).  
+6) Salve.
+
+## Edição
+- Apenas solicitações com status **Aberta** podem ser editadas; demais ficam bloqueadas.
+
+## Campos e validações
+- Tipo*: obrigatório; valida valores permitidos.  
+- Título*: 1–255.  
+- Descrição*: obrigatória.  
+- Data do Erro*: obrigatória quando Tipo = Bug; formato `yyyy-mm-dd`.  
+- Evidências: máximo 10 MB cada; somente na criação.
+
+## Mensagens frequentes
+- “Tipo obrigatório/Tipo inválido”.  
+- “Título é obrigatório / deve ter no máximo 255 caracteres”.  
+- “Descrição é obrigatória”.  
+- “Data do erro é obrigatória para o tipo Bug”.  
+- “Arquivo excede 10MB”.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Tentar editar chamada já fechada (status diferente de Aberta).  
+- Tentar anexar evidência na edição (permitido só na criação).  
+- Anexar arquivo >10MB ou formato não aceito.
 
-## Permissões necessárias
-- support.list
+## Permissões necessárias (nomes no sistema)
+- Listar/Criar/Atualizar/Deletar solicitações de suporte
 
 ## Relacionados
 - [acesso-e-navegacao/resolucao-de-problemas-comuns](/docs/acesso-e-navegacao/resolucao-de-problemas-comuns)
@@ -67,5 +87,4 @@ Abra e acompanhe solicitações de suporte técnico e operacional.
 - support.list
 
 ## Conteúdo detalhado (PDF 3.5 Solicitações de Suporte)
-
 

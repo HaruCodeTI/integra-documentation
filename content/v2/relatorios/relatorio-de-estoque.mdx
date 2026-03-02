@@ -11,6 +11,8 @@ tags:
   - movimentacao
 permissionHints:
   - stock.stock_export
+permissionDescriptions:
+  - Exportar relatório de estoque
 order: 54
 version: v2
 description: 'Monitore níveis de estoque, movimentação e cobertura de itens.'
@@ -20,31 +22,39 @@ related:
   - gestao/hub-de-estoque
 ---
 ## Quando usar
-Monitore níveis de estoque, movimentação e cobertura de itens.
+Para visualizar saldos e movimentações de estoque (equipamentos, peças, produtos) e exportar para análise.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/report/stock`.
+## Acesso
+Menu lateral → Relatórios → Relatório de Estoque
+
+## Filtros
+- Tipo de item: Equipamento, Peça ou Produto.  
+- Lote (para peças).  
+- Categoria / Família / Marca.  
+- Status de estoque.  
+- Depósito/Localização (se disponível).
+
+## Colunas típicas
+- Item (modelo/nome).  
+- Tipo (Equipamento/Peça/Produto).  
+- Lote (quando houver).  
+- Quantidade disponível.  
+- Unidade de medida.  
+- Localização/Depósito.  
+- Status (ativo/inativo/lote inativo).  
+- Última movimentação.
 
 ## Passo a passo
-1. Acesse o menu correspondente ao módulo `Relatórios`.
-2. Abra a funcionalidade `Relatório de Estoque`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
-
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+1) Selecione filtros de tipo, categoria/marca e, para peças, o lote.  
+2) Aplique o filtro.  
+3) Revise a tabela e, se necessário, clique em **Exportar** para gerar CSV/XLSX.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Exportação vazia por filtro excessivamente restritivo.  
+- Consultar lote inativo e interpretar como falta de estoque.
 
-## Permissões necessárias
-- stock.stock_export
+## Permissões necessárias (nomes no sistema)
+- Exportar relatório de estoque
 
 ## Relacionados
 - [gestao/hub-de-estoque](/docs/gestao/hub-de-estoque)
@@ -67,5 +77,4 @@ Monitore níveis de estoque, movimentação e cobertura de itens.
 - Exportar relatório de estoque
 
 ## Conteúdo detalhado (PDF 11.3 Relatório de Estoque)
-
 

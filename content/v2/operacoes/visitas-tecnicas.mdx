@@ -11,6 +11,12 @@ tags:
   - atendimento
 permissionHints:
   - technical_visit.list
+permissionDescriptions:
+  - Listar visitas técnicas
+  - Visualizar visita técnica
+  - Criar visita técnica
+  - Atualizar visita técnica
+  - Deletar visita técnica
 order: 24
 version: v2
 description: 'Registre visitas, etapas de atendimento e histórico técnico.'
@@ -20,31 +26,39 @@ related:
   - operacoes/ordem-de-servico
 ---
 ## Quando usar
-Registre visitas, etapas de atendimento e histórico técnico.
+Para planejar e registrar deslocamentos técnicos ao cliente, com endereço, responsável e vínculos com OS.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/technical-visit`.
+## Acesso
+Menu lateral → Operações → Visitas Técnicas
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Operações`.
-2. Abra a funcionalidade `Visitas Técnicas`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Criar visita técnica
+1) Clique em **Nova Visita Técnica**.  
+2) Aba **Dados da Visita**: Título*, Descrição, Data* (`yyyy-mm-dd`), Horário* (`HH:MM`), Endereço*, Observações.  
+3) Aba **Vínculos**: Cliente*, Técnico Responsável*, OS (opcional).  
+4) Aba **Recorrência** (opcional): marcar recorrente e escolher periodicidade (Semanal, Quinzenal, Mensal, Bimestral, Trimestral, Semestral, Anual); Data Final opcional.  
+5) Salve.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Campos e validações
+- Título*: 1–255.  
+- Data*: `yyyy-mm-dd`; Horário*: `HH:MM`; não podem ser passados.  
+- Endereço*: obrigatório.  
+- Cliente*, Técnico Responsável*: obrigatórios.  
+- Recorrência: Periodicidade obrigatória se recorrente ativado; Data Final opcional.
+
+## Mensagens frequentes
+- “Título é obrigatório” / “Título deve ter no máximo 255 caracteres”.  
+- “Endereço é obrigatório”.  
+- “Data deve estar no formato YYYY-MM-DD”.  
+- “Horário deve estar no formato HH:MM”.  
+- “Cliente é obrigatório”; “Técnico responsável é obrigatório”.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Habilitar recorrência sem definir periodicidade.  
+- Endereço ausente confiando apenas no cadastro do cliente.  
+- Data/horário no passado.
 
-## Permissões necessárias
-- technical_visit.list
+## Permissões necessárias (nomes no sistema)
+- Listar/Visualizar/Criar/Atualizar/Deletar visita técnica
 
 ## Relacionados
 - [operacoes/ordem-de-servico](/docs/operacoes/ordem-de-servico)
@@ -67,5 +81,4 @@ Registre visitas, etapas de atendimento e histórico técnico.
 - Listar visitas técnicas
 
 ## Conteúdo detalhado (PDF 3.4 Visitas Técnicas)
-
 

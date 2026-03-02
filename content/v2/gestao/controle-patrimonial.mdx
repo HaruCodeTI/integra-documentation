@@ -11,6 +11,16 @@ tags:
   - movimentacao
 permissionHints:
   - equipment.show_asset_equipment
+permissionDescriptions:
+  - Visualizar equipamento do controle de equipamentos
+  - Listar equipamentos do controle de equipamentos
+  - Criar equipamento do controle de equipamentos
+  - Atualizar equipamento do controle de equipamentos
+  - Mover equipamento do controle de equipamentos
+  - Baixar equipamento do controle de equipamentos
+  - Agendar manutenção de equipamento do controle de equipamentos
+  - Atualizar valor do equipamento do controle de equipamentos
+  - Gerar relatório de ativo fixo
 order: 31
 version: v2
 description: Controle movimentações e ciclo de vida de ativos patrimoniais.
@@ -20,31 +30,48 @@ related:
   - gestao/historico-de-equipamentos
 ---
 ## Quando usar
-Controle movimentações e ciclo de vida de ativos patrimoniais.
+Para controlar o ciclo de vida de ativos patrimoniais: cadastro, movimentação, baixa, agendamento de manutenção e valor contábil.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/asset-equipment`.
+## Acesso
+Menu lateral → Gestão → Controle de Equipamentos (Patrimônio)
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Gestão`.
-2. Abra a funcionalidade `Controle Patrimonial`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Cadastrar ativo
+1) Clique em **Novo Equipamento Patrimonial**.  
+2) Informe modelo (do catálogo), número de série, status, localização e valor.  
+3) Salve.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Passo a passo — Movimentar/baixar
+1) Abra o ativo.  
+2) Use ações de **Mover** (altera localização/cliente) ou **Baixar** (retira do ativo).  
+3) Registre data e motivo; confirme.
+
+## Passo a passo — Agendar manutenção
+1) No ativo, escolha **Agendar manutenção**.  
+2) Preencha data/hora, duração e responsável (integra com Agendamentos de Manutenção).  
+3) Salve.
+
+## Campos e validações
+- Modelo*, Número de Série*, Status*, Localização, Valor.  
+- Movimentação exige data/motivo; Baixa exige data/motivo de baixa.  
+- Datas em `yyyy-mm-dd`; valor numérico ≥0.
+
+## Mensagens frequentes
+- “Número de série obrigatório”.  
+- “Valor deve ser numérico”.  
+- “Motivo obrigatório” em baixa/movimentação.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Não registrar baixa ao retirar ativo, mantendo estoque inflado.  
+- Movimentar sem data/motivo, perdendo rastreabilidade.  
+- Não agendar manutenção preventiva após incluir ativo crítico.
 
-## Permissões necessárias
-- equipment.show_asset_equipment
+## Permissões necessárias (nomes no sistema)
+- Visualizar/Listar/Criar/Atualizar equipamento patrimonial
+- Mover equipamento patrimonial
+- Baixar equipamento patrimonial
+- Agendar manutenção de equipamento patrimonial
+- Atualizar valor do equipamento patrimonial
+- Gerar relatório de ativo fixo
 
 ## Relacionados
 - [gestao/historico-de-equipamentos](/docs/gestao/historico-de-equipamentos)
@@ -66,5 +93,4 @@ Controle movimentações e ciclo de vida de ativos patrimoniais.
 - Visualizar equipamento do controle de equipamentos
 
 ## Conteúdo detalhado (PDF 5.3 Controle Patrimonial)
-
 

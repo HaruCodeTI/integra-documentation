@@ -11,6 +11,10 @@ tags:
   - titulos
 permissionHints:
   - financial_movement.list
+permissionDescriptions:
+  - Listar contas a receber
+  - Visualizar conta a receber
+  - Liquidar conta a receber
 order: 39
 version: v2
 description: 'Controle recebimentos, vencimentos e conciliações de receita.'
@@ -20,31 +24,38 @@ related:
   - financeiro/faturamento
 ---
 ## Quando usar
-Controle recebimentos, vencimentos e conciliações de receita.
+Para consultar e liquidar títulos a receber (parcelas oriundas de OS ou orçamentos faturados), monitorando vencimentos.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/financial/receivables`.
+## Acesso
+Menu lateral → Financeiro → Contas a Receber
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Financeiro`.
-2. Abra a funcionalidade `Contas a Receber`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Consultar
+1) Use filtros: Período de vencimento, Status (Pendente/Liquidado/Todos), Cliente.  
+2) Clique em **Filtrar**.  
+3) Abra o título para ver valor, vencimento, cliente e origem (OS/Orçamento).
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Passo a passo — Liquidar
+1) Abra o detalhe do título.  
+2) Clique **Liquidar** e confirme.  
+> Liquidação é irreversível; confirme apenas se o pagamento foi recebido.
+
+## Campos e validações
+- Data de vencimento: filtro em `yyyy-mm-dd`.  
+- Status: Pendente ou Liquidado.  
+- Cliente: busca por nome/razão social.
+
+## Mensagens frequentes
+- “Data obrigatória” (quando filtro exigir).  
+- “Título não encontrado” (filtro sem resultado).
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Liquidar título sem confirmação de pagamento.  
+- Período de filtro incorreto ocultando títulos pendentes.
 
-## Permissões necessárias
-- financial_movement.list
+## Permissões necessárias (nomes no sistema)
+- Listar contas a receber
+- Visualizar conta a receber
+- Liquidar conta a receber
 
 ## Relacionados
 - [financeiro/faturamento](/docs/financeiro/faturamento)
@@ -67,5 +78,4 @@ Controle recebimentos, vencimentos e conciliações de receita.
 - Listar contas a receber
 
 ## Conteúdo detalhado (PDF 8.2 Contas a Receber)
-
 

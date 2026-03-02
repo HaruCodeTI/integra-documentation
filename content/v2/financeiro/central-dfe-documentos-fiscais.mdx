@@ -11,6 +11,9 @@ tags:
   - documentos
 permissionHints:
   - fiscal_config.list_documents
+permissionDescriptions:
+  - Listar documentos fiscais
+  - Reenviar webhook de documento fiscal
 order: 42
 version: v2
 description: Consulte e gerencie documentos fiscais eletrônicos centralizados.
@@ -20,31 +23,40 @@ related:
   - financeiro/configuracoes-fiscais
 ---
 ## Quando usar
-Consulte e gerencie documentos fiscais eletrônicos centralizados.
+Para acompanhar o ciclo de vida de NF-e e NFS-e emitidas: autorização, erro, cancelamento e reenvio de webhook.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/financial/fiscal-documents`.
+## Acesso
+Menu lateral → Financeiro → Documentos Fiscais
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Financeiro`.
-2. Abra a funcionalidade `Central DFe / Documentos Fiscais`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Status possíveis
+- Pendente, Em Processamento, Autorizado, Cancelado, Erro, Denegado.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Passo a passo — Consultar
+1) Filtre por Período (data de emissão), Status e Tipo (NF-e/NFS-e).  
+2) Clique em **Filtrar**.  
+3) Abra o documento para ver número, data, cliente, status e eventos.
+
+## Passo a passo — Reenviar webhook
+1) Abra documento com status **Erro** ou que precise reprocessar.  
+2) Clique em **Reenviar Webhook**.  
+3) Aguarde atualização do status.
+
+## Campos e validações
+- Período: datas em `yyyy-mm-dd`.  
+- Tipo: NF-e ou NFS-e.  
+- Status: conforme lista acima.
+
+## Mensagens frequentes
+- Erro de dados (CNPJ inválido, alíquota incorreta) requer corrigir na origem antes de reenviar.  
+- “Documento denegado” — rever dados fiscais e reemitir.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Reenviar webhook para erro de dados (não resolve); ajustar origem primeiro.  
+- Filtro de período errado não mostra o documento.
 
-## Permissões necessárias
-- fiscal_config.list_documents
+## Permissões necessárias (nomes no sistema)
+- Listar documentos fiscais
+- Reenviar webhook de documento fiscal
 
 ## Relacionados
 - [financeiro/configuracoes-fiscais](/docs/financeiro/configuracoes-fiscais)
@@ -67,5 +79,4 @@ Consulte e gerencie documentos fiscais eletrônicos centralizados.
 - Listar documentos fiscais
 
 ## Conteúdo detalhado (PDF 8.5 Central DFe / Documentos Fiscais)
-
 

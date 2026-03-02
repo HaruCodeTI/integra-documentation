@@ -11,6 +11,8 @@ tags:
   - tributacao
 permissionHints:
   - fiscal_config.list
+permissionDescriptions:
+  - Acessar configuração fiscal
 order: 43
 version: v2
 description: Configure parâmetros fiscais usados em emissão e integração.
@@ -21,31 +23,37 @@ related:
   - financeiro/naturezas-de-operacao-tipos-de-operacao
 ---
 ## Quando usar
-Configure parâmetros fiscais usados em emissão e integração.
+Para manter dados fiscais do emitente (empresa) usados na emissão de NF-e e NFS-e. Pré-requisito para faturamento.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/financial/fiscal-config`.
+## Acesso
+Menu lateral → Financeiro → Configurações Fiscais
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Financeiro`.
-2. Abra a funcionalidade `Configurações Fiscais`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Estrutura do formulário
+Três seções (accordions):  
+1) **Dados da Empresa**: CNPJ*, Razão Social*, Nome Fantasia, Inscrição Municipal*, Inscrição Estadual, Regime Tributário*, CNAEs.  
+2) **Endereço**: CEP*, Logradouro, Número, Bairro, Cidade, Estado.  
+3) **Contato**: E-mail e Telefone fiscais.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Passo a passo — Preencher dados da empresa
+1) Informe **CNPJ*** e clique **Consultar**: preenche automático Razão Social, endereço e CNAE principal.  
+2) Revise/complemente Razão Social*, Nome Fantasia, Inscrição Municipal*, Inscrição Estadual, Regime Tributário*, CNAEs.  
+3) Ajuste endereço se necessário.  
+4) Salve.
+
+## Campos e validações
+- CNPJ*: obrigatório; consulta automática.  
+- Inscrição Municipal*: obrigatória para NFS-e.  
+- Regime Tributário*: obrigatório.  
+- CEP*: 8 dígitos, busca automática de endereço.  
+- CNAE*: obrigatório para emissão NFS-e.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Tentar emitir NFS-e sem Inscrição Municipal ou CNAE.  
+- Endereço incompleto por não usar **Buscar** no CEP.  
+- CNPJ inválido ou não consultado.
 
-## Permissões necessárias
-- fiscal_config.list
+## Permissões necessárias (nomes no sistema)
+- Acessar configuração fiscal
 
 ## Relacionados
 - [financeiro/central-dfe-documentos-fiscais](/docs/financeiro/central-dfe-documentos-fiscais)
@@ -69,5 +77,4 @@ Configure parâmetros fiscais usados em emissão e integração.
 - Acessar configuração fiscal
 
 ## Conteúdo detalhado (PDF 8.6 Configurações Fiscais)
-
 

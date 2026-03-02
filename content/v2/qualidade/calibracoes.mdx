@@ -11,6 +11,12 @@ tags:
   - qualidade
 permissionHints:
   - quality.calibrations_list
+permissionDescriptions:
+  - Listar calibrações
+  - Visualizar calibrações
+  - Criar calibrações
+  - Atualizar calibrações
+  - Deletar calibrações
 order: 47
 version: v2
 description: Gerencie o ciclo de calibração de instrumentos e alertas de prazo.
@@ -20,31 +26,31 @@ related:
   - cadastros/instrumentos
 ---
 ## Quando usar
-Gerencie o ciclo de calibração de instrumentos e alertas de prazo.
+Para controlar calibrações de instrumentos, registrar certificados e programar próximas datas.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/quality/calibrations`.
+## Acesso
+Menu lateral → Qualidade → Calibrações
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Qualidade`.
-2. Abra a funcionalidade `Calibrações`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Registrar calibração
+1) Selecione o **Instrumento***.  
+2) Informe **Data da Calibração*** (`yyyy-mm-dd`).  
+3) Informe **Próxima Calibração*** (`yyyy-mm-dd`, futura).  
+4) Preencha **Certificadora** (opcional), **Resultado/Observações** (opcional).  
+5) Salve para ativar alertas de vencimento.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Campos e validações
+- Instrumento*: obrigatório; escolhido da base de instrumentos.  
+- Data da Calibração*: data válida.  
+- Próxima Calibração*: obrigatória; deve ser futura.  
+- Certificadora/Resultado/Observações: texto opcional.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Próxima calibração vazia ou em data passada.  
+- Data fora do formato `yyyy-mm-dd`.  
+- Registrar calibração para instrumento inativo.
 
-## Permissões necessárias
-- quality.calibrations_list
+## Permissões necessárias (nomes no sistema)
+- Listar/Visualizar/Criar/Atualizar/Deletar calibrações
 
 ## Relacionados
 - [cadastros/instrumentos](/docs/cadastros/instrumentos)
@@ -67,5 +73,3 @@ Gerencie o ciclo de calibração de instrumentos e alertas de prazo.
 - Listar calibrações
 
 ## Conteúdo detalhado (PDF 9.2 Calibrações)
-
-

@@ -11,6 +11,12 @@ tags:
   - gestao
 permissionHints:
   - rental_contract.list
+permissionDescriptions:
+  - Listar contratos de locação
+  - Visualizar contrato de locação
+  - Criar contrato de locação
+  - Atualizar contrato de locação
+  - Deletar contrato de locação
 order: 33
 version: v2
 description: 'Gerencie contratos de locação com itens, prazos e status.'
@@ -20,31 +26,40 @@ related:
   - gestao/controle-patrimonial
 ---
 ## Quando usar
-Gerencie contratos de locação com itens, prazos e status.
+Para registrar contratos de locação de equipamentos, com status de assinatura, serviços incluídos e backup.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/contract/rental`.
+## Acesso
+Menu lateral → Gestão → Contratos (aba Locação)
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Gestão`.
-2. Abra a funcionalidade `Contratos de Locação`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Novo contrato de locação
+1) Clique em **Novo Contrato** na aba Locação.  
+2) **Cabeçalho**: Cliente*, Status (Pendente de Assinatura/Expirado/Assinado/Em Vigor/Recusado), Data de Início*, Data de Término*, Valor Mensal* (mín. R$0,01), Renovável, Índice de Reajuste (IGPM/IPCA).  
+3) **Serviços/Opções**: Manutenção Incluída (sim/não), Equipamento de Backup (sim/não).  
+4) **SLA/Responsabilidades**: Canal de SLA, Tempo de Resposta SLA, Frete (Cliente/Empresa), Seguro (Cliente/Empresa).  
+5) **Pagamento**: Método de Pagamento (Crédito, Débito, PIX, Transferência, Boleto, Dinheiro).  
+6) **Equipamentos***: mínimo 1; selecione equipamento patrimonial, marque Backup se houver, adicione acessórios.  
+7) Salve.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Campos e validações
+- Datas `yyyy-mm-dd`; início e término obrigatórios.  
+- Valor Mensal*: ≥0,01.  
+- Status: opcional na criação, define situação do contrato.  
+- Equipamentos*: mínimo 1.  
+- SLA/Responsabilidades opcionais mas recomendados.
+
+## Mensagens frequentes
+- “Cliente é obrigatório”  
+- “Data de início é obrigatória”  
+- “Valor deve ser no mínimo R$ 0,01”  
+- “Selecione pelo menos um equipamento”
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Deixar contrato em Pendente de Assinatura após firmado.  
+- Não marcar Equipamento de Backup quando previsto.  
+- Não vincular equipamento patrimonial (usa controle patrimonial, não catálogo).
 
-## Permissões necessárias
-- rental_contract.list
+## Permissões necessárias (nomes no sistema)
+- Listar/Visualizar/Criar/Atualizar/Deletar contrato de locação
 
 ## Relacionados
 - [gestao/controle-patrimonial](/docs/gestao/controle-patrimonial)
@@ -67,5 +82,4 @@ Gerencie contratos de locação com itens, prazos e status.
 - Listar contratos de locação
 
 ## Conteúdo detalhado (PDF 5.5 Contratos de Locacao)
-
 

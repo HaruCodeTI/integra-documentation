@@ -11,6 +11,11 @@ tags:
   - fiscal
 permissionHints:
   - operation_type.list
+permissionDescriptions:
+  - Listar naturezas de operação
+  - Criar natureza de operação
+  - Atualizar natureza de operação
+  - Deletar natureza de operação
 order: 44
 version: v2
 description: Defina naturezas de operação para controle tributário e fiscal.
@@ -20,31 +25,35 @@ related:
   - financeiro/configuracoes-fiscais
 ---
 ## Quando usar
-Defina naturezas de operação para controle tributário e fiscal.
+Para cadastrar as naturezas de operação (cenários fiscais) usadas no faturamento, definindo CFOP e regras de tributos.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/financial/operation-types`.
+## Acesso
+Menu lateral → Financeiro → Naturezas de Operação
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Financeiro`.
-2. Abra a funcionalidade `Naturezas de Operação / Tipos de Operação`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Nova natureza
+1) Clique em **Nova Natureza de Operação**.  
+2) Preencha **Nome/Descrição*** (cenário fiscal).  
+3) Defina **CFOP*** (4 dígitos) e parâmetros fiscais conforme a operação.  
+4) Salve.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Campos e validações
+- Nome/Descrição*: texto obrigatório.  
+- CFOP*: 4 dígitos numéricos.  
+- Demais campos fiscais conforme operação (base, alíquotas, CST, etc.).
+
+## Mensagens frequentes
+- “CFOP deve ter 4 dígitos”.  
+- “Nome obrigatório”.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Selecionar CFOP incorreto para o tipo de operação (interna/interestadual).  
+- Não atualizar natureza ao mudar modelo de negócio e gerar impostos errados.
 
-## Permissões necessárias
-- operation_type.list
+## Permissões necessárias (nomes no sistema)
+- Listar naturezas de operação
+- Criar natureza de operação
+- Atualizar natureza de operação
+- Deletar natureza de operação
 
 ## Relacionados
 - [financeiro/configuracoes-fiscais](/docs/financeiro/configuracoes-fiscais)
@@ -67,5 +76,4 @@ Defina naturezas de operação para controle tributário e fiscal.
 - Listar naturezas de operação
 
 ## Conteúdo detalhado (PDF 8.7 Naturezas de Operação / Tipos de Operação)
-
 

@@ -11,6 +11,14 @@ tags:
   - os
 permissionHints:
   - budget.list
+permissionDescriptions:
+  - Listar orçamentos
+  - Visualizar orçamento
+  - Criar orçamento
+  - Atualizar orçamento
+  - Deletar orçamento
+  - Atualizar status do orçamento
+  - Enviar orçamento
 order: 22
 version: v2
 description: 'Monte orçamentos, aprove e acompanhe pendências do cliente.'
@@ -21,31 +29,46 @@ related:
   - financeiro/faturamento
 ---
 ## Quando usar
-Monte orçamentos, aprove e acompanhe pendências do cliente.
+Para montar propostas técnicas/comerciais antes do atendimento (Venda ou Serviço), com cálculo de valores e posterior faturamento.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/budget`.
+## Acesso
+Menu lateral → Operações → Orçamentos
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Operações`.
-2. Abra a funcionalidade `Orçamentos`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Classificação
+- **Natureza***: Venda ou Serviço.  
+- **Tipo***: Simulação (estimativa interna) ou Formal (proposta oficial).  
+  - Cliente é obrigatório apenas em **Formal**; em Simulação é opcional.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Passo a passo — Criar orçamento
+1) Clique em **Novo Orçamento**.  
+2) Escolha **Natureza*** (Venda/Serviço) e **Tipo*** (Simulação/Formal).  
+3) Se Tipo = Formal, selecione **Cliente***; opcionalmente vincule **Ordem de Serviço**.  
+4) Informe **Valor total*** (>0) e **Valor do frete** (opcional).  
+5) (Conforme modelo do sistema) adicione itens/serviços se disponível; revise totais.  
+6) Salve; envie ao cliente se aplicável.
+
+## Campos e validações
+- Natureza*: obrigatório.  
+- Tipo*: obrigatório.  
+- Cliente*: obrigatório apenas para Tipo Formal.  
+- Valor total*: deve ser >0.  
+- Valor de frete: ≥0 quando preenchido.  
+- Datas em `yyyy-mm-dd` quando exibidas (ex.: validade, previsão).
+
+## Mensagens frequentes
+- “Cliente é obrigatório” (Tipo Formal).  
+- “Valor total deve ser maior que zero”.  
+- “Natureza/Tipo obrigatórios”.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Criar orçamento Formal sem vincular cliente.  
+- Deixar valor total zerado.  
+- Não selecionar Natureza/Tipo corretos (impacta impostos e itens).
 
-## Permissões necessárias
-- budget.list
+## Permissões necessárias (nomes no sistema)
+- Listar/Visualizar/Criar/Atualizar/Deletar orçamento
+- Atualizar status do orçamento
+- Enviar orçamento
 
 ## Relacionados
 - [operacoes/ordem-de-servico](/docs/operacoes/ordem-de-servico)
@@ -69,5 +92,4 @@ Monte orçamentos, aprove e acompanhe pendências do cliente.
 - Listar orçamentos
 
 ## Conteúdo detalhado (PDF 3.2 Orçamentos)
-
 

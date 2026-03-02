@@ -11,6 +11,10 @@ tags:
   - financeiro
 permissionHints:
   - financial.expenses_list
+permissionDescriptions:
+  - Listar despesas
+  - Visualizar despesa
+  - Liquidar despesa
 order: 40
 version: v2
 description: 'Gerencie despesas, aprovações e pagamentos com rastreabilidade.'
@@ -20,31 +24,38 @@ related:
   - financeiro/despesas
 ---
 ## Quando usar
-Gerencie despesas, aprovações e pagamentos com rastreabilidade.
+Para consultar e liquidar títulos a pagar (despesas), acompanhando vencimentos e status.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/financial/expenses`.
+## Acesso
+Menu lateral → Financeiro → Contas a Pagar
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Financeiro`.
-2. Abra a funcionalidade `Contas a Pagar`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Consultar
+1) Filtros: Período de vencimento, Status (Pendente/Liquidado/Todos), Fornecedor.  
+2) Clique em **Filtrar**.  
+3) Abra o título para ver valor, vencimento, fornecedor e origem.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Passo a passo — Liquidar
+1) Abra o detalhe do título.  
+2) Clique **Liquidar** e confirme.  
+> Liquidação é irreversível; valide pagamento antes.
+
+## Campos e validações
+- Datas em `yyyy-mm-dd`.  
+- Status: Pendente ou Liquidado.  
+- Fornecedor: busca por nome/razão social.
+
+## Mensagens frequentes
+- “Data obrigatória” (quando filtro exigir).  
+- “Título não encontrado”.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Liquidar sem pagamento confirmado.  
+- Aplicar filtro errado e não ver títulos em aberto.
 
-## Permissões necessárias
-- financial.expenses_list
+## Permissões necessárias (nomes no sistema)
+- Listar despesas
+- Visualizar despesa
+- Liquidar despesa
 
 ## Relacionados
 - [financeiro/despesas](/docs/financeiro/despesas)
@@ -67,5 +78,4 @@ Gerencie despesas, aprovações e pagamentos com rastreabilidade.
 - Listar despesas
 
 ## Conteúdo detalhado (PDF 8.3 Contas a Pagar)
-
 

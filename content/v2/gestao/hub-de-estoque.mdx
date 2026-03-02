@@ -13,6 +13,21 @@ permissionHints:
   - stock.list_part
   - stock.list_product
   - stock.list_equipment
+permissionDescriptions:
+  - Listar estoque de peça
+  - Visualizar estoque de peça
+  - Criar estoque de peça
+  - Atualizar estoque de peça
+  - Inativar lote de peça do estoque
+  - Listar estoque de produto
+  - Visualizar estoque de produto
+  - Criar estoque de produto
+  - Atualizar estoque de produto
+  - Listar estoque de equipamento
+  - Visualizar estoque de equipamento
+  - Criar estoque de equipamento
+  - Atualizar estoque de equipamento
+  - Deletar estoque de equipamento
 order: 29
 version: v2
 description: 'Gerencie estoques de equipamentos, peças e produtos no mesmo hub.'
@@ -22,33 +37,55 @@ related:
   - relatorios/relatorio-de-estoque
 ---
 ## Quando usar
-Gerencie estoques de equipamentos, peças e produtos no mesmo hub.
+Para gerenciar estoque de equipamentos (controle individual), peças (com lotes) e produtos no mesmo hub.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/stock`.
+## Acesso
+Menu lateral → Gestão → Estoque
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Gestão`.
-2. Abra a funcionalidade `Hub de Estoque`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Seções do hub
+- **Estoque de Equipamentos**: controle por item, série e localização.  
+- **Estoque de Peças (lotes)**: entrada e saída por lote, rastreando validade/status.  
+- **Estoque de Produtos**: itens de consumo sem lote.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Fluxo — Equipamentos
+1) Abra **Estoque de Equipamentos**.  
+2) Cadastre entrada: modelo, número de série, status.  
+3) Movimente (mover/baixar) quando sair do ativo fixo ou mudar localização.  
+4) Relatórios: use “Gerar relatório de ativo fixo”.
+
+## Fluxo — Peças (com lotes)
+1) Abra **Estoque de Peças**.  
+2) Para nova entrada, registre lote com quantidade, validade (se aplicável) e status.  
+3) Ajuste quantidades por movimentação; inative lote quando necessário.  
+4) Use rastreabilidade por lote para saídas.
+
+## Fluxo — Produtos
+1) Abra **Estoque de Produtos**.  
+2) Registre entradas simples (quantidade).  
+3) Atualize saldo conforme consumo/saída.
+
+## Campos e validações
+- Equipamento: modelo, número de série, status.  
+- Peça (lote): lote*, quantidade*, validade (se houver), status; inativar lote disponível.  
+- Produto: quantidade*.  
+- Datas em `yyyy-mm-dd`; quantidades numéricas ≥0.
+
+## Mensagens frequentes
+- “Quantidade deve ser maior que 0” ao registrar lote/entrada.  
+- “Número de série obrigatório” para equipamentos.  
+- “Lote inativo” ao tentar movimentar lote inativado.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Registrar peça sem lote e perder rastreabilidade.  
+- Não baixar equipamento ao desativar um ativo patrimonial.  
+- Usar lote vencido em saída.
 
-## Permissões necessárias
-- stock.list_part
-- stock.list_product
-- stock.list_equipment
+## Permissões necessárias (nomes no sistema)
+- Listar/Visualizar/Criar/Atualizar estoque de peça
+- Inativar lote de peça do estoque
+- Listar/Visualizar/Criar/Atualizar estoque de produto
+- Listar/Visualizar/Criar/Atualizar/Deletar estoque de equipamento
+- Gerar relatório de ativo fixo
 
 ## Relacionados
 - [relatorios/relatorio-de-estoque](/docs/relatorios/relatorio-de-estoque)
@@ -73,5 +110,4 @@ Gerencie estoques de equipamentos, peças e produtos no mesmo hub.
 - Listar estoque de equipamento
 
 ## Conteúdo detalhado (PDF 5.1 Hub de Estoque)
-
 

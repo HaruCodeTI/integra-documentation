@@ -11,6 +11,25 @@ tags:
   - assistencia
 permissionHints:
   - service_order.list
+permissionDescriptions:
+  - Listar ordens de serviço
+  - Visualizar ordem de serviço
+  - Criar ordem de serviço
+  - Atualizar ordem de serviço
+  - Iniciar ordem de serviço
+  - Confirmar atribuição de ordem de serviço
+  - Atribuir ordem de serviço
+  - Listar tipos de ordem de serviço
+  - Listar checklists de ordem de serviço
+  - Atualizar tarefa de checklists de ordem de serviço
+  - Visualizar avaliação
+  - Gerenciar itens de exceção
+  - Visualizar valor da ordem de serviço
+  - Atribuir labor
+  - Atualizar checklists do labor
+  - Listar status técnicos
+  - Listar status financeiros
+  - Gerar relatório de ordens de serviço
 order: 21
 version: v2
 description: 'Abra, acompanhe e finalize OS conforme o fluxo operacional.'
@@ -21,31 +40,61 @@ related:
   - operacoes/agenda-de-manutencao
 ---
 ## Quando usar
-Abra, acompanhe e finalize OS conforme o fluxo operacional.
+Para abrir, executar e encerrar ordens de serviço com rastreabilidade de cliente, equipamento, acessórios, serviços e peças.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/service-order`.
+## Acesso
+Menu lateral → Operações → Ordem de Serviço
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Operações`.
-2. Abra a funcionalidade `Ordem de Serviço`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Criar OS
+1) Clique em **Nova OS**.  
+2) Preencha o **Cabeçalho**:  
+   - Cliente* (busca CPF/CNPJ/nome).  
+   - Proprietário e Pagador (opcionais, quando diferentes).  
+   - Tipo de OS* (Padrão, Garantia, Contrato, Locação, Backup, Infiltrada).  
+   - Tipo de item* (Equipamento ou Peça).  
+3) **Equipamento/Peça**: selecione conforme o tipo; informe **Número de Série** opcional.  
+4) **Acessórios**: marque “Não possui” ou adicione pelo menos 1 acessório com **Quantidade***.  
+5) **Serviços**: selecione Serviço (mão de obra) e Responsável, informe valor quando aplicável.  
+6) **Peças utilizadas**: selecione peça, Quantidade*, Valor unitário, Motivo* (≥10 caracteres).  
+7) Transporte/Notas (opcional): transportadora, NF entrada/saída, datas.  
+8) Defeitos/Observações: Defeito relatado, Defeito encontrado, Observação.  
+9) **Checklist de avaliação** (opcional).  
+10) Relacionar OS e Orçamento, anexar Fotos/Mídias.  
+11) Revise **Valor total** e salve.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Campos e validações (principais)
+- Cliente*: obrigatório e ativo.  
+- Tipo de OS*: obrigatório.  
+- Tipo de item* + Equipamento/Peça* conforme seleção.  
+- Acessórios: marcar “Não possui” ou adicionar ≥1 acessório; Quantidade ≥1.  
+- Peças: Quantidade ≥1; Motivo* min. 10 caracteres.  
+- Datas NF: formato `yyyy-mm-dd`.  
+- Valores (serviços/peças/total): numéricos válidos.
+
+## Mensagens frequentes
+- “Cliente é obrigatório.”  
+- “Tipo de OS é obrigatório.”  
+- “Você deve marcar ‘Não possui acessórios’ ou adicionar acessórios.”  
+- “Quantidade deve ser no mínimo 1.”  
+- “Motivo é obrigatório para peças.”  
+- “Data deve estar no formato YYYY-MM-DD.”  
+- “Valor deve ser um número válido.”
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Salvar sem acessórios (nem marcar “Não possui”).  
+- Motivo de peça com &lt;10 caracteres.  
+- Datas de NF fora do formato.  
+- Não atualizar parcelas/valores após editar itens (total inconsistente).  
+- Não registrar transferência de propriedade quando equipamento muda de cliente.
 
-## Permissões necessárias
-- service_order.list
+## Permissões necessárias (nomes no sistema)
+- Listar/Visualizar/Criar/Atualizar ordens de serviço
+- Iniciar/Atribuir/Confirmar atribuição de OS
+- Listar status técnicos e financeiros
+- Visualizar valores de OS
+- Gerenciar exceções e checklists de OS
+- Atribuir labor e atualizar checklists do labor
+- Gerar relatório de ordens de serviço
 
 ## Relacionados
 - [operacoes/orcamentos](/docs/operacoes/orcamentos)
@@ -69,5 +118,3 @@ Abra, acompanhe e finalize OS conforme o fluxo operacional.
 - Listar ordens de serviço
 
 ## Conteúdo detalhado (PDF 3.1 Ordem de Serviço)
-
-
