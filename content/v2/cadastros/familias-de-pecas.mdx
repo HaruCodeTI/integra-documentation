@@ -11,6 +11,12 @@ tags:
   - classificacao
 permissionHints:
   - part_family.list
+permissionDescriptions:
+  - Listar famílias de peça
+  - Visualizar família de peça
+  - Criar família de peça
+  - Atualizar família de peça
+  - Deletar família de peça
 order: 15
 version: v2
 description: 'Organize peças por famílias para busca, filtros e relatórios.'
@@ -21,53 +27,40 @@ related:
   - relatorios/relatorio-de-estoque
 ---
 ## Quando usar
-Organize peças por famílias para busca, filtros e relatórios.
+Para agrupar peças por tipo ou função (ex.: Filtros, Sensores), garantindo organização e filtros consistentes.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/part-family`.
+## Acesso
+Menu lateral → Cadastros → Famílias de Peças
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Cadastros`.
-2. Abra a funcionalidade `Famílias de Peças`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Visão geral da listagem
+- Filtro por nome e status (Ativo/Inativo).  
+- Ações: criar, editar, ativar/inativar, excluir.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Passo a passo — Nova família
+1) Clique em **Nova Família**.  
+2) Informe **Nome*** (mín. 1 caractere).  
+3) Defina **Ativo** (toggle, padrão ligado).  
+4) Clique em **Cadastrar**.
+
+## Campos e validações
+- Nome*: texto ≥1.  
+- Ativo: toggle opcional; famílias inativas não aparecem ao criar peças.
+
+## Mensagens frequentes
+- “Nome obrigatório”.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Criar família e deixá-la inativa sem necessidade, ocultando-a na criação de peças.  
+- Duplicar nomes semelhantes gerando confusão.
 
-## Permissões necessárias
-- part_family.list
+## Permissões necessárias (nomes no sistema)
+- Listar famílias de peça
+- Visualizar família de peça
+- Criar família de peça
+- Atualizar família de peça
+- Deletar família de peça
 
 ## Relacionados
 - [cadastros/catalogo-de-pecas](/docs/cadastros/catalogo-de-pecas)
 - [relatorios/relatorio-de-estoque](/docs/relatorios/relatorio-de-estoque)
-
-
-## O que você pode fazer nesta página
-- Listar e filtrar registros.
-
-## Fluxo detalhado
-1. Acesse o menu Cadastros e abra Famílias de Peças.
-2. Use a busca/filtros da listagem para localizar registros.
-7. Revise mensagens de validação antes de concluir.
-
-## Campos e validações
-- Consulte o PDF seção 2.7 para nomes de campos, obrigatoriedade, máscaras e exemplos específicos.
-- Respeite formatos: datas em yyyy-mm-dd; e-mails válidos; documentos com dígitos completos.
-- Campos marcados com * são obrigatórios na criação e edição, quando exibidos.
-
-## Permissões necessárias (nomes no sistema)
-- Listar famílias de peça
-
-## Conteúdo detalhado (PDF 2.7 Familias de Peças)
-
 

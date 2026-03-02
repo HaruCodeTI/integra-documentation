@@ -217,6 +217,13 @@
     "permissionHints": [
       "customer.list"
     ],
+    "permissionDescriptions": [
+      "Listar clientes",
+      "Visualizar cliente",
+      "Criar cliente",
+      "Atualizar cliente",
+      "Deletar cliente"
+    ],
     "order": 9,
     "version": "v2",
     "description": "Cadastre e mantenha dados de clientes para operações e CRM.",
@@ -244,6 +251,17 @@
       "equipment.list",
       "equipment.list_category"
     ],
+    "permissionDescriptions": [
+      "Listar equipamento",
+      "Visualizar equipamento",
+      "Criar equipamento",
+      "Atualizar equipamento",
+      "Deletar equipamento",
+      "Listar categoria de equipamento",
+      "Criar categoria de equipamento",
+      "Atualizar categoria de equipamento",
+      "Deletar categoria de equipamento"
+    ],
     "order": 10,
     "version": "v2",
     "description": "Gerencie catálogo técnico e categorias usadas em estoque e OS.",
@@ -269,6 +287,13 @@
     ],
     "permissionHints": [
       "part.list"
+    ],
+    "permissionDescriptions": [
+      "Listar peças",
+      "Visualizar peça",
+      "Criar peça",
+      "Atualizar peça",
+      "Deletar peça"
     ],
     "order": 11,
     "version": "v2",
@@ -296,6 +321,14 @@
     "permissionHints": [
       "product.list"
     ],
+    "permissionDescriptions": [
+      "Listar produtos",
+      "Visualizar produto",
+      "Criar produto",
+      "Atualizar produto",
+      "Deletar produto",
+      "Atualizar registro ANVISA do produto"
+    ],
     "order": 12,
     "version": "v2",
     "description": "Registre produtos para venda, estoque e faturamento.",
@@ -322,6 +355,13 @@
     "permissionHints": [
       "accessory.list"
     ],
+    "permissionDescriptions": [
+      "Listar acessórios",
+      "Visualizar acessório",
+      "Criar acessório",
+      "Atualizar acessório",
+      "Deletar acessório"
+    ],
     "order": 13,
     "version": "v2",
     "description": "Cadastre acessórios vinculáveis a equipamentos e contratos.",
@@ -347,6 +387,13 @@
     "permissionHints": [
       "brand.list"
     ],
+    "permissionDescriptions": [
+      "Listar marcas",
+      "Visualizar marca",
+      "Criar marca",
+      "Atualizar marca",
+      "Deletar marca"
+    ],
     "order": 14,
     "version": "v2",
     "description": "Padronize marcas para catálogo de peças, produtos e equipamentos.",
@@ -371,6 +418,13 @@
     ],
     "permissionHints": [
       "part_family.list"
+    ],
+    "permissionDescriptions": [
+      "Listar famílias de peça",
+      "Visualizar família de peça",
+      "Criar família de peça",
+      "Atualizar família de peça",
+      "Deletar família de peça"
     ],
     "order": 15,
     "version": "v2",
@@ -398,6 +452,13 @@
     "permissionHints": [
       "supplier.list"
     ],
+    "permissionDescriptions": [
+      "Listar fornecedores",
+      "Visualizar fornecedor",
+      "Criar fornecedor",
+      "Atualizar fornecedor",
+      "Deletar fornecedor"
+    ],
     "order": 16,
     "version": "v2",
     "description": "Cadastre fornecedores e mantenha dados para compras e qualidade.",
@@ -423,6 +484,13 @@
     ],
     "permissionHints": [
       "labor.list"
+    ],
+    "permissionDescriptions": [
+      "Listar serviços",
+      "Visualizar serviço",
+      "Criar serviço",
+      "Atualizar serviço",
+      "Deletar serviço"
     ],
     "order": 17,
     "version": "v2",
@@ -450,6 +518,13 @@
     "permissionHints": [
       "quality.instruments_list"
     ],
+    "permissionDescriptions": [
+      "Listar instrumentos",
+      "Visualizar instrumentos",
+      "Criar instrumentos",
+      "Atualizar instrumentos",
+      "Deletar instrumentos"
+    ],
     "order": 18,
     "version": "v2",
     "description": "Gerencie instrumentos usados em qualidade e calibração.",
@@ -475,6 +550,15 @@
     "permissionHints": [
       "checklist.list"
     ],
+    "permissionDescriptions": [
+      "Listar checklists",
+      "Visualizar checklist",
+      "Criar checklist",
+      "Atualizar checklist",
+      "Deletar checklist",
+      "Listar módulos de checklist",
+      "Listar tarefas de checklist"
+    ],
     "order": 19,
     "version": "v2",
     "description": "Crie checklists operacionais para execução técnica padronizada.",
@@ -499,6 +583,12 @@
     ],
     "permissionHints": [
       "anvisa_registration_status.list"
+    ],
+    "permissionDescriptions": [
+      "Listar status ANVISA",
+      "Criar status ANVISA",
+      "Atualizar status ANVISA",
+      "Desativar status ANVISA"
     ],
     "order": 20,
     "version": "v2",

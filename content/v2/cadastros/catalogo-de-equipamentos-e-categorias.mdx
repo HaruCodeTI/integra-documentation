@@ -12,6 +12,16 @@ tags:
 permissionHints:
   - equipment.list
   - equipment.list_category
+permissionDescriptions:
+  - Listar equipamento
+  - Visualizar equipamento
+  - Criar equipamento
+  - Atualizar equipamento
+  - Deletar equipamento
+  - Listar categoria de equipamento
+  - Criar categoria de equipamento
+  - Atualizar categoria de equipamento
+  - Deletar categoria de equipamento
 order: 10
 version: v2
 description: Gerencie catálogo técnico e categorias usadas em estoque e OS.
@@ -22,55 +32,72 @@ related:
   - gestao/historico-de-equipamentos
 ---
 ## Quando usar
-Gerencie catálogo técnico e categorias usadas em estoque e OS.
+Para manter o catálogo técnico de modelos atendidos e suas categorias, base para OS, estoque e compatibilidades.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/equipments`.
+## Acesso
+Menu lateral → Cadastros → Catálogo de Equipamentos (e Categorias)
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Cadastros`.
-2. Abra a funcionalidade `Catálogo de Equipamentos e Categorias`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Visão geral da listagem
+- Busca/filtros por modelo, categoria, marca, status ANVISA.
+- Ações: criar equipamento, editar, visualizar, excluir; criar categorias.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Passo a passo — Novo equipamento (wizard 4 abas)
+1) Clique em **Novo Equipamento**.  
+2) **Aba Geral**: modelo*, categoria*, fabricante, marca, fotos.  
+3) **Aba Detalhes**: NCM, CEST, código ANVISA, status ANVISA.  
+4) **Aba Status**: Composto?* (Sim/Não), Equipamentos Compostos (se Sim), Status* (Ativo/Inativo).  
+5) **Aba Resumo**: revise tudo e clique **Cadastrar**.
+
+## Campos e validações — Equipamentos
+**Geral**  
+- Modelo*: texto ≥1.  
+- Categoria*: seleção de categoria existente.  
+- Fabricante: texto.  
+- Marca: seleção de marca.  
+- Fotos: upload opcional de imagens.
+
+**Detalhes**  
+- NCM: seleção com busca.  
+- CEST: seleção com busca.  
+- Código de Registro ANVISA: texto.  
+- Status do Registro ANVISA: seleção (usa Status ANVISA; opção “Nenhum” limpa).
+
+**Status**  
+- Composto?* (Sim/Não, padrão Não).  
+- Equipamentos Compostos: multi-seleção exibida só se Composto=Sim.  
+- Status* (Ativo/Inativo, padrão Ativo).
+
+**Validações**  
+- Modelo obrigatório.  
+- Categoria obrigatória.  
+- Cada aba valida antes de avançar; erros marcam a aba.
+
+## Passo a passo — Nova categoria de equipamento
+1) Clique em **Nova Categoria**.  
+2) Informe **Nome da categoria*** (mín. 1 caractere).  
+3) Salve.
+
+## Campos e validações — Categorias
+- Nome da categoria*: texto ≥1, único.  
+- Erro comum: nome em branco.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Tentar salvar equipamento sem modelo ou categoria.  
+- Marcar Composto=Sim sem selecionar os equipamentos componentes.  
+- Deixar status ANVISA divergente do catálogo de status.
 
-## Permissões necessárias
-- equipment.list
-- equipment.list_category
+## Permissões necessárias (nomes no sistema)
+- Listar equipamento
+- Visualizar equipamento
+- Criar equipamento
+- Atualizar equipamento
+- Deletar equipamento
+- Listar categoria de equipamento
+- Criar categoria de equipamento
+- Atualizar categoria de equipamento
+- Deletar categoria de equipamento
 
 ## Relacionados
 - [gestao/hub-de-estoque](/docs/gestao/hub-de-estoque)
 - [gestao/historico-de-equipamentos](/docs/gestao/historico-de-equipamentos)
-
-
-## O que você pode fazer nesta página
-- Listar e filtrar registros.
-
-## Fluxo detalhado
-1. Acesse o menu Cadastros e abra Catálogo de Equipamentos e Categorias.
-2. Use a busca/filtros da listagem para localizar registros.
-7. Revise mensagens de validação antes de concluir.
-
-## Campos e validações
-- Consulte o PDF seção 2.2 para nomes de campos, obrigatoriedade, máscaras e exemplos específicos.
-- Respeite formatos: datas em yyyy-mm-dd; e-mails válidos; documentos com dígitos completos.
-- Campos marcados com * são obrigatórios na criação e edição, quando exibidos.
-
-## Permissões necessárias (nomes no sistema)
-- Listar equipamento
-- Listar categoria de equipamento
-
-## Conteúdo detalhado (PDF 2.2 Catalogo de Equipamentos e Categorias)
-
 
