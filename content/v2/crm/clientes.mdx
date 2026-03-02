@@ -11,6 +11,12 @@ tags:
   - relacionamento
 permissionHints:
   - customer.list
+permissionDescriptions:
+  - Listar clientes
+  - Visualizar cliente
+  - Criar cliente
+  - Atualizar cliente
+  - Deletar cliente
 order: 26
 version: v2
 description: Gerencie clientes no contexto comercial e relacionamento contínuo.
@@ -21,31 +27,64 @@ related:
   - crm/solicitacoes-crm
 ---
 ## Quando usar
-Gerencie clientes no contexto comercial e relacionamento contínuo.
+Para cadastrar ou atualizar clientes (PF/PJ) que serão usados em solicitações CRM, orçamentos e vendas.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/customer`.
+## Acesso
+Menu lateral → CRM → Clientes
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `CRM`.
-2. Abra a funcionalidade `Clientes no CRM`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Visão geral da listagem
+- Filtros: Nome, Documento (CPF/CNPJ), E-mail, Status.  
+- Ações: criar, editar, visualizar, excluir.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Passo a passo — Criar cliente
+1) Clique em **Novo Cliente**.  
+2) Preencha **Dados Pessoais**: Nome*, Apelido, Documento (CPF/CNPJ)*, Telefone*, Telefone Fixo, E-mail*, Razão Social (PJ).  
+3) Informe **CEP*** e clique **Buscar CEP** para preencher endereço; ajuste Rua*, Número, Bairro, Complemento, Cidade*, Estado*.  
+4) Salve.
+
+## Passo a passo — Editar
+1) Abra **Editar** na linha desejada.  
+2) Ajuste dados pessoais ou endereço.  
+3) Salve.
+
+## Campos e validações
+**Dados Pessoais**  
+- Nome*: 1–255.  
+- Apelido: até 255.  
+- Documento (CPF/CNPJ)*: 11 ou 14 dígitos; validação e bloqueio de duplicado.  
+- Telefone*: 10–11 dígitos, máscara `(11) 99999-9999`.  
+- Telefone Fixo: opcional.  
+- E-mail*: válido, até 255.  
+- Razão Social: opcional (PJ).
+
+**Endereço**  
+- CEP*: 8 dígitos (preenche via busca).  
+- Rua*: até 255.  
+- Número: opcional numérico.  
+- Bairro: opcional.  
+- Complemento: opcional.  
+- Cidade*: até 255.  
+- Estado*: 2 letras (UF).
+
+## Mensagens frequentes
+- “Nome é obrigatório / muito longo”  
+- “Obrigatório” / “CPF/CNPJ inválido ou duplicado”  
+- “Telefone é obrigatório” / “Telefone deve ter 10 ou 11 dígitos”  
+- “Email é obrigatório / inválido”  
+- “CEP é obrigatório / inválido”  
+- “Estado deve ter 2 caracteres”
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Não clicar em **Buscar CEP** e salvar endereço incompleto.  
+- Tentar duplicar CPF/CNPJ existente.  
+- Telefone fora do padrão.
 
-## Permissões necessárias
-- customer.list
+## Permissões necessárias (nomes no sistema)
+- Listar clientes
+- Visualizar cliente
+- Criar cliente
+- Atualizar cliente
+- Deletar cliente
 
 ## Relacionados
 - [cadastros/clientes](/docs/cadastros/clientes)
@@ -69,5 +108,4 @@ Gerencie clientes no contexto comercial e relacionamento contínuo.
 - Listar clientes
 
 ## Conteúdo detalhado (PDF 4.1 Clientes)
-
 

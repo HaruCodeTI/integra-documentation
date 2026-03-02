@@ -742,6 +742,13 @@
     "permissionHints": [
       "customer.list"
     ],
+    "permissionDescriptions": [
+      "Listar clientes",
+      "Visualizar cliente",
+      "Criar cliente",
+      "Atualizar cliente",
+      "Deletar cliente"
+    ],
     "order": 26,
     "version": "v2",
     "description": "Gerencie clientes no contexto comercial e relacionamento contínuo.",
@@ -768,6 +775,14 @@
     "permissionHints": [
       "crm.list_report"
     ],
+    "permissionDescriptions": [
+      "Listar solicitações",
+      "Visualizar solicitação",
+      "Criar solicitação",
+      "Atualizar solicitação",
+      "Deletar solicitação",
+      "Atribuir responsável à solicitação"
+    ],
     "order": 27,
     "version": "v2",
     "description": "Registre oportunidades, demandas e evolução de solicitações comerciais.",
@@ -793,6 +808,15 @@
     ],
     "permissionHints": [
       "crm.customer_equipment_list_customers"
+    ],
+    "permissionDescriptions": [
+      "Listar clientes com parque instalado",
+      "Listar equipamentos por cliente no parque instalado",
+      "Criar equipamento no parque instalado",
+      "Excluir equipamento no parque instalado",
+      "Reatribuir equipamento no parque instalado",
+      "Gerar relatório de equipamentos no parque instalado",
+      "Visualizar histórico de equipamentos do cliente"
     ],
     "order": 28,
     "version": "v2",
@@ -974,6 +998,18 @@
     "permissionHints": [
       "purchase.list_request"
     ],
+    "permissionDescriptions": [
+      "Listar pedidos de compra",
+      "Visualizar pedido de compra",
+      "Criar pedido de compra",
+      "Atualizar pedido de compra",
+      "Deletar pedido de compra",
+      "Analisar pedido de compra",
+      "Solicitar nova análise de pedido de compra",
+      "Adicionar itens ao pedido de compra",
+      "Atualizar itens do pedido de compra",
+      "Deletar itens do pedido de compra"
+    ],
     "order": 35,
     "version": "v2",
     "description": "Solicite itens para reposição e aquisição conforme necessidade operacional.",
@@ -998,6 +1034,19 @@
     ],
     "permissionHints": [
       "purchase.list"
+    ],
+    "permissionDescriptions": [
+      "Listar compras",
+      "Visualizar compra",
+      "Criar compra",
+      "Atualizar compra",
+      "Exportar pedido de compra de peças",
+      "Listar etapas de importação do pedido de compra",
+      "Criar etapa de importação do pedido de compra",
+      "Atualizar etapa de importação do pedido de compra",
+      "Enviar arquivos da etapa de importação do pedido de compra",
+      "Baixar arquivo da etapa de importação do pedido de compra",
+      "Excluir arquivo da etapa de importação do pedido de compra"
     ],
     "order": 36,
     "version": "v2",
@@ -1024,6 +1073,17 @@
     ],
     "permissionHints": [
       "commercial.sales_order_list"
+    ],
+    "permissionDescriptions": [
+      "Listar pedidos de venda",
+      "Visualizar pedido de venda",
+      "Criar pedido de venda",
+      "Atualizar pedido de venda",
+      "Excluir pedido de venda",
+      "Aprovar pedido de venda",
+      "Faturar pedido de venda",
+      "Cancelar pedido de venda",
+      "Alterar status do pedido de venda"
     ],
     "order": 37,
     "version": "v2",

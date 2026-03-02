@@ -11,6 +11,18 @@ tags:
   - fornecedores
 permissionHints:
   - purchase.list
+permissionDescriptions:
+  - Listar compras
+  - Visualizar compra
+  - Criar compra
+  - Atualizar compra
+  - Exportar pedido de compra de peças
+  - Listar etapas de importação do pedido de compra
+  - Criar etapa de importação do pedido de compra
+  - Atualizar etapa de importação do pedido de compra
+  - Enviar arquivos da etapa de importação do pedido de compra
+  - Baixar arquivo da etapa de importação do pedido de compra
+  - Excluir arquivo da etapa de importação do pedido de compra
 order: 36
 version: v2
 description: Converta solicitações em pedidos e acompanhe status de aquisição.
@@ -21,53 +33,56 @@ related:
   - cadastros/fornecedores
 ---
 ## Quando usar
-Converta solicitações em pedidos e acompanhe status de aquisição.
+Para registrar a compra efetiva (com fornecedor, valores reais e itens adquiridos), vinculada ou não a uma solicitação aprovada.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/purchase`.
+## Acesso
+Menu lateral → Compras → Compras
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Compras`.
-2. Abra a funcionalidade `Pedidos de Compra`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Novo pedido de compra
+1) Clique em **Nova Compra**.  
+2) Se houver, selecione a **Solicitação de Origem** (opcional; preferir quando a demanda veio da solicitação).  
+3) Informe **Data da Compra*** (`yyyy-mm-dd`).  
+4) Informe **Valor Total*** do pedido.  
+5) Adicione **Itens Comprados*** (mínimo 1): Fornecedor (opcional), Item* (Equipamento/Peça/Produto), Quantidade* (≥1), Valor Unitário, Valor Total do item.  
+6) Adicione itens adicionais conforme necessário.  
+7) Salve e valide o pedido no detalhe.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Campos e validações
+- Solicitação de Origem: opcional; deve estar aprovada para vincular.  
+- Data da Compra*: obrigatório; formato `yyyy-mm-dd`.  
+- Valor Total*: obrigatório; numérico.  
+- Itens*: ao menos um item.  
+  - Fornecedor: opcional.  
+  - Item*: obrigatório.  
+  - Quantidade*: numérico ≥1.  
+  - Valor Unitário/Total: numérico ≥0.
+
+## Mensagens frequentes
+- “Data obrigatória”  
+- “Valor obrigatório”  
+- “Adicione pelo menos um item”  
+- “Quantidade obrigatória”
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Valor total divergente da soma dos itens.  
+- Vincular solicitação ainda não aprovada.  
+- Não selecionar fornecedor quando a política interna exige cotação (gera retrabalho).  
+- Deixar itens sem valor unitário definido, dificultando conciliação.
 
-## Permissões necessárias
-- purchase.list
+## Permissões necessárias (nomes no sistema)
+- Listar compras
+- Visualizar compra
+- Criar compra
+- Atualizar compra
+- Exportar pedido de compra de peças
+- Listar etapas de importação do pedido de compra
+- Criar etapa de importação do pedido de compra
+- Atualizar etapa de importação do pedido de compra
+- Enviar arquivos da etapa de importação do pedido de compra
+- Baixar arquivo da etapa de importação do pedido de compra
+- Excluir arquivo da etapa de importação do pedido de compra
 
 ## Relacionados
 - [compras/solicitacoes-de-compra](/docs/compras/solicitacoes-de-compra)
 - [cadastros/fornecedores](/docs/cadastros/fornecedores)
-
-
-## O que você pode fazer nesta página
-- Listar e filtrar registros.
-
-## Fluxo detalhado
-1. Acesse o menu Compras e abra Pedidos de Compra.
-2. Use a busca/filtros da listagem para localizar registros.
-7. Revise mensagens de validação antes de concluir.
-
-## Campos e validações
-- Consulte o PDF seção 6.2 para nomes de campos, obrigatoriedade, máscaras e exemplos específicos.
-- Respeite formatos: datas em yyyy-mm-dd; e-mails válidos; documentos com dígitos completos.
-- Campos marcados com * são obrigatórios na criação e edição, quando exibidos.
-
-## Permissões necessárias (nomes no sistema)
-- Listar compras
-
-## Conteúdo detalhado (PDF 6.2 Pedidos de Compra)
-
 

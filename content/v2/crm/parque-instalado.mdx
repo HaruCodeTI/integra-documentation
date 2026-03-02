@@ -11,6 +11,14 @@ tags:
   - crm
 permissionHints:
   - crm.customer_equipment_list_customers
+permissionDescriptions:
+  - Listar clientes com parque instalado
+  - Listar equipamentos por cliente no parque instalado
+  - Criar equipamento no parque instalado
+  - Excluir equipamento no parque instalado
+  - Reatribuir equipamento no parque instalado
+  - Gerar relatório de equipamentos no parque instalado
+  - Visualizar histórico de equipamentos do cliente
 order: 28
 version: v2
 description: Associe equipamentos a clientes e mantenha rastreabilidade instalada.
@@ -21,31 +29,48 @@ related:
   - gestao/historico-de-equipamentos
 ---
 ## Quando usar
-Associe equipamentos a clientes e mantenha rastreabilidade instalada.
+Para registrar e consultar quais equipamentos estão instalados em cada cliente, com série e observação de local/condição.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/crm/customer-equipment`.
+## Acesso
+Menu lateral → CRM → Parque Instalado
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `CRM`.
-2. Abra a funcionalidade `Parque Instalado`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Passo a passo — Vincular equipamento ao cliente
+1) Clique em **Novo** no Parque Instalado.  
+2) **Cliente***: busque por CPF/CNPJ ou nome; o formulário permite cadastro rápido se não existir.  
+3) **Equipamento***: selecione modelo do catálogo; busca por modelo.  
+4) **Número de Série**: opcional, recomenda-se preencher para rastreabilidade.  
+5) **Observação***: obrigatória; descreva local/andar/setor ou condição da instalação.  
+6) Salve.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Passo a passo — Consultar
+1) Use filtros/listagem para escolher o cliente.  
+2) Veja todos os equipamentos vinculados, com série e observação.  
+3) Abra um equipamento para detalhes ou histórico.
+
+## Campos e validações
+- Cliente*: obrigatório.  
+- Equipamento*: obrigatório.  
+- Número de Série: opcional.  
+- Observação*: texto obrigatório.
+
+## Mensagens frequentes
+- “Cliente é obrigatório”  
+- “Equipamento é obrigatório”  
+- “Observação é obrigatória”
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Não registrar observação e perder contexto de localização.  
+- Selecionar cliente ou equipamento incorretos ao buscar por nome semelhante.  
+- Falta de cadastro do equipamento no catálogo impede seleção (cadastrar antes).
 
-## Permissões necessárias
-- crm.customer_equipment_list_customers
+## Permissões necessárias (nomes no sistema)
+- Listar clientes com parque instalado
+- Listar equipamentos por cliente no parque instalado
+- Criar equipamento no parque instalado
+- Excluir equipamento no parque instalado
+- Reatribuir equipamento no parque instalado
+- Gerar relatório de equipamentos no parque instalado
+- Visualizar histórico de equipamentos do cliente
 
 ## Relacionados
 - [gestao/controle-patrimonial](/docs/gestao/controle-patrimonial)
@@ -69,5 +94,4 @@ Associe equipamentos a clientes e mantenha rastreabilidade instalada.
 - Listar clientes com parque instalado
 
 ## Conteúdo detalhado (PDF 4.3 Parque Instalado)
-
 

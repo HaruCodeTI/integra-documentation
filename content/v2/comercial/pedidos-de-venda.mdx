@@ -11,6 +11,16 @@ tags:
   - comercial
 permissionHints:
   - commercial.sales_order_list
+permissionDescriptions:
+  - Listar pedidos de venda
+  - Visualizar pedido de venda
+  - Criar pedido de venda
+  - Atualizar pedido de venda
+  - Excluir pedido de venda
+  - Aprovar pedido de venda
+  - Faturar pedido de venda
+  - Cancelar pedido de venda
+  - Alterar status do pedido de venda
 order: 37
 version: v2
 description: 'Registre pedidos de venda com itens, impostos e condições comerciais.'
@@ -21,53 +31,61 @@ related:
   - cadastros/catalogo-de-produtos
 ---
 ## Quando usar
-Registre pedidos de venda com itens, impostos e condições comerciais.
+Registrar vendas de produtos/peças/equipamentos com cálculos fiscais, parcelas e preparação para faturamento (NF-e/NFS-e).
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/sales-order`.
+## Acesso
+Menu lateral → Comercial → Pedidos de Venda
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `Comercial`.
-2. Abra a funcionalidade `Pedidos de Venda`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Estrutura da tela
+- Abas: **Cabeçalho**, **Itens da Venda**, **Parcelas**, **Info. Adicionais**.
+- Painel de Totais fixo no topo calcula itens, descontos e impostos (ICMS, PIS, COFINS, IPI) em tempo real.
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Passo a passo — Criar pedido
+1) Clique em **Novo Pedido de Venda**.  
+2) **Cabeçalho**: Cliente*, Previsão de Faturamento, Vendedor, Cenário Fiscal (Natureza de Operação), Observações. Selecione o Cenário Fiscal antes dos itens para aplicar alíquotas.  
+3) **Itens da Venda**: para cada item clique **Adicionar Item** e preencha Tipo* (Produto/Peça/Equipamento), Item*, Lote (quando houver), Quantidade* (≥0,001), Preço Unitário* (≥0), Desconto, CFOP, ICMS/PIS/COFINS/IPI (%). Repita para todos os itens.  
+4) **Parcelas**: adicione ao menos uma parcela com Data de Vencimento*, Valor*, Percentual (0–100), Tipo de Documento, Método de Pagamento. Gere parcelas automáticas se disponível e ajuste somatório = Total.  
+5) **Info. Adicionais**: observações internas e instruções.  
+6) Clique **Salvar** → revise Totais, itens e parcelas → **Confirmar**.
+
+## Passo a passo — Editar
+1) Abra o pedido, clique **Editar**.  
+2) Ajuste campos/itens. Se alterar itens (quantidade, preço ou desconto), gere novas parcelas — o sistema remove parcelas antigas para manter consistência.  
+3) Salve e confirme.
+
+## Campos e validações (resumo)
+- Cliente*: obrigatório; busca por CPF/CNPJ ou nome.  
+- Cenário Fiscal: opcional, mas recomendado; aplica alíquotas automaticamente.  
+- Itens: Tipo*; Item*; Quantidade* (>0); Preço Unitário* (≥0); ICMS/PIS/COFINS/IPI 0–100; Lote quando requerido.  
+- Parcelas: ao menos 1; soma deve bater com Total. Datas em `yyyy-mm-dd`.  
+- Painel de Totais: Total Produtos, Total Desconto, ICMS, PIS, COFINS, IPI, Total Final.
+
+## Mensagens frequentes
+- “Cliente é obrigatório”  
+- “Adicione pelo menos um item”  
+- “Quantidade deve ser maior que 0”  
+- “Adicione pelo menos uma parcela”  
+- “Alíquotas devem estar entre 0 e 100”  
+- Se itens mudarem: parcelas removidas para recálculo.
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Adicionar itens antes de definir Cenário Fiscal e precisar reabrir cada item para impostos.  
+- Alterar itens e não regenerar parcelas (parcelas somem).  
+- Lote não selecionado para item que exige lote.  
+- Total final diferente da soma das parcelas.
 
-## Permissões necessárias
-- commercial.sales_order_list
+## Permissões necessárias (nomes no sistema)
+- Listar pedidos de venda
+- Visualizar pedido de venda
+- Criar pedido de venda
+- Atualizar pedido de venda
+- Excluir pedido de venda
+- Aprovar pedido de venda
+- Faturar pedido de venda
+- Cancelar pedido de venda
+- Alterar status do pedido de venda
 
 ## Relacionados
 - [financeiro/faturamento](/docs/financeiro/faturamento)
 - [cadastros/catalogo-de-produtos](/docs/cadastros/catalogo-de-produtos)
-
-
-## O que você pode fazer nesta página
-- Listar e filtrar registros.
-
-## Fluxo detalhado
-1. Acesse o menu Comercial e abra Pedidos de Venda.
-2. Use a busca/filtros da listagem para localizar registros.
-7. Revise mensagens de validação antes de concluir.
-
-## Campos e validações
-- Consulte o PDF seção 7.1 para nomes de campos, obrigatoriedade, máscaras e exemplos específicos.
-- Respeite formatos: datas em yyyy-mm-dd; e-mails válidos; documentos com dígitos completos.
-- Campos marcados com * são obrigatórios na criação e edição, quando exibidos.
-
-## Permissões necessárias (nomes no sistema)
-- Listar pedidos de venda
-
-## Conteúdo detalhado (PDF 7.1 Pedidos de Venda)
-
 

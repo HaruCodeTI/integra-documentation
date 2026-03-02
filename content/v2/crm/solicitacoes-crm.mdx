@@ -11,6 +11,13 @@ tags:
   - pipeline
 permissionHints:
   - crm.list_report
+permissionDescriptions:
+  - Listar solicitações
+  - Visualizar solicitação
+  - Criar solicitação
+  - Atualizar solicitação
+  - Deletar solicitação
+  - Atribuir responsável à solicitação
 order: 27
 version: v2
 description: 'Registre oportunidades, demandas e evolução de solicitações comerciais.'
@@ -21,31 +28,65 @@ related:
   - crm/parque-instalado
 ---
 ## Quando usar
-Registre oportunidades, demandas e evolução de solicitações comerciais.
+Para registrar e acompanhar solicitações CRM (contatos, demandas comerciais) com dados do cliente, responsável e equipamentos envolvidos.
 
-## Pré-requisitos
-- Perfil com permissões indicadas em `Permissões necessárias`.
-- Dados mínimos já cadastrados para o fluxo.
-- Acesso ao módulo em `/crm`.
+## Acesso
+Menu lateral → CRM → Solicitações
 
-## Passo a passo
-1. Acesse o menu correspondente ao módulo `CRM`.
-2. Abra a funcionalidade `Solicitações CRM`.
-3. Execute o fluxo principal seguindo a sequência operacional da tela.
-4. Revise os dados antes de confirmar a operação.
+## Status do fluxo
+- **NOT_ASSIGNED** (não atribuído)  
+- **PENDING** (pendente)  
+- **IN_PROGRESS** (em andamento)  
+- **FINISHED** (finalizado)  
+(edição do status disponível ao editar a solicitação)
 
-## Campos críticos
-- Campos obrigatórios exibidos com validação de preenchimento.
-- Identificadores de cliente/equipamento/produto conforme contexto.
-- Datas, status e responsáveis quando aplicável.
+## Passo a passo — Criar solicitação
+1) Clique em **Nova Solicitação**.  
+2) Aba **Dados do Cliente**:  
+   - Nome do Cliente*  
+   - E-mail (opcional)  
+   - Telefone (opcional, máscara BR)  
+3) Aba **Solicitação**:  
+   - Tipo de Contato* (E-mail, WhatsApp, Telefone, Outro)  
+   - Descrição* (detalhe da demanda)  
+   - Responsável (opcional; exige permissão de atribuição)  
+   - Equipamentos (opcional; múltipla seleção de modelos)  
+4) Salve.
+
+## Passo a passo — Editar
+1) Abra a solicitação e clique em **Editar**.  
+2) Ajuste dados e, se necessário, altere **Status** para Pendente / Em andamento / Finalizado.  
+3) Salve.
+
+## Campos e validações
+- Nome do Cliente*: texto ≥1.  
+- E-mail: opcional; formato válido.  
+- Telefone: opcional; máscara `(99) 99999-9999`.  
+- Tipo de Contato*: obrigatório (EMAIL, WHATSAPP, PHONE, OTHER).  
+- Descrição*: texto ≥1.  
+- Responsável: seleção de usuário (opcional; requer permissão).  
+- Equipamentos: múltipla seleção opcional.  
+- Status: obrigatório na edição; opções listadas acima.
+
+## Mensagens frequentes
+- “Nome do cliente é obrigatório”  
+- “Tipo de contato é obrigatório”  
+- “Descrição é obrigatória”  
+- “E-mail inválido”  
+- “Telefone inválido”
 
 ## Erros comuns
-- Permissão insuficiente para a ação solicitada.
-- Dados obrigatórios ausentes ou em formato inválido.
-- Inconsistência de vínculo entre registros relacionados.
+- Tentar atribuir responsável sem permissão.  
+- Deixar status sem atualizar ao concluir o atendimento.  
+- Não registrar equipamentos relacionados e perder contexto técnico.
 
-## Permissões necessárias
-- crm.list_report
+## Permissões necessárias (nomes no sistema)
+- Listar solicitações
+- Visualizar solicitação
+- Criar solicitação
+- Atualizar solicitação
+- Deletar solicitação
+- Atribuir responsável à solicitação
 
 ## Relacionados
 - [crm/clientes](/docs/crm/clientes)
@@ -69,5 +110,4 @@ Registre oportunidades, demandas e evolução de solicitações comerciais.
 - Listar solicitações
 
 ## Conteúdo detalhado (PDF 4.2 Solicitações CRM)
-
 
