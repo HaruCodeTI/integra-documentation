@@ -126,82 +126,7 @@
     ],
     "slug": "acesso-e-navegacao/busca-rapida-de-modulos"
   },
-  {
-    "title": "Outros Elementos da Interface",
-    "module": "acesso-e-navegacao",
-    "route": "/",
-    "pdfRef": "1.6",
-    "videoUrl": "/videos/acesso-e-navegacao-outros-elementos-da-interface-v2.mp4",
-    "updatedAt": "2026-02-27",
-    "tags": [
-      "breadcrumb",
-      "notificacoes",
-      "perfil"
-    ],
-    "permissionHints": [
-      "Acesso ao sistema"
-    ],
-    "order": 6,
-    "version": "v2",
-    "description": "Use breadcrumb, notificações e perfil para navegação contextual.",
-    "menuGroup": "acesso-e-navegacao",
-    "menuGroupLabel": "Acesso e Navegação",
-    "related": [
-      "acesso-e-navegacao/dashboard-visao-geral"
-    ],
-    "slug": "acesso-e-navegacao/outros-elementos-da-interface"
-  },
-  {
-    "title": "Sistema de Permissões",
-    "module": "acesso-e-navegacao",
-    "route": "/config/permissions",
-    "pdfRef": "1.7",
-    "videoUrl": "/videos/acesso-e-navegacao-sistema-de-permissoes-v2.mp4",
-    "updatedAt": "2026-02-27",
-    "tags": [
-      "permissoes",
-      "seguranca",
-      "perfil"
-    ],
-    "permissionHints": [
-      "Permissão config_permissions"
-    ],
-    "order": 7,
-    "version": "v2",
-    "description": "Compreenda níveis de acesso e impacto das permissões na interface.",
-    "menuGroup": "acesso-e-navegacao",
-    "menuGroupLabel": "Acesso e Navegação",
-    "related": [
-      "administracao/permissoes",
-      "acesso-e-navegacao/menu-lateral"
-    ],
-    "slug": "acesso-e-navegacao/sistema-de-permissoes"
-  },
-  {
-    "title": "Resolução de Problemas Comuns",
-    "module": "acesso-e-navegacao",
-    "route": "/",
-    "pdfRef": "1.8",
-    "videoUrl": "/videos/acesso-e-navegacao-resolucao-de-problemas-comuns-v2.mp4",
-    "updatedAt": "2026-02-27",
-    "tags": [
-      "suporte",
-      "problemas",
-      "troubleshooting"
-    ],
-    "permissionHints": [
-      "Acesso ao sistema"
-    ],
-    "order": 8,
-    "version": "v2",
-    "description": "Resolva incidentes frequentes de login, lentidão e módulos indisponíveis.",
-    "menuGroup": "acesso-e-navegacao",
-    "menuGroupLabel": "Acesso e Navegação",
-    "related": [
-      "operacoes/solicitacoes-de-suporte"
-    ],
-    "slug": "acesso-e-navegacao/resolucao-de-problemas-comuns"
-  },
+  
   {
     "title": "Clientes",
     "module": "cadastros",
@@ -1776,7 +1701,7 @@
     "module": "administracao",
     "route": "/config/permissions",
     "pdfRef": "12.3",
-    "videoUrl": "/videos/administracao-permissoes-v2.mp4",
+    "videoUrl": "/videos/administracao-cargos-v2.mp4",
     "updatedAt": "2026-02-27",
     "tags": [
       "permissoes",
