@@ -69,7 +69,7 @@ export default async function DocPage({ params }: { params: Promise<{ slug: stri
             <h3>Assistentes IA</h3>
             <p>Use os assistentes treinados com o Integra para tirar dúvidas sobre o fluxo desta página.</p>
             <div className="ai-links">
-              <a href="https://chatgpt.com/g/g-69a5a5362464819193f7c54ed0579bba-integra-suporte" target="_blank" rel="noreferrer">
+              <a href="https://chatgpt.com/g/g-6979233718048191a3dc602c3f213ab0-arquiteto-integra-erp" target="_blank" rel="noreferrer">
                 GPT Assistente
               </a>
               <a href="https://gemini.google.com/gem/1Mo9G6XOwpQUa54Dl7RoLAea8_KP1U-T2?usp=sharing" target="_blank" rel="noreferrer">

@@ -37,7 +37,7 @@ export default async function HomePage() {
         <div className="contact-links">
           <a href="mailto:contato@harucode.com.br">contato@harucode.com.br</a>
           <a href="tel:+5567999532526">+55 (67) 99953-2526</a>
-          <a href="https://chatgpt.com/g/g-69a5a5362464819193f7c54ed0579bba-integra-suporte" target="_blank" rel="noreferrer">
+          <a href="https://chatgpt.com/g/g-6979233718048191a3dc602c3f213ab0-arquiteto-integra-erp" target="_blank" rel="noreferrer">
             GPT Assistente
           </a>
           <a href="https://gemini.google.com/gem/1Mo9G6XOwpQUa54Dl7RoLAea8_KP1U-T2?usp=sharing" target="_blank" rel="noreferrer">
