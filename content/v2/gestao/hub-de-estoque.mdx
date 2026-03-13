@@ -4,7 +4,7 @@ module: gestao
 route: /stock
 pdfRef: '5.1'
 videoUrl: /videos/gestao-hub-de-estoque-v2.mp4
-updatedAt: '2026-02-27'
+updatedAt: '2026-03-13'
 tags:
   - estoque
   - hub
@@ -65,10 +65,19 @@ Menu lateral → Gestão → Estoque
 3) Atualize saldo conforme consumo/saída.
 
 ## Campos e validações
-- Equipamento: modelo, número de série, status.  
-- Peça (lote): lote*, quantidade*, validade (se houver), status; inativar lote disponível.  
-- Produto: quantidade*.  
+- Equipamento: modelo, número de série, status, campos de custo (ver abaixo).
+- Peça (lote): lote*, quantidade*, validade (se houver), status, campos de custo (ver abaixo); inativar lote disponível.
+- Produto (lote): quantidade*, campos de custo (ver abaixo).
 - Datas em `yyyy-mm-dd`; quantidades numéricas ≥0.
+
+### Campos de custo (Equipamentos, Peças e Produtos)
+Todos os itens de estoque possuem 4 campos opcionais de custo:
+- **Custo Nacionalizado NF (USD)**: custo conforme nota fiscal de importação.
+- **Custo Nacionalizado Real (USD)**: custo efetivo nacionalizado.
+- **Custo Fábrica (USD)**: custo de fabricação/origem.
+- **Cotação do Dólar na Compra**: taxa USD/BRL na data da compra.
+
+Estes campos são opcionais e aceitam valores decimais ≥ 0.
 
 ## Mensagens frequentes
 - “Quantidade deve ser maior que 0” ao registrar lote/entrada.  

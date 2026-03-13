@@ -4,7 +4,7 @@ module: cadastros
 route: /parts
 pdfRef: '2.3'
 videoUrl: /videos/cadastros-catalogo-de-pecas-v2.mp4
-updatedAt: '2026-02-27'
+updatedAt: '2026-03-13'
 tags:
   - pecas
   - estoque
@@ -38,7 +38,7 @@ Menu lateral → Cadastros → Catálogo de Peças
 
 ## Passo a passo — Nova peça (wizard 5 abas)
 1) Clique em **Nova Peça**.  
-2) **Aba Geral**: Parts Number*, Código P / Interno / Fornecedor (preencher ao menos um), Família*, Fotos.  
+2) **Aba Geral**: Parts Number*, Código Interno*, Código P / Fornecedor (opcionais), Família*, Fotos.
 3) **Aba Técnico**: Marca, Especificações*, Unidade de Medida*, Quantidade Mínima, Quantidade Máxima, NCM.  
 4) **Aba Descrições**: Descrição Interna*, Descrição para NF, Descrição do Fornecedor, Descrição Completa.  
 5) **Aba Compatibilidade**: Equipamentos Compatíveis, Equipamentos Adaptáveis, Equipamento Principal.  
@@ -46,8 +46,9 @@ Menu lateral → Cadastros → Catálogo de Peças
 
 ## Campos e validações
 **Geral**  
-- Parts Number*: identificador único.  
-- Código P / Código Interno / Código Fornecedor: condicional; pelo menos um deles é obrigatório.  
+- Parts Number*: identificador único.
+- Código Interno*: obrigatório; identificador interno da peça.
+- Código P / Código Fornecedor: opcionais; identificadores complementares.
 - Família*: seleção de família de peças.  
 - Fotos: upload opcional.
 
@@ -75,12 +76,12 @@ Menu lateral → Cadastros → Catálogo de Peças
 - “Familia obrigatória”  
 - “Especificações obrigatórias”  
 - “Unidade de medida obrigatória”  
-- “Pelo menos um código (P, Interno ou Fornecedor) deve ser informado”  
+- “Código Interno é obrigatório”
 - “Quantidade mínima deve ser maior que 0” / “Quantidade máxima não pode ser inferior à mínima”  
 - “Descrição Interna obrigatória”
 
 ## Erros comuns
-- Deixar todos os códigos em branco.  
+- Não preencher o Código Interno.
 - Informar Quantidade Máxima menor que a Mínima.  
 - Omitir especificações técnicas que impactam compatibilidade.
 
